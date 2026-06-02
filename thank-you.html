@@ -17,10 +17,9 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','894951940022072');
 fbq('track','PageView');
-fbq('track','Purchase');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=894951940022072&ev=Purchase&noscript=1"/></noscript>
+src="https://www.facebook.com/tr?id=894951940022072&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel -->
 
 <!-- Google Analytics -->
@@ -30,9 +29,49 @@ src="https://www.facebook.com/tr?id=894951940022072&ev=Purchase&noscript=1"/></n
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-0274LCMD1G');
-  gtag('event', 'purchase');
 </script>
 <!-- End Google Analytics -->
+
+<!-- Purchase tracking — reads ?ticket=basic|popular|vip from Stripe redirect URL -->
+<script>
+(function() {
+  var ticketMap = {
+    basic:   { value: 27,  name: 'RevStream LIVE — Basic',   items: 1 },
+    popular: { value: 47,  name: 'RevStream LIVE — 2 места', items: 2 },
+    vip:     { value: 77,  name: 'RevStream LIVE — VIP',     items: 1 }
+  };
+  var params  = new URLSearchParams(window.location.search);
+  var ticket  = params.get('ticket') || 'popular';
+  var data    = ticketMap[ticket] || ticketMap['popular'];
+
+  // Meta Pixel Purchase
+  fbq('track', 'Purchase', {
+    value:        data.value,
+    currency:     'EUR',
+    num_items:    data.items,
+    content_type: 'product',
+    content_ids:  [ticket],
+    content_name: data.name
+  });
+
+  // Google Analytics purchase
+  gtag('event', 'purchase', {
+    transaction_id: params.get('session_id') || ('rs-' + Date.now()),
+    value:          data.value,
+    currency:       'EUR',
+    items: [{
+      item_id:   ticket,
+      item_name: data.name,
+      price:     data.value,
+      quantity:  data.items
+    }]
+  });
+
+  // Show correct ticket name on page if element exists
+  var el = document.getElementById('ticket-name');
+  if (el) el.textContent = data.name;
+})();
+</script>
 
 <!-- Plausible Analytics -->
 <script async src="https://plausible.io/js/pa-OAFLMgXe_6mTuEZDCJyR-.js"></script>
