@@ -777,18 +777,37 @@ footer { background: #070707; border-top: 1px solid var(--border); padding: 44px
 </footer>
 
 <script>
+function doScrollTo(target) {
+  var top = target.getBoundingClientRect().top + window.pageYOffset - 88;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+
+function scrollAfterImagesLoad(target) {
+  var lazyImgs = Array.from(document.querySelectorAll('img[loading="lazy"]')).filter(function(img) {
+    return img.compareDocumentPosition(target) & Node.DOCUMENT_POSITION_FOLLOWING;
+  });
+  if (lazyImgs.length === 0) { doScrollTo(target); return; }
+  var pending = lazyImgs.filter(function(img) { return !img.complete; });
+  if (pending.length === 0) { doScrollTo(target); return; }
+  var done = 0;
+  pending.forEach(function(img) {
+    img.addEventListener('load',  function() { if (++done === pending.length) doScrollTo(target); }, { once: true });
+    img.addEventListener('error', function() { if (++done === pending.length) doScrollTo(target); }, { once: true });
+    img.loading = 'eager';
+  });
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(function(a) {
   a.addEventListener('click', function(e) {
     var href = this.getAttribute('href');
     if (href === '#') return;
     var target = document.querySelector(href);
-    if (target) {
-      e.preventDefault();
-      // Defer one frame so any pending image-load reflows settle first
-      requestAnimationFrame(function() {
-        var top = target.getBoundingClientRect().top + window.pageYOffset - 88;
-        window.scrollTo({ top: top, behavior: 'smooth' });
-      });
+    if (!target) return;
+    e.preventDefault();
+    if (href === '#apply') {
+      scrollAfterImagesLoad(target);
+    } else {
+      requestAnimationFrame(function() { doScrollTo(target); });
     }
   });
 });
