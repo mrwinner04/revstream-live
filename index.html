@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="bg">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="RevStream LIVE — Продажби Без Граници. Едно-дневно обучение по продажбите. Хотел Черно Море, Варна. 4 Юли 2026.">
-<title>RevStream LIVE — Продажби Без Граници | Варна 4 Юли 2026</title>
+<meta name="description" content="RevStream Consortium — Изграждаме търговски екипи за бизнеси и обучаваме топ клоузъри, които след това се назначават на работа.">
+<title>RevStream Consortium — Търговски Екипи &amp; Клоузър Програма</title>
+
 <!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -42,6 +43,7 @@ src="https://www.facebook.com/tr?id=894951940022072&ev=PageView&noscript=1"/></n
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 /* ===================== RESET & BASE ===================== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -63,7 +65,6 @@ src="https://www.facebook.com/tr?id=894951940022072&ev=PageView&noscript=1"/></n
 }
 
 html { scroll-behavior: smooth; }
-
 body {
   background: var(--black);
   color: var(--text);
@@ -72,3709 +73,716 @@ body {
   line-height: 1.6;
 }
 
-/* ===================== TYPOGRAPHY ===================== */
-.bebas { font-family: 'Bebas Neue', 'Oswald', sans-serif; }
 h1, h2, h3 { font-family: 'Bebas Neue', 'Oswald', sans-serif; letter-spacing: 0.04em; }
-
-.section-title {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
-  letter-spacing: 0.06em;
-  text-align: center;
-  margin-bottom: 1rem;
-  line-height: 1.1;
-}
-
-.section-subtitle {
-  text-align: center;
-  color: var(--text-dim);
-  font-size: 1rem;
-  margin-bottom: 3rem;
-  font-weight: 400;
-}
-
-.gold-text {
-  background: var(--gold-text);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
+.container { max-width: 1140px; margin: 0 auto; width: 100%; padding: 0 20px; }
 section { padding: 90px 20px; }
-
-.container {
-  max-width: 1160px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-/* ===================== HERO ===================== */
-#hero {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 160px 20px 80px;
-  overflow: hidden;
-  background: radial-gradient(ellipse at 50% 30%, #1a1200 0%, var(--black) 65%);
-}
-
-/* Gold particles */
-.particles {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.particle {
-  position: absolute;
-  border-radius: 50%;
-  background: var(--gold-light);
-  opacity: 0;
-  animation: floatUp var(--dur, 8s) var(--delay, 0s) infinite ease-in-out;
-}
-
-@keyframes floatUp {
-  0%   { transform: translateY(0)   translateX(0)   scale(1);   opacity: 0; }
-  10%  { opacity: var(--op, 0.7); }
-  80%  { opacity: var(--op, 0.4); }
-  100% { transform: translateY(-110vh) translateX(var(--drift, 30px)) scale(0.4); opacity: 0; }
-}
-
-/* Hero content */
-.hero-content { position: relative; z-index: 2; max-width: 900px; }
-
-.hero-eyebrow {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
-  letter-spacing: 0.25em;
-  color: var(--gold-dark);
-  margin-bottom: 1.2rem;
-}
-
-.hero-qualifier {
-  font-size: clamp(0.85rem, 1.6vw, 1rem);
-  color: var(--text-dim);
-  font-style: italic;
-  line-height: 1.7;
-  margin-bottom: 1.6rem;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid rgba(212,160,23,0.18);
-  border-radius: 6px;
-  padding: 12px 20px;
-  background: rgba(212,160,23,0.04);
-}
-
-.hero-hl-event-sub {
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-size: clamp(0.9rem, 1.8vw, 1.15rem);
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gold-dark);
-  margin-top: 0.4em;
-}
-
-.hero-hook {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(1.3rem, 2.8vw, 2rem);
-  letter-spacing: 0.08em;
-  color: var(--gold);
-  margin: 1rem 0 1.2rem;
-}
-
-.hero-subhook {
-  font-size: clamp(0.9rem, 1.8vw, 1.15rem);
-  color: var(--text);
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  margin: -0.5rem 0 1.4rem;
-  opacity: 0.75;
-}
-
-.hero-promise {
-  font-size: clamp(0.9rem, 1.7vw, 1.05rem);
-  color: var(--text);
-  line-height: 1.75;
-  max-width: 720px;
-  margin: 0 auto 1.8rem;
-  font-weight: 400;
-}
-
-.hero-promise strong {
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 700;
-}
-
-.hero-headline {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  line-height: 1;
-  margin-bottom: 1.2rem;
-}
-
-.hero-hl-intro {
-  display: block;
-  font-size: clamp(0.9rem, 1.8vw, 1.3rem);
-  letter-spacing: 0.45em;
-  color: var(--gold-dark);
-  margin-bottom: 0.6em;
-}
-
-.hero-hl-big {
-  display: block;
-  font-size: clamp(2.8rem, 6vw, 7rem);
-  line-height: 0.92;
-  color: #ffffff;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  text-shadow: 0 0 80px rgba(255, 215, 0, 0.12);
-}
-
-.hero-hl-sub {
-  display: block;
-  font-size: clamp(1rem, 2.2vw, 1.7rem);
-  letter-spacing: 0.28em;
-  margin-top: 0.55em;
-  background: linear-gradient(90deg, #D4A017 0%, #FFD700 25%, #fff 45%, #FFD700 65%, #D4A017 85%, #FFD700 100%);
-  background-size: 300% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 4s linear infinite;
-}
 
 @keyframes shimmer {
   0%   { background-position: 0% center; }
   100% { background-position: 300% center; }
 }
-
-.hero-location {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(1.2rem, 3vw, 2rem);
-  letter-spacing: 0.12em;
-  color: var(--gold);
-  margin-bottom: 1.4rem;
+@keyframes floatUp {
+  0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+  10%  { opacity: var(--op, 0.7); }
+  80%  { opacity: var(--op, 0.4); }
+  100% { transform: translateY(-110vh) translateX(var(--drift, 30px)) scale(0.4); opacity: 0; }
 }
-
-.hero-proof-strip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  margin-bottom: 2.4rem;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.hero-proof-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 24px;
-  background: rgba(212,160,23,0.07);
-  border: 1px solid rgba(212,160,23,0.2);
-  border-radius: 6px;
-}
-
-.hero-proof-num {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.04em;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1.1;
-}
-
-.hero-proof-label {
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-dim);
-  margin-top: 2px;
-}
-
-.hero-proof-sep {
-  width: 1px;
-  height: 32px;
-  background: rgba(212,160,23,0.2);
-  display: none;
-}
-
-.hero-sub-cta {
-  margin-top: 14px;
-  font-size: 0.8rem;
-  color: #555;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.hero-tagline {
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
-  color: var(--text-dim);
-  margin-bottom: 3rem;
-  font-weight: 400;
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ===================== COUNTDOWN ===================== */
-.countdown {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 2.8rem;
-}
-
-.cd-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 80px;
-  padding: 14px 18px;
-  border: 1.5px solid var(--gold-dark);
-  background: rgba(212,160,23,0.07);
-  border-radius: 6px;
-  backdrop-filter: blur(4px);
-}
-
-.cd-num {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 2.6rem;
-  line-height: 1;
-  color: var(--gold-light);
-}
-
-.cd-label {
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gold-dark);
-  margin-top: 4px;
-  font-weight: 600;
-}
-
-.cd-expired {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 2rem;
-  color: var(--gold-light);
-  letter-spacing: 0.08em;
-}
-
-/* ===================== CTA BUTTON ===================== */
-.btn-primary {
-  display: inline-block;
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.1em;
-  padding: 18px 52px;
-  background: var(--gold-grad);
-  color: #000;
-  text-decoration: none;
-  border-radius: 4px;
-  cursor: pointer;
-  border: none;
-  transition: transform 0.2s, filter 0.2s;
-  animation: pulseBorder 2s ease-in-out infinite;
-  box-shadow: 0 0 0 0 rgba(255,215,0,0.7);
-  position: relative;
-}
-
-.btn-primary:hover { transform: translateY(-2px); filter: brightness(1.1); }
-
 @keyframes pulseBorder {
   0%   { box-shadow: 0 0 0 0   rgba(255,215,0,0.7); }
-  50%  { box-shadow: 0 0 0 14px rgba(255,215,0,0);   }
-  100% { box-shadow: 0 0 0 0   rgba(255,215,0,0);   }
+  50%  { box-shadow: 0 0 0 14px rgba(255,215,0,0); }
+  100% { box-shadow: 0 0 0 0   rgba(255,215,0,0); }
 }
-
-.btn-secondary {
-  display: inline-block;
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 0.1em;
-  padding: 16px 44px;
-  background: transparent;
-  color: var(--gold-light);
-  text-decoration: none;
-  border-radius: 4px;
-  border: 2px solid var(--gold-dark);
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
-  animation: pulseBorder 2s ease-in-out infinite;
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-
-.btn-secondary:hover { background: var(--gold-grad); color: #000; transform: translateY(-2px); }
-
-/* ===================== TICKER ===================== */
-#ticker {
-  padding: 0;
-  overflow: hidden;
-  background: linear-gradient(135deg, #0e0e0e 0%, #1a1200 50%, #0e0e0e 100%);
-  border-top: 1px solid var(--gold-deep);
-  border-bottom: 1px solid var(--gold-deep);
-}
-
-.ticker-track {
-  display: flex;
-  width: max-content;
-  animation: scrollTicker 35s linear infinite;
-}
-
-.ticker-track:hover { animation-play-state: paused; }
-
 @keyframes scrollTicker {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
-.ticker-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  white-space: nowrap;
-  padding: 18px 48px;
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.15rem;
-  letter-spacing: 0.12em;
-  color: var(--gold);
-}
-
-.ticker-divider {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: var(--gold-dark);
-  border-radius: 50%;
-  margin: 0 20px;
-  vertical-align: middle;
-}
-
-/* ===================== FOR WHO ===================== */
-#for-who {
-  background: var(--black-2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.who-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 3rem;
-}
-
-.who-column {
-  background: var(--card-bg);
-  border-radius: 8px;
-  padding: 36px 32px;
-}
-
-.who-col-title {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 1.4rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.who-col-title.yes { color: var(--gold-light); border-bottom: 2px solid var(--gold-dark); padding-bottom: 10px; }
-.who-col-title.no  { color: var(--red);        border-bottom: 2px solid var(--red);       padding-bottom: 10px; }
-
-.who-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
-
-.who-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 0.95rem;
-  color: var(--text-dim);
-  line-height: 1.5;
-}
-
-.check-icon {
-  flex-shrink: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: rgba(212,160,23,0.15);
-  border: 1.5px solid var(--gold-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  color: var(--gold-light);
-  margin-top: 1px;
-  font-weight: 700;
-}
-
-.x-icon {
-  flex-shrink: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: rgba(230,57,70,0.12);
-  border: 1.5px solid var(--red);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  color: var(--red);
-  margin-top: 1px;
-  font-weight: 700;
-}
-
-/* ===================== WHAT YOU'LL LEARN ===================== */
-#learn { background: var(--black); }
-
-.learn-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 3rem;
-}
-
-.learn-card {
-  background: var(--card-bg);
-  border-radius: 8px;
-  padding: 32px 28px;
-  border: 1px solid var(--border);
-  position: relative;
-  overflow: hidden;
-  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
-}
-
-.learn-card::before {
-  content: '';
-  position: absolute;
+/* ===================== NAV ===================== */
+nav {
+  position: fixed;
   top: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--gold-grad);
-}
-
-.learn-card:hover {
-  border-color: var(--gold-dark);
-  box-shadow: 0 0 28px rgba(212,160,23,0.18);
-  transform: translateY(-4px);
-}
-
-.learn-num {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 3rem;
-  line-height: 1;
-  color: var(--gold-dark);
-  opacity: 0.5;
-  margin-bottom: 0.6rem;
-}
-
-.learn-title {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.35rem;
-  letter-spacing: 0.06em;
-  color: var(--gold-light);
-  margin-bottom: 0.7rem;
-}
-
-.learn-desc {
-  font-size: 0.9rem;
-  color: var(--text-dim);
-  line-height: 1.6;
-}
-
-.learn-card-secret {
-  background: #0f0d08;
-  border-color: rgba(212,160,23,0.5) !important;
-  box-shadow: 0 0 40px rgba(212,160,23,0.1) !important;
-  position: relative;
-}
-
-.learn-card-secret-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background: rgba(212,160,23,0.1);
-  border: 1px solid rgba(212,160,23,0.35);
-  color: var(--gold);
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  padding: 3px 12px;
-  border-radius: 30px;
-  margin-bottom: 0.8rem;
-}
-
-.learn-card-secret .learn-num {
-  opacity: 0.25;
-}
-
-.learn-card-secret-pill {
-  display: inline-block;
-  border: 1px solid rgba(212,160,23,0.35);
-  border-radius: 30px;
-  padding: 4px 14px;
-  font-size: 0.78rem;
-  color: var(--gold);
-  letter-spacing: 0.07em;
-  margin-top: 1rem;
-}
-
-.learn-card-secret-note {
-  font-size: 0.73rem;
-  color: var(--text-dim);
-  opacity: 0.5;
-  margin-top: 0.7rem;
-  font-style: italic;
-  line-height: 1.5;
-}
-
-.learn-bonus-card {
-  position: relative;
-  background: #0f0d08;
-  border: 1px solid rgba(212,160,23,0.5);
-  border-radius: 10px;
-  padding: 36px 36px 32px;
-  margin-top: 2.5rem;
-  box-shadow: 0 0 60px rgba(212,160,23,0.08), inset 0 0 80px rgba(212,160,23,0.03);
-  overflow: hidden;
-}
-
-.learn-bonus-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--gold-dark), var(--gold), var(--gold-dark), transparent);
-}
-
-.learn-bonus-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(212,160,23,0.12);
-  border: 1px solid rgba(212,160,23,0.4);
-  color: var(--gold);
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 0.82rem;
-  letter-spacing: 0.14em;
-  padding: 5px 14px;
-  border-radius: 30px;
-  margin-bottom: 1.4rem;
-}
-
-.learn-bonus-inner {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 2.5rem;
-  align-items: start;
-}
-
-.learn-bonus-num {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 5rem;
-  line-height: 1;
-  color: var(--gold-dark);
-  opacity: 0.35;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.02em;
-}
-
-.learn-bonus-title {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.05em;
-  color: var(--gold-light);
-  line-height: 1.25;
-}
-
-.learn-bonus-right p {
-  font-size: 0.95rem;
-  color: var(--text);
-  line-height: 1.7;
-  margin-bottom: 0.8rem;
-}
-
-.learn-bonus-right p strong {
-  color: var(--gold-light);
-}
-
-.learn-bonus-disclaimer {
-  font-size: 0.78rem !important;
-  color: var(--text-dim) !important;
-  opacity: 0.6;
-  margin-top: 0.8rem !important;
-  font-style: italic;
-}
-
-.learn-bonus-pill {
-  display: inline-block;
-  border: 1px solid rgba(212,160,23,0.4);
-  border-radius: 30px;
-  padding: 6px 18px;
-  font-size: 0.82rem;
-  color: var(--gold);
-  letter-spacing: 0.08em;
-  margin-top: 0.4rem;
-}
-
-@media (max-width: 680px) {
-  .learn-bonus-inner { grid-template-columns: 1fr; gap: 1rem; }
-}
-
-/* ===================== SCHEDULE ===================== */
-#schedule {
-  background: var(--black-2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.timeline {
-  position: relative;
-  max-width: 720px;
-  margin: 3rem auto 0;
-  padding-left: 30px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  bottom: 8px;
-  width: 2px;
-  background: linear-gradient(180deg, var(--gold-dark) 0%, var(--gold-deep) 100%);
-}
-
-.timeline-item {
-  position: relative;
-  padding: 0 0 2.4rem 30px;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -5px;
-  top: 6px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--gold-light);
-  border: 2px solid var(--black-2);
-  box-shadow: 0 0 10px rgba(255,215,0,0.5);
-}
-
-.timeline-time {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 0.1em;
-  color: var(--gold-light);
-  margin-bottom: 4px;
-}
-
-.timeline-desc {
-  font-size: 0.95rem;
-  color: var(--text-dim);
-  line-height: 1.5;
-}
-
-.timeline-desc strong { color: var(--text); }
-
-/* ===================== ABOUT ===================== */
-#about { background: var(--black); }
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-  margin-top: 3rem;
-}
-
-.about-bullets { list-style: none; display: flex; flex-direction: column; gap: 16px; }
-
-.about-bullets li {
-  font-size: 0.97rem;
-  color: var(--text-dim);
-  line-height: 1.5;
-  padding-left: 8px;
-  border-left: 2px solid var(--gold-dark);
-  padding: 8px 0 8px 16px;
-}
-
-.about-methodology {
-  margin-top: 2rem;
-  padding: 20px 24px;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  font-size: 0.9rem;
-  color: var(--text-dim);
-  font-style: italic;
-  border-left: 3px solid var(--gold-dark);
-}
-
-.about-photo-placeholder {
-  border-radius: 8px;
-  border: 2px solid var(--gold-dark);
-  overflow: hidden;
-  box-shadow: 0 0 40px rgba(212,160,23,0.15);
-  position: relative;
-}
-
-.about-photo-placeholder img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.about-photo-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 12px 16px;
-  background: linear-gradient(transparent, rgba(0,0,0,0.85));
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.15em;
-  color: var(--gold-dark);
-  text-align: center;
-}
-
-/* ===================== TICKETS ===================== */
-#tickets {
-  background: var(--black-2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.tickets-urgency {
-  text-align: center;
-  color: var(--gold-dark);
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 3rem;
-  letter-spacing: 0.04em;
-}
-
-.tickets-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  align-items: start;
-}
-
-.ticket-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0 0 32px;
-  position: relative;
-  transition: transform 0.3s;
-  overflow: hidden;
-}
-
-.ticket-card:hover { transform: translateY(-6px); }
-
-.ticket-card.featured {
-  border-color: var(--gold-dark);
-  box-shadow: 0 0 50px rgba(212,160,23,0.2), 0 0 100px rgba(212,160,23,0.06);
-  transform: scale(1.04);
-}
-
-.ticket-card.featured:hover { transform: scale(1.04) translateY(-6px); }
-
-.ticket-card-top {
-  padding: 28px 28px 20px;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 24px;
-  position: relative;
-}
-
-.ticket-card-top::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--gold-grad);
-}
-
-.featured .ticket-card-top::before {
-  height: 4px;
-  box-shadow: 0 0 12px var(--gold);
-}
-
-.ticket-badge {
-  display: inline-block;
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.15em;
-  padding: 4px 12px;
-  border-radius: 100px;
-  margin-bottom: 14px;
-}
-
-.ticket-badge.basic    { background: rgba(212,160,23,0.1); color: var(--gold-dark); border: 1px solid var(--gold-deep); }
-.ticket-badge.popular  { background: var(--gold-grad); color: #000; border: none; }
-.ticket-badge.vip      { background: rgba(212,160,23,0.1); color: var(--gold-light); border: 1px solid var(--gold); }
-
-.ticket-name {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 0.08em;
-  color: var(--text);
-  margin-bottom: 4px;
-}
-
-.ticket-price {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 3.2rem;
-  letter-spacing: 0.04em;
-  line-height: 1;
-  color: var(--gold-light);
-}
-
-.ticket-price-note {
-  font-size: 0.8rem;
-  color: var(--text-dim);
-  margin-top: 4px;
-}
-
-.ticket-features {
-  list-style: none;
-  padding: 0 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 28px;
-}
-
-.ticket-features li {
-  font-size: 0.9rem;
-  color: var(--text-dim);
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  line-height: 1.4;
-}
-
-.feat-check { color: var(--gold-light); font-weight: 700; flex-shrink: 0; }
-.feat-x     { color: var(--red);        font-weight: 700; flex-shrink: 0; opacity: 0.7; }
-
-.ticket-cta {
-  display: block;
-  text-align: center;
-  margin: 0 28px;
-  padding: 16px;
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.25rem;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: filter 0.2s, transform 0.2s;
-}
-
-.ticket-cta:hover { filter: brightness(1.1); transform: translateY(-1px); }
-
-.ticket-cta.basic { background: transparent; color: var(--gold-light); border: 2px solid var(--gold-dark); }
-.ticket-cta.basic:hover { background: rgba(212,160,23,0.1); }
-.ticket-cta.popular { background: var(--gold-grad); color: #000; border: none; animation: pulseBorder 2s ease-in-out infinite; }
-.ticket-cta.vip { background: transparent; color: var(--gold-light); border: 2px solid var(--gold); }
-.ticket-cta.vip:hover { background: rgba(255,215,0,0.08); }
-
-.tickets-trust {
-  text-align: center;
-  margin-top: 2.4rem;
-  font-size: 0.85rem;
-  color: var(--text-dim);
-}
-
-.tickets-trust span { color: var(--gold-dark); }
-
-/* ===================== FAQ ===================== */
-#faq { background: var(--black); }
-
-.faq-list {
-  max-width: 780px;
-  margin: 3rem auto 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.faq-item {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: border-color 0.25s;
-}
-
-.faq-item.open { border-color: var(--gold-dark); }
-
-.faq-question {
-  width: 100%;
+  z-index: 100;
+  padding: 18px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  gap: 16px;
-  color: var(--text);
-  font-family: 'Inter', sans-serif;
-}
-
-.faq-question-text {
-  font-size: 0.97rem;
-  font-weight: 600;
-  line-height: 1.4;
-  color: var(--text);
-}
-
-.faq-icon {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  border: 1.5px solid var(--gold-dark);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--gold-light);
-  font-size: 1.1rem;
-  font-weight: 300;
-  transition: transform 0.3s, background 0.3s;
-  line-height: 1;
-}
-
-.faq-item.open .faq-icon {
-  transform: rotate(45deg);
-  background: var(--gold-dark);
-  color: #000;
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s;
-}
-
-.faq-answer-inner {
-  padding: 0 24px 20px;
-  font-size: 0.9rem;
-  color: var(--text-dim);
-  line-height: 1.7;
-}
-
-.faq-item.open .faq-answer { max-height: 300px; }
-
-/* ===================== FINAL CTA ===================== */
-#final-cta {
-  background: radial-gradient(ellipse at 50% 60%, #1a1200 0%, var(--black) 70%);
-  text-align: center;
-  border-top: 1px solid var(--border);
-}
-
-.final-headline {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(4rem, 10vw, 9rem);
-  line-height: 0.95;
-  letter-spacing: 0.04em;
-  background: var(--gold-text);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 3s linear infinite;
-  margin-bottom: 1rem;
-}
-
-.final-sub {
-  font-size: 1.1rem;
-  color: var(--text-dim);
-  margin-bottom: 2.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.final-note {
-  margin-top: 1.8rem;
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  letter-spacing: 0.04em;
-}
-
-/* ===================== FOOTER ===================== */
-footer {
-  background: #070707;
-  border-top: 1px solid var(--border);
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.footer-brand {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.15em;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 12px;
-}
-
-.footer-copy {
-  font-size: 0.8rem;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.footer-ig {
-  font-size: 0.88rem;
-  color: var(--gold-dark);
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  transition: color 0.2s;
-}
-
-.footer-ig:hover { color: var(--gold-light); }
-
-.footer-hint {
-  font-size: 0.78rem;
-  color: #444;
-  margin-top: 8px;
-}
-
-.footer-tc-link {
-  display: inline-block;
-  margin-top: 14px;
-  font-size: 0.75rem;
-  color: #555;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-.footer-tc-link:hover { color: var(--gold-dark); }
-
-/* ── T&C MODAL ── */
-#tc-modal, #pp-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: rgba(0,0,0,0.82);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  overflow-y: auto;
-  padding: 40px 20px;
-}
-#tc-modal.open, #pp-modal.open { display: flex; align-items: flex-start; justify-content: center; }
-.tc-box {
-  background: #0f0f0f;
-  border: 1px solid #222;
-  border-top: 2px solid var(--gold-dark);
-  max-width: 720px;
-  width: 100%;
-  padding: 40px 44px 48px;
-  position: relative;
-  margin: auto;
-}
-@media(max-width:600px) { .tc-box { padding: 28px 22px 36px; } }
-.tc-close {
-  position: absolute;
-  top: 16px; right: 20px;
-  background: none; border: none;
-  color: #555; font-size: 1.5rem;
-  cursor: pointer; line-height: 1;
-  transition: color 0.2s;
-}
-.tc-close:hover { color: var(--gold-light); }
-.tc-box h2 {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.9rem;
-  letter-spacing: 0.1em;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 6px;
-}
-.tc-box .tc-date {
-  font-size: 0.75rem;
-  color: #555;
-  margin-bottom: 28px;
-}
-.tc-box h3 {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gold-dark);
-  margin: 22px 0 6px;
-}
-.tc-box p, .tc-box li {
-  font-size: 0.85rem;
-  color: #999;
-  line-height: 1.7;
-}
-.tc-box ul { padding-left: 1.2em; margin-top: 4px; }
-.tc-box ul li { margin-bottom: 4px; }
-.tc-box .tc-divider {
-  border: none;
-  border-top: 1px solid #1e1e1e;
-  margin: 18px 0;
-}
-
-/* ===================== GOLD DIVIDER ===================== */
-.gold-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold-dark), transparent);
-  margin: 0;
-}
-
-/* ===================== SECTION CTA BAR ===================== */
-.section-cta-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 40px 20px 52px;
-  background: var(--black);
-}
-.section-cta-note {
-  font-size: 0.82rem;
-  color: var(--text-dim);
-  letter-spacing: 0.03em;
-}
-
-/* ===================== ABOUT IMPACT BLOCK ===================== */
-.about-impact {
-  margin-top: 52px;
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--gold-dark);
-  border-radius: 8px;
-  background: var(--card-bg);
-  padding: 40px 44px;
-}
-
-.about-impact-globe {
-  font-size: 0.82rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gold-dark);
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.about-impact-body {
-  font-size: 1rem;
-  color: var(--text-dim);
-  line-height: 1.8;
-  margin-bottom: 32px;
-}
-
-.about-impact-body em {
-  color: var(--text);
-  font-style: normal;
-  font-weight: 600;
-}
-
-.gold-inline {
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 700;
-}
-
-.about-impact-stories {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-bottom: 32px;
-}
-
-.impact-story {
-  background: rgba(212,160,23,0.05);
-  border: 1px solid rgba(212,160,23,0.15);
-  border-radius: 6px;
-  padding: 20px 18px;
-}
-
-.impact-story-num {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 0.04em;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 8px;
-  line-height: 1;
-}
-
-.impact-story-desc {
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  line-height: 1.5;
-}
-
-.impact-story-desc strong { color: var(--text); }
-
-.about-impact-close {
-  font-size: 0.95rem;
-  color: var(--text-dim);
-  line-height: 1.8;
-  border-top: 1px solid var(--border);
-  padding-top: 24px;
-}
-
-/* ===================== TESTIMONIALS ===================== */
-#testimonials {
-  background: var(--black-2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-/* Stats row */
-.proof-stats {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  margin-bottom: 56px;
-}
-
-.proof-stat {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-top: 3px solid var(--gold-dark);
-  border-radius: 8px;
-  padding: 24px 20px;
-  text-align: center;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.proof-stat:hover {
-  border-color: var(--gold);
-  box-shadow: 0 0 24px rgba(212,160,23,0.15);
-}
-
-.proof-stat-num {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 2.8rem;
-  line-height: 1;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 8px;
-}
-
-.proof-stat-label {
-  font-size: 0.8rem;
-  color: var(--text-dim);
-  line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-/* Video */
-.proof-video-wrap {
-  margin-bottom: 52px;
-  text-align: center;
-}
-
-.proof-video-label {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.15em;
-  color: var(--gold-dark);
-  margin-bottom: 20px;
-}
-
-.proof-video-frame {
-  position: relative;
-  width: 100%;
-  max-width: 820px;
-  margin: 0 auto;
-  padding-top: 56.25%; /* 16:9 */
-  border: 2px solid var(--gold-dark);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 50px rgba(212,160,23,0.15);
-}
-
-.proof-video-frame iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  background: #000;
-}
-
-/* Screenshot grid — CSS columns masonry */
-.proof-grid {
-  columns: 4;
-  column-gap: 16px;
-  margin-bottom: 32px;
-}
-
-.proof-card {
-  break-inside: avoid;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: var(--card-bg);
-  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-  cursor: pointer;
-}
-
-.proof-card:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 8px 40px rgba(212,160,23,0.2);
-  border-color: var(--gold-dark);
-}
-
-.proof-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.proof-card-tag {
-  padding: 8px 12px;
-  font-size: 0.72rem;
-  color: var(--gold-dark);
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  border-top: 1px solid var(--border);
-  background: rgba(212,160,23,0.04);
-}
-
-.proof-section-label {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.2em;
-  color: var(--gold-dark);
-  text-align: center;
-  margin: 52px 0 28px;
-}
-
-.proof-footer-note {
-  text-align: center;
-  font-size: 0.78rem;
-  color: #444;
-  font-style: italic;
-  margin-bottom: 52px;
-}
-
-/* YouTube video grid */
-.yt-label {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.2em;
-  color: var(--gold-dark);
-  text-align: center;
-  margin-bottom: 28px;
-}
-
-
-.yt-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-/* Local video */
-.local-video-wrap {
-  border: 1px solid var(--gold-dark);
-  border-radius: 10px;
-  overflow: hidden;
-  background: var(--card-bg);
-  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
-}
-
-.local-video-wrap:hover {
-  border-color: var(--gold);
-  box-shadow: 0 0 32px rgba(212,160,23,0.28);
-  transform: translateY(-4px);
-}
-
-.local-video-wrap video {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #000;
-}
-
-/* YouTube thumbnail cards */
-.yt-card {
-  display: block;
-  text-decoration: none;
-  border: 1px solid var(--gold-dark);
-  border-radius: 10px;
-  overflow: hidden;
-  background: var(--card-bg);
-  cursor: pointer;
-  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
-}
-
-.yt-card:hover {
-  border-color: var(--gold);
-  box-shadow: 0 0 32px rgba(212,160,23,0.28);
-  transform: translateY(-4px);
-}
-
-.yt-thumb-wrap {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  overflow: hidden;
-  background: #000;
-}
-
-.yt-thumb-wrap img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s, filter 0.3s;
-  filter: brightness(0.85);
-}
-
-.yt-card:hover .yt-thumb-wrap img {
-  transform: scale(1.04);
-  filter: brightness(0.7);
-}
-
-.yt-play {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.yt-play span {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: rgba(0,0,0,0.7);
-  border: 2px solid var(--gold-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: var(--gold-light);
-  padding-left: 4px;
-  transition: background 0.2s, transform 0.2s, border-color 0.2s;
-}
-
-.yt-card:hover .yt-play span {
-  background: var(--gold-dark);
-  color: #000;
-  transform: scale(1.12);
-  border-color: var(--gold-light);
-}
-
-.yt-frame {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-}
-
-.yt-frame iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* ===================== FOUNDER CARD ===================== */
-.founder-greeting {
-  font-family: 'Inter', sans-serif;
-  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 2.4rem;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
-  color: var(--text);
-}
-
-.founder-card {
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 48px;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 40px;
-  margin-bottom: 0;
-  align-items: flex-start;
-}
-
-.founder-photo-wrap {
-  border-radius: 8px;
-  overflow: hidden;
-  border: 2px solid var(--gold-dark);
-  box-shadow: 0 0 40px rgba(212,160,23,0.15);
-  flex-shrink: 0;
-  width: 100%;
-}
-
-.founder-photo-wrap img {
-  display: block;
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.founder-stars {
-  font-size: 1.5rem;
-  color: var(--gold);
-  letter-spacing: 4px;
-  margin-bottom: 1.2rem;
-}
-
-.founder-bio-text {
-  font-size: 0.96rem;
-  color: var(--text-dim);
-  line-height: 1.85;
-  margin-bottom: 1rem;
-}
-
-.founder-bio-text strong { color: var(--text); }
-
-.founder-bio-close {
-  color: var(--text);
-  border-top: 1px solid var(--border);
-  padding-top: 1rem;
-  margin-top: 0.4rem;
-}
-
-.founder-stats-row {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0;
-  border: 1px solid var(--border);
-  border-top: none;
-  border-radius: 0 0 12px 12px;
-  overflow: hidden;
-  margin-bottom: 52px;
-}
-
-.founder-stat {
-  padding: 24px 16px;
-  text-align: center;
-  border-right: 1px solid var(--border);
-  background: rgba(212,160,23,0.03);
-  transition: background 0.2s;
-}
-
-.founder-stat:last-child { border-right: none; }
-.founder-stat:hover { background: rgba(212,160,23,0.07); }
-
-.founder-stat-num {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
-  letter-spacing: 0.04em;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1.1;
-  margin-bottom: 6px;
-}
-
-.founder-stat-label {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-dim);
-  line-height: 1.4;
-}
-
-@media (max-width: 900px) {
-  .founder-card { grid-template-columns: 1fr; gap: 28px; padding: 28px; }
-  .founder-stats-row { grid-template-columns: repeat(3, 1fr); border-radius: 0 0 8px 8px; }
-  .founder-stats-row .founder-stat:nth-child(3) { border-right: none; }
-  .founder-stats-row .founder-stat:nth-child(4),
-  .founder-stats-row .founder-stat:nth-child(5) { border-top: 1px solid var(--border); }
-}
-
-@media (max-width: 580px) {
-  .founder-stats-row { grid-template-columns: repeat(2, 1fr); }
-  .founder-stats-row .founder-stat:nth-child(2) { border-right: none; }
-  .founder-stats-row .founder-stat:nth-child(3) { border-right: 1px solid var(--border); border-top: 1px solid var(--border); }
-  .founder-greeting { font-size: 1.5rem; }
-}
-
-/* ===================== NAVBAR ===================== */
-#navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
   background: rgba(10,10,10,0.92);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(212,160,23,0.15);
-  transition: background 0.3s, box-shadow 0.3s;
-}
-
-#navbar.scrolled {
-  background: rgba(10,10,10,0.98);
-  box-shadow: 0 2px 24px rgba(0,0,0,0.5);
-}
-
-.nav-inner {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 24px;
-  height: 62px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.nav-logo {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.25rem;
-  letter-spacing: 0.15em;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  white-space: nowrap;
-  text-decoration: none;
-  flex-shrink: 0;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  list-style: none;
-  flex-wrap: nowrap;
-}
-
-.nav-links a {
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: color 0.2s, background 0.2s;
-  white-space: nowrap;
-}
-
-.nav-links a:hover { color: var(--gold-light); background: rgba(212,160,23,0.08); }
-
-.nav-cta {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 0.95rem;
-  letter-spacing: 0.1em;
-  padding: 8px 22px !important;
-  background: var(--gold-grad) !important;
-  color: #000 !important;
-  border-radius: 4px;
-  transition: filter 0.2s, transform 0.2s !important;
-}
-
-.nav-cta:hover { filter: brightness(1.1); transform: translateY(-1px); background: var(--gold-grad) !important; color: #000 !important; }
-
-/* Hamburger */
-.nav-burger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  flex-shrink: 0;
-}
-
-.nav-burger span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--gold-dark);
-  border-radius: 2px;
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-.nav-burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-burger.open span:nth-child(2) { opacity: 0; }
-.nav-burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-@media (max-width: 820px) {
-  .nav-burger { display: flex; }
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 62px;
-    left: 0;
-    right: 0;
-    background: rgba(10,10,10,0.98);
-    border-bottom: 1px solid rgba(212,160,23,0.15);
-    flex-direction: column;
-    align-items: stretch;
-    padding: 12px 16px 20px;
-    gap: 4px;
-  }
-  .nav-links.open { display: flex; }
-  .nav-links a { padding: 10px 16px; font-size: 0.88rem; }
-  .nav-cta { text-align: center; }
-}
-
-/* ===================== OPPORTUNITY BLOCK ===================== */
-.opportunity-block {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-top: 3px solid var(--gold-dark);
-  border-radius: 10px;
-  padding: 40px 44px;
-  margin-bottom: 3rem;
-}
-
-.opp-statement {
-  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.55;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.opp-statement span {
-  display: block;
-  margin-top: 0.4em;
-  font-size: 0.85em;
-  color: var(--gold);
-  font-weight: 500;
-}
-
-.opp-niches {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.opp-niche {
-  padding: 8px 18px;
-  background: rgba(212,160,23,0.07);
-  border: 1px solid rgba(212,160,23,0.2);
-  border-radius: 100px;
-  font-size: 0.88rem;
-  color: var(--text-dim);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: background 0.2s, color 0.2s;
-}
-
-.opp-niche:hover {
-  background: rgba(212,160,23,0.15);
-  color: var(--text);
-}
-
-.opp-insight {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  padding: 20px 0;
-  border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  margin-bottom: 1.8rem;
 }
-
-.opp-insight-left,
-.opp-insight-right {
-  text-align: center;
-}
-
-.opp-insight-label {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #555;
-  margin-bottom: 4px;
-}
-
-.opp-insight-val {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-  letter-spacing: 0.06em;
-  line-height: 1;
-}
-
-.opp-insight-divider {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 2.4rem;
-  color: var(--border);
-  line-height: 1;
-}
-
-.opp-conclusion {
-  font-size: 0.97rem;
-  color: var(--text-dim);
-  line-height: 1.75;
-  text-align: center;
-  margin: 0;
-}
-
-.opp-conclusion strong { color: var(--text); }
-
-@media (max-width: 580px) {
-  .opportunity-block { padding: 28px 20px; }
-  .opp-insight { gap: 16px; }
-}
-
-/* ===================== NARRATIVE SECTION ===================== */
-.narrative-section { background: var(--black-2); }
-
-.narrative-inner { max-width: 760px; margin: 0 auto; }
-
-.narrative-hook {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(1.8rem, 3.8vw, 3rem);
-  letter-spacing: 0.06em;
-  line-height: 1.15;
-  color: var(--text);
-  margin-bottom: 0.6rem;
-}
-
-.narrative-hook span {
-  display: block;
-  font-size: 0.7em;
-  color: var(--text-dim);
-  letter-spacing: 0.08em;
-}
-
-.narrative-pivot {
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
-  color: var(--gold);
-  letter-spacing: 0.12em;
-  margin: 2.4rem 0 0.8rem;
-}
-
-.narrative-body {
-  font-size: 1rem;
-  color: var(--text-dim);
-  line-height: 1.9;
-  margin-bottom: 1rem;
-}
-
-.narrative-body strong { color: var(--text); font-weight: 600; }
-
-.narrative-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 1rem 0 1.6rem;
-  padding: 0;
-}
-
-.narrative-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 0.96rem;
-  color: var(--text-dim);
-  line-height: 1.5;
-}
-
-.narrative-list li::before {
-  content: '—';
-  color: var(--gold-dark);
-  font-weight: 700;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.narrative-whatif {
-  background: rgba(212,160,23,0.04);
-  border-left: 3px solid var(--gold-dark);
-  border-radius: 0 6px 6px 0;
-  padding: 24px 28px;
-  margin: 2.2rem 0;
-}
-
-.narrative-whatif p {
-  font-size: 0.97rem;
-  color: var(--text-dim);
-  line-height: 1.7;
-  margin-bottom: 0.7rem;
-}
-
-.narrative-whatif p:last-child { margin-bottom: 0; color: var(--text); font-weight: 500; }
-
-.narrative-whatif strong { color: var(--gold-light); }
-
-.narrative-close {
-  font-size: 1.05rem;
-  color: var(--text);
-  font-weight: 600;
-  line-height: 1.65;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.narrative-close span { color: var(--text-dim); font-weight: 400; display: block; margin-top: 4px; font-size: 0.95rem; }
-
-/* ===================== OUTCOMES SECTION ===================== */
-.outcomes-section { background: var(--black); }
-
-.outcomes-inner { max-width: 860px; margin: 0 auto; }
-
-.outcomes-not-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin: 1.4rem auto 1rem;
-  max-width: 540px;
-  padding: 0;
-}
-
-.outcomes-not-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 0.93rem;
-  color: #666;
-  line-height: 1.5;
-}
-
-.outcomes-not-list li::before {
-  content: '✗';
-  color: var(--red);
-  font-weight: 700;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.outcomes-real-goal {
-  display: block;
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: clamp(2.4rem, 5.5vw, 4.5rem);
-  letter-spacing: 0.08em;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-align: center;
-  margin: 1.6rem 0 1rem;
-}
-
-.outcomes-goal-sub {
-  text-align: center;
-  font-size: 1rem;
-  color: var(--text-dim);
-  line-height: 1.8;
-  margin-bottom: 2.8rem;
-}
-
-.time-cost-block {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-left: 3px solid #c0392b;
-  border-radius: 0 8px 8px 0;
-  padding: 28px 32px;
-  margin: 0 0 2.8rem;
-}
-
-.time-cost-block p {
-  font-size: 0.97rem;
-  color: var(--text-dim);
-  line-height: 1.8;
-  margin-bottom: 0.6rem;
-}
-
-.time-cost-block p:last-child { margin-bottom: 0; }
-.time-cost-block strong { color: var(--text); }
-
-.time-cost-losing {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin: 0.8rem 0;
-}
-
-.time-cost-losing li {
-  font-size: 0.9rem;
-  color: #777;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.time-cost-losing li::before {
-  content: '→';
-  color: #c0392b;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-
-.outcomes-label {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--text);
-  text-align: center;
-  margin-bottom: 1.2rem;
-  letter-spacing: 0.02em;
-}
-
-.outcomes-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 2.8rem;
-}
-
-.outcome-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px 24px;
-  border-bottom: 1px solid var(--border);
-  transition: background 0.2s;
-}
-
-.outcome-item:last-child { border-bottom: none; }
-.outcome-item:hover { background: rgba(212,160,23,0.04); }
-
-.outcome-num {
-  flex-shrink: 0;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: rgba(212,160,23,0.1);
-  border: 1.5px solid var(--gold-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1rem;
-  color: var(--gold-light);
-  letter-spacing: 0.04em;
-  margin-top: 2px;
-}
-
-.outcome-title {
-  font-size: 0.97rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 5px;
-  line-height: 1.4;
-}
-
-.outcome-detail {
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  line-height: 1.55;
-}
-
-.outcomes-transform {
-  text-align: center;
-  padding: 28px 32px;
-  background: rgba(212,160,23,0.04);
-  border: 1px solid rgba(212,160,23,0.14);
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-.transform-before {
-  font-size: 0.95rem;
-  color: #555;
-  text-decoration: line-through;
-  margin-bottom: 8px;
-  font-style: italic;
-}
-
-.transform-arrow { font-size: 1.4rem; color: var(--gold-dark); margin: 0 0 8px; }
-
-.transform-after {
-  font-size: 1.05rem;
-  color: var(--text);
-  font-weight: 600;
-}
-
-.outcomes-cta-line {
-  text-align: center;
-  font-size: 1rem;
-  color: var(--text-dim);
-  line-height: 1.85;
-}
-
-.outcomes-cta-line strong { color: var(--text); }
-.outcomes-cta-line em { color: #666; }
-
-/* ===================== SOCIAL PROOF POPUP ===================== */
-#social-proof-popup {
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: #141414;
-  border: 1px solid rgba(212,160,23,0.3);
-  border-left: 3px solid var(--gold-dark);
-  border-radius: 8px;
-  padding: 14px 18px;
-  max-width: 320px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-  transform: translateY(100px);
-  opacity: 0;
-  transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), opacity 0.3s ease;
-  pointer-events: none;
-}
-
-#social-proof-popup.show {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.sp-avatar {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: var(--gold-grad);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Bebas Neue', 'Oswald', sans-serif;
-  font-size: 1.1rem;
-  color: #000;
-  flex-shrink: 0;
-}
-
-.sp-text { flex: 1; }
-
-.sp-name {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 2px;
-}
-
-.sp-action {
-  font-size: 0.78rem;
-  color: var(--text-dim);
-  line-height: 1.4;
-}
-
-.sp-action span {
-  color: var(--gold);
-  font-weight: 600;
-}
-
-.sp-time {
-  font-size: 0.68rem;
-  color: #555;
-  margin-top: 3px;
-}
-
-/* ===================== GUARANTEE ===================== */
-.guarantee-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  background: rgba(212,160,23,0.04);
-  border: 1px solid rgba(212,160,23,0.18);
-  border-radius: 8px;
-  padding: 36px 40px;
-  margin-top: 48px;
-}
-
-.guarantee-icon { font-size: 2.6rem; flex-shrink: 0; line-height: 1; }
-
-.guarantee-title {
+.nav-brand {
   font-family: 'Bebas Neue', 'Oswald', sans-serif;
   font-size: 1.5rem;
-  letter-spacing: 0.08em;
-  color: var(--gold);
-  margin-bottom: 10px;
+  letter-spacing: 0.18em;
+  background: var(--gold-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+}
+.nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+.nav-links a {
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-dim); text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold-light); }
+.nav-cta {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  font-size: 1rem; letter-spacing: 0.1em;
+  padding: 10px 26px; background: var(--gold-grad);
+  color: #000 !important; border-radius: 4px;
+  transition: filter 0.2s, transform 0.2s !important;
+}
+.nav-cta:hover { filter: brightness(1.1); transform: translateY(-1px); color: #000 !important; }
+
+/* ===================== PARTICLES ===================== */
+.particles { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.particle {
+  position: absolute; border-radius: 50%; background: var(--gold-light);
+  opacity: 0; animation: floatUp var(--dur, 8s) var(--delay, 0s) infinite ease-in-out;
 }
 
-.guarantee-body {
-  font-size: 0.9rem;
-  color: var(--text-dim);
-  line-height: 1.8;
+/* ===================== HERO ===================== */
+#hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: 140px 20px 80px; overflow: hidden;
+  background: radial-gradient(ellipse at 50% 30%, #1a1200 0%, var(--black) 65%);
 }
-
-.guarantee-body strong { color: var(--text); }
-
-@media (max-width: 900px) {
-  .guarantee-box { flex-direction: column; padding: 28px 24px; gap: 16px; }
+.hero-content { position: relative; z-index: 2; max-width: 960px; }
+.hero-eyebrow {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.2rem); letter-spacing: 0.3em;
+  color: var(--gold-dark); margin-bottom: 1.4rem;
+  animation: fadeUp 0.6s ease 0.1s both;
 }
+.hero-headline {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  font-size: clamp(3rem, 7.5vw, 7rem); line-height: 0.92;
+  letter-spacing: 0.03em; margin-bottom: 1.4rem;
+  animation: fadeUp 0.6s ease 0.2s both;
+}
+.hero-headline .line-white { display: block; color: #fff; }
+.hero-headline .line-gold {
+  display: block;
+  background: linear-gradient(90deg, #D4A017, #FFD700, #F0C030, #FFD700, #D4A017);
+  background-size: 300% auto;
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  animation: shimmer 4s linear infinite, fadeUp 0.6s ease 0.2s both;
+}
+.hero-sub {
+  font-size: clamp(1rem, 2.2vw, 1.2rem); color: var(--text-dim);
+  max-width: 680px; margin: 0 auto 2.8rem; line-height: 1.7;
+  animation: fadeUp 0.6s ease 0.35s both;
+}
+.hero-sub strong { color: var(--text); }
+
+.hero-tracks {
+  display: flex; gap: 16px; justify-content: center;
+  flex-wrap: wrap; margin-bottom: 3rem;
+  animation: fadeUp 0.6s ease 0.45s both;
+}
+.track-btn {
+  display: flex; flex-direction: column; align-items: flex-start;
+  padding: 20px 28px; border-radius: 8px; text-decoration: none;
+  cursor: pointer; transition: transform 0.2s, filter 0.2s, box-shadow 0.2s;
+  min-width: 240px; text-align: left;
+}
+.track-btn-b2b { background: var(--gold-grad); color: #000; animation: pulseBorder 2.5s ease-in-out infinite; }
+.track-btn-b2c { background: transparent; color: var(--gold-light); border: 2px solid var(--gold-dark); }
+.track-btn-b2c:hover { background: rgba(212,160,23,0.08); transform: translateY(-3px); }
+.track-btn-b2b:hover { filter: brightness(1.1); transform: translateY(-3px); }
+.track-btn-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.7; margin-bottom: 4px; }
+.track-btn-b2b .track-btn-label { color: #000; }
+.track-btn-title { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.35rem; letter-spacing: 0.08em; line-height: 1.1; margin-bottom: 4px; }
+.track-btn-b2b .track-btn-title { color: #000; }
+.track-btn-desc { font-size: 0.78rem; line-height: 1.4; opacity: 0.75; }
+.track-btn-b2b .track-btn-desc { color: #000; }
+
+.hero-proof { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; animation: fadeUp 0.6s ease 0.55s both; }
+.proof-pill {
+  display: flex; align-items: center; gap: 8px;
+  padding: 9px 18px; background: rgba(212,160,23,0.07);
+  border: 1px solid rgba(212,160,23,0.2); border-radius: 100px;
+  font-size: 0.8rem; color: var(--text-dim);
+}
+.proof-pill strong { color: var(--gold-light); font-weight: 700; }
+
+/* ===================== TICKER ===================== */
+#ticker {
+  padding: 0; overflow: hidden;
+  background: linear-gradient(135deg, #0e0e0e 0%, #1a1200 50%, #0e0e0e 100%);
+  border-top: 1px solid var(--gold-deep); border-bottom: 1px solid var(--gold-deep);
+}
+.ticker-track { display: flex; width: max-content; animation: scrollTicker 30s linear infinite; }
+.ticker-track:hover { animation-play-state: paused; }
+.ticker-item {
+  display: inline-flex; align-items: center; white-space: nowrap;
+  padding: 16px 40px; font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  font-size: 1.1rem; letter-spacing: 0.12em; color: var(--gold);
+}
+.ticker-dot { display: inline-block; width: 5px; height: 5px; background: var(--gold-dark); border-radius: 50%; margin: 0 20px; vertical-align: middle; }
+
+/* ===================== SECTION COMMON ===================== */
+.section-eyebrow {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 0.9rem;
+  letter-spacing: 0.3em; color: var(--gold-dark); text-align: center; margin-bottom: 0.8rem;
+}
+.section-title {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 4rem); letter-spacing: 0.05em;
+  text-align: center; line-height: 1; margin-bottom: 1rem;
+}
+.section-sub {
+  text-align: center; color: var(--text-dim); font-size: 1rem;
+  max-width: 600px; margin: 0 auto 3.5rem; line-height: 1.7;
+}
+.section-sub strong { color: var(--text); }
+
+.btn-primary {
+  display: inline-block; font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  font-size: 1.35rem; letter-spacing: 0.1em; padding: 18px 44px;
+  background: var(--gold-grad); color: #000; text-decoration: none;
+  border-radius: 4px; cursor: pointer; border: none;
+  transition: transform 0.2s, filter 0.2s;
+  animation: pulseBorder 2.5s ease-in-out infinite; white-space: nowrap;
+}
+.btn-primary:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+/* ===================== WHO ===================== */
+#who { background: var(--black-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.who-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); transition: border-color 0.3s, box-shadow 0.3s; }
+.who-card:hover { border-color: var(--gold-dark); box-shadow: 0 0 40px rgba(212,160,23,0.12); }
+.who-card-top { padding: 36px 36px 28px; position: relative; }
+.who-card-top::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold-grad); }
+.who-tag { display: inline-block; font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; padding: 4px 14px; border-radius: 100px; margin-bottom: 1.2rem; background: rgba(212,160,23,0.12); color: var(--gold); border: 1px solid rgba(212,160,23,0.3); }
+.who-title { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: clamp(1.5rem, 2.8vw, 2.2rem); letter-spacing: 0.05em; color: var(--text); margin-bottom: 0.8rem; line-height: 1.1; }
+.who-desc { font-size: 0.95rem; color: var(--text-dim); line-height: 1.7; margin-bottom: 1.6rem; }
+.who-desc strong { color: var(--text); }
+.who-list { list-style: none; display: flex; flex-direction: column; gap: 12px; padding: 0 36px 36px; }
+.who-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.9rem; color: var(--text-dim); line-height: 1.5; }
+.who-check { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; background: rgba(212,160,23,0.12); border: 1.5px solid var(--gold-dark); display: flex; align-items: center; justify-content: center; font-size: 0.65rem; color: var(--gold-light); font-weight: 700; margin-top: 2px; }
+.who-cta { display: block; margin: 0 36px 36px; padding: 15px; text-align: center; font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.1rem; letter-spacing: 0.1em; text-decoration: none; border-radius: 5px; transition: filter 0.2s, transform 0.2s; }
+.who-cta:hover { filter: brightness(1.1); transform: translateY(-2px); }
+.who-cta.b2b { background: var(--gold-grad); color: #000; animation: pulseBorder 2.5s ease-in-out infinite; }
+.who-cta.b2c { border: 2px solid var(--gold-dark); color: var(--gold-light); }
+.who-cta.b2c:hover { background: rgba(212,160,23,0.08); }
+
+/* ===================== B2B ===================== */
+#b2b { background: var(--black); scroll-margin-top: 80px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 3rem; }
+.problem-card { background: rgba(230,57,70,0.05); border: 1px solid rgba(230,57,70,0.15); border-left: 3px solid var(--red); border-radius: 8px; padding: 28px; }
+.problem-card-title { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.1rem; letter-spacing: 0.1em; color: var(--red); margin-bottom: 1rem; }
+.problem-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.problem-list li { font-size: 0.9rem; color: var(--text-dim); line-height: 1.5; padding-left: 16px; position: relative; }
+.problem-list li::before { content: '—'; position: absolute; left: 0; color: var(--red); opacity: 0.6; }
+.solution-card { background: rgba(212,160,23,0.05); border: 1px solid rgba(212,160,23,0.2); border-left: 3px solid var(--gold-dark); border-radius: 8px; padding: 28px; }
+.solution-card-title { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.1rem; letter-spacing: 0.1em; color: var(--gold-light); margin-bottom: 1rem; }
+.solution-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.solution-list li { font-size: 0.9rem; color: var(--text-dim); line-height: 1.5; display: flex; align-items: flex-start; gap: 10px; }
+.solution-list li::before { content: '✓'; color: var(--gold-light); font-weight: 700; flex-shrink: 0; }
+
+.process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 3rem; }
+.process-step { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 28px 24px; position: relative; overflow: hidden; transition: border-color 0.3s, box-shadow 0.3s; }
+.process-step::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold-grad); }
+.process-step:hover { border-color: var(--gold-dark); box-shadow: 0 0 28px rgba(212,160,23,0.12); }
+.process-num { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 3rem; line-height: 1; color: var(--gold-dark); opacity: 0.35; margin-bottom: 0.5rem; }
+.process-title { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.2rem; letter-spacing: 0.06em; color: var(--gold-light); margin-bottom: 0.6rem; }
+.process-desc { font-size: 0.87rem; color: var(--text-dim); line-height: 1.6; }
+
+.qualifier-box { background: #0f0d08; border: 1px solid rgba(212,160,23,0.3); border-radius: 10px; padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.qualifier-text h3 { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.5rem; letter-spacing: 0.06em; color: var(--gold-light); margin-bottom: 0.5rem; }
+.qualifier-text p { font-size: 0.9rem; color: var(--text-dim); max-width: 460px; line-height: 1.6; }
+.qualifier-text p strong { color: var(--text); }
+
+/* ===================== B2C ===================== */
+#b2c { background: var(--black-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); scroll-margin-top: 80px; }
+.outcome-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 3.5rem; }
+.outcome-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 28px 24px; position: relative; overflow: hidden; transition: border-color 0.3s, transform 0.3s; }
+.outcome-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold-grad); }
+.outcome-card:hover { border-color: var(--gold-dark); transform: translateY(-4px); }
+.outcome-icon { font-size: 2rem; margin-bottom: 0.8rem; }
+.outcome-title { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.2rem; letter-spacing: 0.06em; color: var(--gold-light); margin-bottom: 0.6rem; }
+.outcome-desc { font-size: 0.87rem; color: var(--text-dim); line-height: 1.6; }
+
+.program-phases { max-width: 720px; margin: 0 auto 3.5rem; position: relative; padding-left: 28px; }
+.program-phases::before { content: ''; position: absolute; left: 0; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(180deg, var(--gold-dark), var(--gold-deep)); }
+.phase { position: relative; padding: 0 0 2.5rem 28px; }
+.phase:last-child { padding-bottom: 0; }
+.phase::before { content: ''; position: absolute; left: -5px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--gold-light); border: 2px solid var(--black-2); box-shadow: 0 0 10px rgba(255,215,0,0.5); }
+.phase-num { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; color: var(--gold-dark); margin-bottom: 4px; }
+.phase-title { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.4rem; letter-spacing: 0.06em; color: var(--text); margin-bottom: 6px; }
+.phase-desc { font-size: 0.9rem; color: var(--text-dim); line-height: 1.6; }
+.phase-desc strong { color: var(--text); }
+
+.recruit-box { background: #0f0d08; border: 1px solid rgba(212,160,23,0.4); border-radius: 12px; padding: 40px 44px; text-align: center; position: relative; overflow: hidden; margin-bottom: 3rem; }
+.recruit-box::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--gold-dark), var(--gold), var(--gold-dark), transparent); }
+.recruit-box h3 { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: 0.05em; color: var(--text); margin-bottom: 0.8rem; line-height: 1.1; }
+.recruit-box h3 span { background: var(--gold-text); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.recruit-box p { font-size: 0.97rem; color: var(--text-dim); max-width: 560px; margin: 0 auto 1.8rem; line-height: 1.7; }
+.recruit-box p strong { color: var(--text); }
+
+/* ===================== PROOF ===================== */
+#proof { background: var(--black); border-top: 1px solid var(--border); }
+.stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 56px; }
+.stat-box { background: var(--card-bg); border: 1px solid var(--border); border-top: 3px solid var(--gold-dark); border-radius: 8px; padding: 28px 20px; text-align: center; transition: border-color 0.3s, box-shadow 0.3s; }
+.stat-box:hover { border-color: var(--gold); box-shadow: 0 0 24px rgba(212,160,23,0.15); }
+.stat-num { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 3rem; line-height: 1; background: var(--gold-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+.stat-label { font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.4; }
+
+.proof-section-label { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1rem; letter-spacing: 0.2em; color: var(--gold-dark); text-align: center; margin-bottom: 24px; }
+.proof-grid { columns: 4; column-gap: 14px; margin-bottom: 16px; }
+.proof-card { break-inside: avoid; margin-bottom: 14px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: var(--card-bg); transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; cursor: pointer; }
+.proof-card:hover { transform: translateY(-4px) scale(1.01); box-shadow: 0 8px 40px rgba(212,160,23,0.2); border-color: var(--gold-dark); }
+.proof-card img { display: block; width: 100%; height: auto; }
+
+.video-section-label { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1rem; letter-spacing: 0.2em; color: var(--gold-dark); text-align: center; margin: 40px 0 24px; }
+.video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.local-video-wrap { border: 1px solid var(--gold-dark); border-radius: 10px; overflow: hidden; background: var(--card-bg); transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s; }
+.local-video-wrap:hover { border-color: var(--gold); box-shadow: 0 0 32px rgba(212,160,23,0.28); transform: translateY(-4px); }
+.local-video-wrap video { display: block; width: 100%; height: auto; background: #000; }
+.yt-card { display: block; text-decoration: none; border: 1px solid var(--gold-dark); border-radius: 10px; overflow: hidden; background: var(--card-bg); cursor: pointer; transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s; }
+.yt-card:hover { border-color: var(--gold); box-shadow: 0 0 32px rgba(212,160,23,0.28); transform: translateY(-4px); }
+.yt-thumb-wrap { position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; background: #000; }
+.yt-thumb-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s, filter 0.3s; filter: brightness(0.85); }
+.yt-card:hover .yt-thumb-wrap img { transform: scale(1.04); filter: brightness(0.7); }
+.yt-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.yt-play span { width: 52px; height: 52px; border-radius: 50%; background: rgba(0,0,0,0.7); border: 2px solid var(--gold-dark); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; color: var(--gold-light); padding-left: 4px; transition: background 0.2s, transform 0.2s; }
+.yt-card:hover .yt-play span { background: var(--gold-dark); color: #000; transform: scale(1.1); }
+
+/* ===================== FOUNDERS ===================== */
+#founders { background: var(--black-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.founders-photo-block { margin-top: 3rem; border-radius: 12px; overflow: hidden; border: 2px solid var(--gold-dark); box-shadow: 0 0 60px rgba(212,160,23,0.15); max-width: 680px; margin-left: auto; margin-right: auto; position: relative; }
+.founders-photo-block img { display: block; width: 100%; height: auto; object-fit: cover; object-position: center top; }
+.founders-photo-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 14px 20px; background: linear-gradient(transparent, rgba(0,0,0,0.88)); font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1rem; letter-spacing: 0.15em; color: var(--gold-dark); text-align: center; }
+.founders-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 28px; }
+.founder-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 28px 32px; transition: border-color 0.3s; }
+.founder-card:hover { border-color: var(--gold-dark); }
+.founder-name { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.5rem; letter-spacing: 0.06em; color: var(--text); margin-bottom: 2px; }
+.founder-role { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold-dark); font-weight: 600; margin-bottom: 14px; }
+.founder-bio { font-size: 0.87rem; color: var(--text-dim); line-height: 1.7; }
+.founder-bio strong { color: var(--text); }
+
+/* ===================== APPLY ===================== */
+#apply { background: radial-gradient(ellipse at 50% 60%, #1a1200 0%, var(--black) 70%); text-align: center; border-top: 1px solid var(--border); scroll-margin-top: 80px; }
+.apply-headline { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: clamp(3rem, 8vw, 7rem); line-height: 0.95; letter-spacing: 0.04em; background: var(--gold-text); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 3s linear infinite; margin-bottom: 1rem; }
+.apply-sub { font-size: 1.05rem; color: var(--text-dim); margin-bottom: 3rem; max-width: 560px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+.apply-sub strong { color: var(--text); }
+.apply-tracks { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+.apply-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 36px 32px; width: 320px; text-align: left; position: relative; overflow: hidden; transition: border-color 0.3s, box-shadow 0.3s; }
+.apply-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold-grad); }
+.apply-card:hover { border-color: var(--gold-dark); box-shadow: 0 0 40px rgba(212,160,23,0.15); }
+.apply-card-tag { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.2em; color: var(--gold-dark); margin-bottom: 0.8rem; }
+.apply-card-title { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.6rem; letter-spacing: 0.05em; color: var(--text); margin-bottom: 0.6rem; line-height: 1.1; }
+.apply-card-desc { font-size: 0.87rem; color: var(--text-dim); line-height: 1.6; margin-bottom: 1.6rem; }
+.apply-card-cta { display: block; padding: 14px; text-align: center; font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.1rem; letter-spacing: 0.1em; text-decoration: none; border-radius: 5px; transition: filter 0.2s, transform 0.2s; }
+.apply-card-cta:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.apply-card-cta.b2b { background: var(--gold-grad); color: #000; animation: pulseBorder 2.5s ease-in-out infinite; }
+.apply-card-cta.b2c { border: 2px solid var(--gold-dark); color: var(--gold-light); }
+.apply-card-cta.b2c:hover { background: rgba(212,160,23,0.08); }
+.apply-note { font-size: 0.8rem; color: #555; letter-spacing: 0.04em; }
+
+/* ===================== FOOTER ===================== */
+footer { background: #070707; border-top: 1px solid var(--border); padding: 44px 20px; text-align: center; }
+.footer-brand { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.6rem; letter-spacing: 0.18em; background: var(--gold-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 10px; }
+.footer-copy { font-size: 0.78rem; color: #555; margin-bottom: 8px; }
+.footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-top: 12px; }
+.footer-links a { font-size: 0.78rem; color: #555; text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold-dark); }
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 900px) {
-  .who-grid { grid-template-columns: 1fr; gap: 24px; }
-  .learn-grid { grid-template-columns: repeat(2, 1fr); }
-  .about-grid { grid-template-columns: 1fr; gap: 36px; }
-  .about-photo-placeholder { min-height: 280px; order: -1; }
-  .tickets-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
-  .ticket-card.featured { transform: none; }
-  .ticket-card.featured:hover { transform: translateY(-6px); }
-  .proof-stats { grid-template-columns: repeat(2, 1fr); }
+  .who-grid, .founders-grid { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: repeat(2, 1fr); }
+  .outcome-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
   .proof-grid { columns: 2; }
-  .about-impact-stories { grid-template-columns: 1fr; }
-  .about-impact { padding: 28px 24px; }
-  .yt-grid { grid-template-columns: repeat(2, 1fr); }
+  .video-grid { grid-template-columns: 1fr 1fr; }
+  .apply-tracks { flex-direction: column; align-items: center; }
+  .apply-card { width: 100%; max-width: 400px; }
 }
-
-@media (max-width: 580px) {
-  .learn-grid { grid-template-columns: 1fr; }
-  section { padding: 70px 16px; }
-  .cd-box { min-width: 68px; padding: 12px 14px; }
-  .cd-num { font-size: 2.1rem; }
-  .hero-tagline { font-size: 0.88rem; }
-  .who-column { padding: 24px 20px; }
-  .ticket-cta { font-size: 1.1rem; }
-  .proof-stats { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 600px) {
+  nav { padding: 14px 16px; }
+  .nav-links { display: none; }
+  .hero-tracks { flex-direction: column; align-items: center; }
+  .track-btn { min-width: unset; width: 100%; max-width: 320px; }
+  .process-steps, .outcome-grid { grid-template-columns: 1fr; }
   .proof-grid { columns: 1; }
-  .yt-grid { grid-template-columns: 1fr; }
+  .video-grid { grid-template-columns: 1fr; }
+  .qualifier-box { flex-direction: column; }
+  .who-card-top { padding: 24px 20px 16px; }
+  .who-list { padding: 0 20px 24px; }
+  .who-cta { margin: 0 20px 24px; }
+  .recruit-box { padding: 28px 20px; }
 }
 </style>
 </head>
 <body>
 
-<!-- ==================== NAVBAR ==================== -->
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="#hero" class="nav-logo">REVSTREAM</a>
-    <button class="nav-burger" id="nav-burger" aria-label="Меню">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#for-who">За кого</a></li>
-      <li><a href="#learn">Програма</a></li>
-      <li><a href="#about">За нас</a></li>
-      <li><a href="#testimonials">Резултати</a></li>
-      <li><a href="#tickets">Цени</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#tickets" class="nav-cta">Запази място</a></li>
-    </ul>
-  </div>
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">REVSTREAM</a>
+  <ul class="nav-links">
+    <li><a href="#b2b">За Бизнеси</a></li>
+    <li><a href="#b2c">Клоузър Програма</a></li>
+    <li><a href="#proof">Резултати</a></li>
+    <li><a href="#founders">Екипът</a></li>
+    <li><a href="#apply" class="nav-cta">КАНДИДАТСТВАЙ</a></li>
+  </ul>
 </nav>
 
-<!-- ==================== 1. HERO ==================== -->
+<!-- HERO -->
 <section id="hero">
-  <div class="particles" id="particles"></div>
-
+  <div class="particles" aria-hidden="true">
+    <div class="particle" style="left:5%;  width:4px; height:4px; --dur:9s;  --delay:0s;   --drift:25px;  --op:0.55;"></div>
+    <div class="particle" style="left:15%; width:3px; height:3px; --dur:12s; --delay:1.5s; --drift:-20px; --op:0.45;"></div>
+    <div class="particle" style="left:28%; width:5px; height:5px; --dur:8s;  --delay:3s;   --drift:35px;  --op:0.4;"></div>
+    <div class="particle" style="left:42%; width:3px; height:3px; --dur:14s; --delay:0.7s; --drift:-28px; --op:0.5;"></div>
+    <div class="particle" style="left:58%; width:4px; height:4px; --dur:10s; --delay:2.2s; --drift:22px;  --op:0.45;"></div>
+    <div class="particle" style="left:70%; width:6px; height:6px; --dur:11s; --delay:0.4s; --drift:-32px; --op:0.35;"></div>
+    <div class="particle" style="left:82%; width:3px; height:3px; --dur:9s;  --delay:4s;   --drift:18px;  --op:0.55;"></div>
+    <div class="particle" style="left:93%; width:4px; height:4px; --dur:13s; --delay:1.1s; --drift:-22px; --op:0.4;"></div>
+  </div>
   <div class="hero-content">
-    <p class="hero-qualifier">
-      За всеки, който иска да научи как да продава услуги онлайн и да печели пари от това —<br>дори да нямаш опит и не знаеш откъде да започнеш
-    </p>
-
+    <p class="hero-eyebrow">REVSTREAM CONSORTIUM</p>
     <h1 class="hero-headline">
-      <span class="hero-hl-big">REVSTREAM LIVE</span>
-      <span class="hero-hl-event-sub">С Ресан Хамид и Даниел Гелов</span>
+      <span class="line-white">ПОВЕЧЕ ПРОДАЖБИ.</span>
+      <span class="line-gold">ПОВЕЧЕ ПАРИ.</span>
     </h1>
-
-    <p class="hero-hook">Етичната Система — Как да Продаваш Всякакви Услуги Онлайн</p>
-    <p class="hero-subhook">Как да превърнеш продажбите в умение, което плаща без таван</p>
-
-    <p class="hero-promise">
-      В един ден ще ти дадем цялата система, която ни отне <strong>10 години да изградим</strong> —
-      дори да започваш от нулата, без опит и без да си продавал никога преди —
-      за да може клиентът да ти <strong>благодари</strong>, че си му продал услуга,
-      от която реално има нужда.
+    <p class="hero-sub">
+      Изграждаме и управляваме търговски екипи за бизнеси,<br>
+      и обучаваме клоузъри, които <strong>след завършване се назначават на работа.</strong>
     </p>
-
-    <div class="hero-location">Варна &bull; 4 Юли 2026 &bull; Хотел Черно Море</div>
-
-    <div class="countdown" id="countdown-hero">
-      <div class="cd-box"><span class="cd-num" id="h-days">00</span><span class="cd-label">Дни</span></div>
-      <div class="cd-box"><span class="cd-num" id="h-hours">00</span><span class="cd-label">Часа</span></div>
-      <div class="cd-box"><span class="cd-num" id="h-mins">00</span><span class="cd-label">Минути</span></div>
-      <div class="cd-box"><span class="cd-num" id="h-secs">00</span><span class="cd-label">Секунди</span></div>
+    <div class="hero-tracks">
+      <a href="#b2b" class="track-btn track-btn-b2b">
+        <span class="track-btn-label">За бизнеси &rarr;</span>
+        <span class="track-btn-title">Изгради Търговски Екип</span>
+        <span class="track-btn-desc">Ако правиш 8 000€+/мес. и искаш да скалираш</span>
+      </a>
+      <a href="#b2c" class="track-btn track-btn-b2c">
+        <span class="track-btn-label">За хора &rarr;</span>
+        <span class="track-btn-title">Стани Топ Клоузър</span>
+        <span class="track-btn-desc">Научи се, завърши програмата, намери работа</span>
+      </a>
     </div>
-
-    <a href="#tickets" class="btn-primary">ЗАПАЗИ МЯСТО &rarr;</a>
-    <p class="hero-sub-cta">от €27 &nbsp;&bull;&nbsp; места са ограничени</p>
+    <div class="hero-proof">
+      <div class="proof-pill"><strong>100+</strong> обучени клоузъри</div>
+      <div class="proof-pill"><strong>800%</strong> ръст на букнати срещи</div>
+      <div class="proof-pill"><strong>4 сделки</strong> за 2 дни</div>
+      <div class="proof-pill"><strong>€3 650</strong> комисионна от 1 клиент</div>
+    </div>
   </div>
 </section>
 
-<!-- ==================== 2. TICKER ==================== -->
+<!-- TICKER -->
 <div id="ticker">
-  <div class="ticker-track" aria-hidden="true">
-    <!-- Set 1 -->
-    <span class="ticker-item">🔥 150+ ОБУЧЕНИ И НАЕТИ ТЪРГОВЦИ</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">💰 500 000+ EUR ПРИХОДИ ЗА КЛИЕНТИ</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">⚡ 47.8% СРЕДЕН CLOSE RATE</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">🎯 1 ДЕН. ЦЯЛАТА СИСТЕМА. РЕАЛЕН ДОХОД.</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">🏆 ВАРНА &bull; 4 ЮЛИ 2026 &bull; ХОТЕЛ ЧЕРНО МОРЕ</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">🔑 УМЕНИЕ, КОЕТО ТИ ПЛАЩА БЕЗ ТАВАН</span>
-    <span class="ticker-divider"></span>
-    <!-- Set 2 (duplicate for seamless loop) -->
-    <span class="ticker-item">🔥 150+ ОБУЧЕНИ И НАЕТИ ТЪРГОВЦИ</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">💰 500 000+ EUR ПРИХОДИ ЗА КЛИЕНТИ</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">⚡ 47.8% СРЕДЕН CLOSE RATE</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">🎯 1 ДЕН. ЦЯЛАТА СИСТЕМА. РЕАЛЕН ДОХОД.</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">🏆 ВАРНА &bull; 4 ЮЛИ 2026 &bull; ХОТЕЛ ЧЕРНО МОРЕ</span>
-    <span class="ticker-divider"></span>
-    <span class="ticker-item">🔑 УМЕНИЕ, КОЕТО ТИ ПЛАЩА БЕЗ ТАВАН</span>
-    <span class="ticker-divider"></span>
+  <div class="ticker-track">
+    <span class="ticker-item">ТЪРГОВСКИ ЕКИПИ<span class="ticker-dot"></span></span>
+    <span class="ticker-item">1-ON-1 КЛОУЗЪР КОУЧИНГ<span class="ticker-dot"></span></span>
+    <span class="ticker-item">RECRUITMENT СЛЕД ЗАВЪРШВАНЕ<span class="ticker-dot"></span></span>
+    <span class="ticker-item">B2B OUTBOUND<span class="ticker-dot"></span></span>
+    <span class="ticker-item">CLOSING УМЕНИЯ<span class="ticker-dot"></span></span>
+    <span class="ticker-item">РЕАЛНИ РЕЗУЛТАТИ<span class="ticker-dot"></span></span>
+    <span class="ticker-item">ТЪРГОВСКИ ЕКИПИ<span class="ticker-dot"></span></span>
+    <span class="ticker-item">1-ON-1 КЛОУЗЪР КОУЧИНГ<span class="ticker-dot"></span></span>
+    <span class="ticker-item">RECRUITMENT СЛЕД ЗАВЪРШВАНЕ<span class="ticker-dot"></span></span>
+    <span class="ticker-item">B2B OUTBOUND<span class="ticker-dot"></span></span>
+    <span class="ticker-item">CLOSING УМЕНИЯ<span class="ticker-dot"></span></span>
+    <span class="ticker-item">РЕАЛНИ РЕЗУЛТАТИ<span class="ticker-dot"></span></span>
   </div>
 </div>
 
-<!-- ==================== NARRATIVE: За Събитието ==================== -->
-<section class="narrative-section">
+<!-- WHO IS THIS FOR -->
+<section id="who">
   <div class="container">
-    <div class="narrative-inner">
-
-      <div class="opportunity-block">
-        <p class="opp-statement">
-          Всеки вече продава програма, курс или менторска програма.<br>
-          <span>Но почти никой от тях няма хора, които умеят да го продават.</span>
-        </p>
-
-        <div class="opp-niches">
-          <div class="opp-niche">💪 Фитнес треньор</div>
-          <div class="opp-niche">🧠 Бизнес коуч</div>
-          <div class="opp-niche">⚖️ Адвокат</div>
-          <div class="opp-niche">🏠 Имотен агент</div>
-          <div class="opp-niche">📊 Счетоводител</div>
-          <div class="opp-niche">🎓 Ментор</div>
-        </div>
-
-        <div class="opp-insight">
-          <div class="opp-insight-left">
-            <div class="opp-insight-label">Търсенето</div>
-            <div class="opp-insight-val" style="color:var(--gold);">Никога по-голямо</div>
-          </div>
-          <div class="opp-insight-divider">≠</div>
-          <div class="opp-insight-right">
-            <div class="opp-insight-label">Предлагането</div>
-            <div class="opp-insight-val" style="color:#c0392b;">Никога по-малко</div>
-          </div>
-        </div>
-
-        <p class="opp-conclusion">
-          Точно затова сега ти даваме цялата система —
-          <strong>как да продаваш услуга във всяка ниша, за всеки специалист, на всяка платформа.</strong>
-        </p>
-      </div>
-
-      <p class="narrative-hook">
-        Продажбите са нещо, с което се раждаш.
-        <span>Поне това ти казват.</span>
-      </p>
-
-      <p class="narrative-body">
-        И може би го вярваш — затова дори не си опитвал. Защото ако не си „роден за това", защо да се излагаш?
-      </p>
-
-      <p class="narrative-pivot">Истината?</p>
-
-      <p class="narrative-body">
-        Продажбите <strong>не са талант</strong>. Никой не се е родил знаейки как да води разговор с клиент. Хората, които изглеждат „естествени" — просто имат система. А теб просто никой не те е учил на нея.
-      </p>
-
-      <p class="narrative-body">Ето как изглежда без система — дори без да си влизал в продажби:</p>
-
-      <ul class="narrative-list">
-        <li>Не знаеш откъде да започнеш — и „проучването" продължава с месеци</li>
-        <li>Страхуваш се да предложиш услуга, защото не знаеш какво да кажеш</li>
-        <li>Чуваш „не ми трябва" и смяташ, че разговорът е свършил</li>
-        <li>Гледаш хора с по-малко от теб да печелят повече — и не разбираш как</li>
-      </ul>
-
-      <p class="narrative-body">Не защото не можеш. А защото никой никога не ти е показал конкретната рамка — с реални думи, реален разговор, реална практика под натиск.</p>
-
-      <div class="narrative-whatif">
-        <p><strong>Какво ако за един ден разбереш точно какво се казва — и кога?</strong></p>
-        <p><strong>Какво ако видиш на живо как изглежда реален разговор с клиент — и осъзнаеш, че не е никаква магия?</strong></p>
-        <p><strong>Какво ако излезеш с готов скрипт и ясен план за следващата седмица — не с бележки, които никога не ползваш?</strong></p>
-        <p>Не мислиш ли, че шансовете ти ще са малко по-добри?</p>
-      </div>
-
-      <p class="narrative-close">
-        Точно това правим на 4 юли в Хотел Черно Море, Варна.
-        <span>Един ден. Цялата система. Реален roleplay, реални скриптове, реални резултати.</span>
-      </p>
-
-    </div>
-  </div>
-  <div class="section-cta-bar">
-    <a href="#tickets" class="btn-primary">ЗАПАЗИ МЯСТО &rarr;</a>
-    <span class="section-cta-note">от €27 &nbsp;&bull;&nbsp; места са ограничени</span>
-  </div>
-</section>
-
-<div class="gold-divider"></div>
-
-<!-- ==================== 4. WHAT YOU'LL LEARN ==================== -->
-<section id="learn">
-  <div class="container">
-    <h2 class="section-title">ЦЯЛАТА СИСТЕМА.<br><span class="gold-text">НА ЕДНО МЯСТО. ЗА ЕДИН ДЕН.</span></h2>
-    <p class="section-subtitle">Компресираме месеци обучение в 8 часа. Всичко от психологията до затварянето на сделката — на живо, с roleplay и Q&amp;A.</p>
-
-    <div class="learn-grid">
-      <div class="learn-card">
-        <div class="learn-num">01</div>
-        <div class="learn-title">Психология на продажбите</div>
-        <p class="learn-desc">Всяка продажба се печели или губи в главата на клиента — преди да са изречени числата. Ще разбереш как хората реално вземат решения, така че да спреш да продаваш на логиката, когато решението е емоционално.</p>
-      </div>
-      <div class="learn-card">
-        <div class="learn-num">02</div>
-        <div class="learn-title">Appointment Setting B2B/B2C</div>
-        <p class="learn-desc">Повечето търговци губят сделката при първия контакт — без да разбират защо. Ще научиш точно какво да казваш, как да го казваш и как да стигнеш до вземащия решения, така че да спреш да чуваш "не ме интересува" след втора дума.</p>
-      </div>
-      <div class="learn-card">
-        <div class="learn-num">03</div>
-        <div class="learn-title">Структури, скриптове и процеси</div>
-        <p class="learn-desc">Структуриран разговор = предвидим резултат. Ще научиш рамката, с която нашите търговци затварят средно 47.8% от разговорите — от първата дума до затварянето. Излизаш с готови скриптове от реални ниши и работен процес за начинаещ и напреднал търговец. От понеделник знаеш точно какво правиш.</p>
-      </div>
-      <div class="learn-card">
-        <div class="learn-num">04</div>
-        <div class="learn-title">Оборване на възражения</div>
-        <p class="learn-desc">"Скъпо е." "Ще помисля." "Не ми трябва." — всяко е решимо с правилния подход. Live roleplay на сцена: реални възражения от публиката, реални отговори в момента. Не теория — практика под натиск.</p>
-      </div>
-      <div class="learn-card">
-        <div class="learn-num">05</div>
-        <div class="learn-title">Проследяване и препоръки</div>
-        <p class="learn-desc">80% от продажбите стават след петото проследяване. Ще научиш кога, как и с какво да се върнеш — без да изглеждаш отчаян или досаден, така че всяко "може би" да стане "да".</p>
-      </div>
-      <div class="learn-card learn-card-secret">
-        <div class="learn-card-secret-tag">🔒 ТАЕН БОНУС</div>
-        <div class="learn-num">?</div>
-        <div class="learn-title">Как да влезеш в индустрията и да намериш работа в продажбите</div>
-        <p class="learn-desc">Повечето хора не знаят дори как изглежда пазарът — кои позиции съществуват, как да ги намерят, как да се представят и как да убедят някой да им даде шанс без опит. Ще ти покажем точно това — <strong style="color:var(--gold-light)">стъпка по стъпка как да влезеш и да получиш първата си позиция.</strong></p>
-        <div class="learn-card-secret-pill">Setter &bull; Closer &bull; Team Lead</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="gold-divider"></div>
-
-<!-- ==================== OUTCOMES: Каква е целта ==================== -->
-<section class="outcomes-section">
-  <div class="container">
-    <div class="outcomes-inner">
-
-      <h2 class="section-title">КАКВА Е <span class="gold-text">ЦЕЛТА НА СЪБИТИЕТО?</span></h2>
-
-      <ul class="outcomes-not-list">
-        <li>Не е да те натрупаме с информация, която никога не ползваш</li>
-        <li>Не е да те впечатлим с термини и рамки</li>
-        <li>Не е да ти кажем „продажбите са добра кариера"</li>
-      </ul>
-
-      <span class="outcomes-real-goal">РЕЗУЛТАТИ.</span>
-
-      <p class="outcomes-goal-sub">
-        Конкретна сделка. Първа комисионна.<br>Или следващото ниво — ако вече продаваш.
-      </p>
-
-      <div class="time-cost-block">
-        <p><strong>Защото най-скъпото нещо, което имаш, не са парите.</strong></p>
-        <p>Това е времето.</p>
-        <p>И повечето хора губят месеци в:</p>
-        <ul class="time-cost-losing">
-          <li>„Проучване", което никога не свършва</li>
-          <li>Видеа и курсове без реална практика под натиск</li>
-          <li>Страх да не кажат нещо грешно на клиент</li>
-          <li>Чакане да „се почувстват готови"</li>
-        </ul>
-        <p>А докато чакат — <strong>сделките се затварят от други.</strong></p>
-      </div>
-
-      <p class="outcomes-label">След събитието ще имаш:</p>
-
-      <div class="outcomes-list">
-        <div class="outcome-item">
-          <div class="outcome-num">1</div>
-          <div class="outcome-text">
-            <div class="outcome-title">Точна структура на продажбен разговор — от първата дума до затварянето</div>
-            <div class="outcome-detail">Не теория. Рамката, с която нашите търговци затварят средно 47.8% от разговорите.</div>
-          </div>
-        </div>
-        <div class="outcome-item">
-          <div class="outcome-num">2</div>
-          <div class="outcome-text">
-            <div class="outcome-title">Отговори на 7-те най-чести възражения — „скъпо е", „ще помисля", „не ми трябва"</div>
-            <div class="outcome-detail">Live roleplay на сцена. Реални отговори. Не скрипт за четене — навик за прилагане.</div>
-          </div>
-        </div>
-        <div class="outcome-item">
-          <div class="outcome-num">3</div>
-          <div class="outcome-text">
-            <div class="outcome-title">Шаблон за проследяване, с което „може би" се превръща в „да"</div>
-            <div class="outcome-detail">80% от продажбите стават след петия контакт. Ще знаеш кога, как и с какво да се върнеш.</div>
-          </div>
-        </div>
-        <div class="outcome-item">
-          <div class="outcome-num">4</div>
-          <div class="outcome-text">
-            <div class="outcome-title">Готов скрипт за студен DM и студено обаждане</div>
-            <div class="outcome-detail">Не шаблон от YouTube. Скрипт, тестван на реални клиенти в реални ниши — от следващата седмица.</div>
-          </div>
-        </div>
-        <div class="outcome-item">
-          <div class="outcome-num">5</div>
-          <div class="outcome-text">
-            <div class="outcome-title">Яснота: Setter, Closer или и двете — и следващата стъпка за теб</div>
-            <div class="outcome-detail">Излизаш с ясна посока, не с отворени въпроси. Точно какво да правиш от понеделник.</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="outcomes-transform">
-        <p class="transform-before">„Някой ден ще се науча да продавам..."</p>
-        <p class="transform-arrow">↓</p>
-        <p class="transform-after">„В понеделник сутринта вдигам телефона."</p>
-      </div>
-
-      <p class="outcomes-cta-line">
-        Идваш да спреш да се <em>„подготвяш"</em> за продажби.<br>
-        <strong>Идваш да започнеш да продаваш.</strong>
-      </p>
-
-    </div>
-  </div>
-  <div class="section-cta-bar">
-    <a href="#tickets" class="btn-primary">ЗАПАЗИ МЯСТО &rarr;</a>
-    <span class="section-cta-note">от €27 &nbsp;&bull;&nbsp; места са ограничени</span>
-  </div>
-</section>
-
-<div class="gold-divider"></div>
-
-<!-- ==================== 3. FOR WHO ==================== -->
-<section id="for-who">
-  <div class="container">
-    <h2 class="section-title">ЗА КОГО Е <span class="gold-text">ТОВА СЪБИТИЕ?</span></h2>
-    <p class="section-subtitle">Честни отговори — преди да вземеш билет.</p>
-
+    <p class="section-eyebrow">КОЙ СМЕ НИЕ ЗА</p>
+    <h2 class="section-title">ДВА ПЪТЯ. ЕДИН РЕЗУЛТАТ.</h2>
+    <p class="section-sub">Независимо дали си бизнес собственик, който иска да скалира, или човек, който иска да изгради кариера в продажбите — имаме решение за теб.</p>
     <div class="who-grid">
-      <div class="who-column">
-        <div class="who-col-title yes">&#10003;&nbsp; ДА — ТИ СИ НА ПРАВИЛНОТО МЯСТО</div>
+      <div class="who-card">
+        <div class="who-card-top">
+          <span class="who-tag">ЗА БИЗНЕСИ</span>
+          <h3 class="who-title">Ти правиш пари. Ние правим продажбите.</h3>
+          <p class="who-desc">Ако бизнесът ти генерира <strong>8 000€+ на месец</strong> и искаш да скалираш без да разчиташ само на себе си — ние изграждаме и управляваме твоя търговски екип.</p>
+        </div>
         <ul class="who-list">
-          <li>
-            <div class="check-icon">&#10003;</div>
-            Нямаш опит в продажбите и търсиш ясна система откъде точно да започнеш
-          </li>
-          <li>
-            <div class="check-icon">&#10003;</div>
-            Работиш на фиксирана заплата и искаш доход без таван — онлайн, офлайн или и двете
-          </li>
-          <li>
-            <div class="check-icon">&#10003;</div>
-            Чувал си за онлайн продажби, но не знаеш как реално се влиза и кое е легитимно
-          </li>
-          <li>
-            <div class="check-icon">&#10003;</div>
-            Готов си да учиш, да практикуваш на живо и да приложиш от следващата седмица
-          </li>
-          <li>
-            <div class="check-icon">&#10003;</div>
-            Вече продаваш, но искаш достъп до по-добри позиции, по-изгодни клиенти и по-висок доход
-          </li>
+          <li><span class="who-check">✓</span>Наемаме, обучаваме и управляваме клоузъри за теб</li>
+          <li><span class="who-check">✓</span>Ти се фокусираш върху продукта и доставката</li>
+          <li><span class="who-check">✓</span>Ние поемаме целия sales процес</li>
+          <li><span class="who-check">✓</span>Резултатно базирано партньорство</li>
+        </ul>
+        <a href="#apply" class="who-cta b2b" onclick="fbq('trackCustom','B2BTrackClick')">ИСКАМ ТЪРГОВСКИ ЕКИП &rarr;</a>
+      </div>
+      <div class="who-card">
+        <div class="who-card-top">
+          <span class="who-tag">ЗА ХОРА</span>
+          <h3 class="who-title">Научи се да клоузваш. Намери работа.</h3>
+          <p class="who-desc">1-on-1 програма, която те завежда от нулата до работещ клоузър. <strong>Ако завършиш успешно — ние те назначаваме.</strong></p>
+        </div>
+        <ul class="who-list">
+          <li><span class="who-check">✓</span>Персонален коучинг 1-on-1 с Ресан или Даниел</li>
+          <li><span class="who-check">✓</span>Реални сделки по време на програмата</li>
+          <li><span class="who-check">✓</span>Сертификат при завършване</li>
+          <li><span class="who-check">✓</span>Recruitment в партньорски компании</li>
+        </ul>
+        <a href="#apply" class="who-cta b2c" onclick="fbq('trackCustom','B2CTrackClick')">ИСКАМ ДА СТАНА КЛОУЗЪР &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- B2B SECTION -->
+<section id="b2b">
+  <div class="container">
+    <p class="section-eyebrow">ЗА БИЗНЕСИ</p>
+    <h2 class="section-title">СПРИ ДА ПРОДАВАШ САМ.</h2>
+    <p class="section-sub">Ти изгради бизнес, който работи. Сега е момент да изградиш екип, който продава — <strong>без да те коства ценното ти внимание.</strong></p>
+    <div class="two-col">
+      <div class="problem-card">
+        <p class="problem-card-title">⚠ ПРОБЛЕМЪТ</p>
+        <ul class="problem-list">
+          <li>Ти си единственият, който затваря сделки</li>
+          <li>Нямаш система — продажбите зависят от теб</li>
+          <li>Пробвал си да наемеш търговец — не проработи</li>
+          <li>Растежът е ограничен от твоите часове</li>
+          <li>Фокусът ти е разпределен: продукт + продажби + operations</li>
         </ul>
       </div>
-
-      <div class="who-column">
-        <div class="who-col-title no">&#10005;&nbsp; НЕ — МОЖЕ БИ ТОВА НЕ Е ЗА ТЕБ</div>
-        <ul class="who-list">
-          <li>
-            <div class="x-icon">&#10005;</div>
-            Не си готов да работиш — продажбите плащат добре, но изискват реално ежедневно усилие
-          </li>
-          <li>
-            <div class="x-icon">&#10005;</div>
-            Търсиш само теория — събитието е 80% практично, с roleplay на сцена и реални упражнения
-          </li>
-          <li>
-            <div class="x-icon">&#10005;</div>
-            Не приемаш директна обратна връзка — тук ще чуеш честни коментари за начина ти на продажба
-          </li>
-          <li>
-            <div class="x-icon">&#10005;</div>
-            Нямаш намерение да приложиш наученото — ако планираш само да "гледаш", билетът не е за теб
-          </li>
+      <div class="solution-card">
+        <p class="solution-card-title">✦ РЕШЕНИЕТО</p>
+        <ul class="solution-list">
+          <li>Изграждаме целия ти sales процес от нулата</li>
+          <li>Наемаме и обучаваме клоузъри специално за твоя бизнес</li>
+          <li>Ние управляваме екипа — ти гледаш числата</li>
+          <li>Ти се освобождаваш да скалираш продукта</li>
+          <li>Партньорство, ориентирано към резултат</li>
         </ul>
       </div>
     </div>
-  </div>
-  <div class="section-cta-bar">
-    <a href="#tickets" class="btn-primary">ЗАПАЗИ МЯСТО &rarr;</a>
-    <span class="section-cta-note">от €27 &nbsp;&bull;&nbsp; места са ограничени</span>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <div class="process-title">Одит &amp; Стратегия</div>
+        <p class="process-desc">Анализираме текущия ти sales процес и дефинираме точно какъв екип ти трябва и как трябва да изглежда.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <div class="process-title">Recruitment</div>
+        <p class="process-desc">Намираме и избираме правилните хора. Не наемаме всеки — наемаме тези, които ще затварят сделки.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <div class="process-title">Обучение &amp; Система</div>
+        <p class="process-desc">Обучаваме екипа с доказани методологии. Изграждаме скриптове, процеси и KPI система.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <div class="process-title">Управление &amp; Скалиране</div>
+        <p class="process-desc">Ние управляваме ежедневно. Ти получаваш репорти и резултати — без да се занимаваш с детайлите.</p>
+      </div>
+    </div>
+    <div class="qualifier-box">
+      <div class="qualifier-text">
+        <h3>Подходящо ли е за теб?</h3>
+        <p>Работим с бизнеси, които генерират <strong>минимум 8 000€ на месец</strong> и са готови да инвестират в изграждане на работещ търговски екип. Ако отговаряш на условията — нека поговорим.</p>
+      </div>
+      <a href="#apply" class="btn-primary" onclick="fbq('trackCustom','B2BApplyClick')">КАНДИДАТСТВАЙ СЕГА</a>
+    </div>
   </div>
 </section>
 
-<div class="gold-divider"></div>
-
-<!-- ==================== 6. ABOUT ==================== -->
-<section id="about">
+<!-- B2C SECTION -->
+<section id="b2c">
   <div class="container">
-
-    <h2 class="founder-greeting">Здравейте, ние сме <span class="gold-text">Ресан и Даниел!</span></h2>
-
-    <div class="founder-card">
-      <div class="founder-photo-wrap">
-        <img src="founders.jpg" alt="Ресан Хамид и Даниел Гелов — RevStream Consortium">
+    <p class="section-eyebrow">КЛОУЗЪР ПРОГРАМА</p>
+    <h2 class="section-title">ОТ НУЛА ДО НАЗНАЧЕН.</h2>
+    <p class="section-sub">1-on-1 коучинг програма, която те прекарва от пълен новак до клоузър, готов за реалния свят. <strong>Завърши успешно и ние те назначаваме.</strong></p>
+    <div class="outcome-grid">
+      <div class="outcome-card">
+        <div class="outcome-icon">🎯</div>
+        <div class="outcome-title">Реални Умения</div>
+        <p class="outcome-desc">Не учиш теория. От ден 1 работиш с реални сценарии, реални възражения и реални техники за затваряне.</p>
       </div>
-      <div class="founder-bio-wrap">
-        <div class="founder-stars">★★★★★</div>
-        <p class="founder-bio-text">
-          Основахме RevStream Consortium с една цел —
-          <strong class="gold-inline">да превърнем продажбите от страх в умение, което плаща.</strong>
-        </p>
-        <p class="founder-bio-text">
-          Между двама ни сме затваряли сделки на <strong>три континента</strong> — UK, US и България.
-          Знаем как изглежда студен DM в 23:00 и как изглежда enterprise close с шестцифрена стойност.
-          150+ от хората, които сме обучили, работят на реални позиции днес — не просто са "завършили програма".
-        </p>
-        <p class="founder-bio-text">
-          Системата, която преподаваме, е изградена върху световно доказани рамки —
-          <strong>NEPQ, Cole Gordon, Bill Walsh</strong> — но адаптирана за реалността на Балканите.
-          Взехме най-доброто от елита и го направихме приложимо тук и сега.
-        </p>
-        <p class="founder-bio-text founder-bio-close">
-          <strong>Всичко, което ще чуеш на 4 юли, е минало през реален разговор с реален клиент. Не сме го прочели — живяли сме го. И затова работи.</strong>
-        </p>
+      <div class="outcome-card">
+        <div class="outcome-icon">💰</div>
+        <div class="outcome-title">Реални Пари</div>
+        <p class="outcome-desc">По време на програмата правиш реални продажби. Учиш се, докато вече печелиш комисионна.</p>
+      </div>
+      <div class="outcome-card">
+        <div class="outcome-icon">🏆</div>
+        <div class="outcome-title">Гарантирана Работа</div>
+        <p class="outcome-desc">Завърши успешно програмата и ние те назначаваме в партньорска компания или при нас. Не те оставяме сам.</p>
       </div>
     </div>
-
-    <div class="founder-stats-row">
-      <div class="founder-stat">
-        <div class="founder-stat-num">150+</div>
-        <div class="founder-stat-label">Обучени търговци</div>
+    <div class="program-phases">
+      <div class="phase">
+        <p class="phase-num">ФАЗА 1</p>
+        <h3 class="phase-title">Фундаменти на Продажбите</h3>
+        <p class="phase-desc">Психология на купувача, как работи мозъкът при вземане на решения, и защо повечето хора продават грешно. <strong>Ти ще знаеш как да го правиш правилно.</strong></p>
       </div>
-      <div class="founder-stat">
-        <div class="founder-stat-num">100+</div>
-        <div class="founder-stat-label">Наети на позиции</div>
+      <div class="phase">
+        <p class="phase-num">ФАЗА 2</p>
+        <h3 class="phase-title">Qualifying &amp; Discovery</h3>
+        <p class="phase-desc">Как да разпознаеш правилния клиент преди да изразходваш енергия. Как да зададеш правилните въпроси и да разкриеш истинската болка.</p>
       </div>
-      <div class="founder-stat">
-        <div class="founder-stat-num">500K EUR</div>
-        <div class="founder-stat-label">Приходи за клиенти</div>
+      <div class="phase">
+        <p class="phase-num">ФАЗА 3</p>
+        <h3 class="phase-title">Closing &amp; Возражения</h3>
+        <p class="phase-desc">Техники за затваряне, работа с "трябва да помисля", "скъпо е", "ще се върна". <strong>Реални роли и симулации с Ресан или Даниел.</strong></p>
       </div>
-      <div class="founder-stat">
-        <div class="founder-stat-num">47.8%</div>
-        <div class="founder-stat-label">Среден close rate</div>
-      </div>
-      <div class="founder-stat">
-        <div class="founder-stat-num">7+</div>
-        <div class="founder-stat-label">Години на UK/US/BG пазари</div>
+      <div class="phase">
+        <p class="phase-num">ФАЗА 4</p>
+        <h3 class="phase-title">Реални Продажби &amp; Сертификация</h3>
+        <p class="phase-desc">Влизаш в реални продажбени разговори. Оценяваме резултатите. При успешно завършване — сертификат и recruitment.</p>
       </div>
     </div>
-
-    <!-- Impact narrative -->
-    <div class="about-impact">
-      <div class="about-impact-globe">
-        <span>🌍</span> България &bull; Великобритания &bull; Дубай &bull; САЩ &bull; Австралия &bull; и по света
-      </div>
-      <p class="about-impact-body">
-        RevStream Consortium е помогнал на клиенти от цял свят да генерират общо
-        <strong class="gold-inline">над 500 000 евро приходи</strong> — и броенето продължава.
-        Това са реални хора, започнали точно там, където си ти сега.
-        <em>Без опит. Без система. Без резултати.</em> Само с желанието да се научат как да продават.
-      </p>
-
-      <div class="about-impact-stories">
-        <div class="impact-story">
-          <div class="impact-story-num">150+</div>
-          <div class="impact-story-desc">Успешно обучени търговци — хора с реални умения, не само <strong>завършен курс</strong></div>
-        </div>
-        <div class="impact-story">
-          <div class="impact-story-num">100+</div>
-          <div class="impact-story-desc">Наети на реални позиции — Setter, Closer, Team Lead — в <strong>реални бизнеси</strong></div>
-        </div>
-        <div class="impact-story">
-          <div class="impact-story-num">10+</div>
-          <div class="impact-story-desc">Изградени продажбени екипа — работещи и генериращи приход <strong>в момента</strong></div>
-        </div>
-      </div>
-
-      <div class="about-impact-stories" style="margin-top:16px;">
-        <div class="impact-story">
-          <div class="impact-story-num">2 000–2 500 €</div>
-          <div class="impact-story-desc">Тийнейджър — първи месец след едва <strong>7–8 часа обучение</strong></div>
-        </div>
-        <div class="impact-story">
-          <div class="impact-story-num">€14 000</div>
-          <div class="impact-story-desc">От корпоративна заплата до тази комисионна за <strong>под 2 седмици</strong></div>
-        </div>
-        <div class="impact-story">
-          <div class="impact-story-num">2–3×</div>
-          <div class="impact-story-desc">Удвоен и утроен месечен доход — счупени лични рекорди</div>
-        </div>
-      </div>
-
-      <p class="about-impact-close">
-        Не обучаваме хора „за сертификат". Обучаваме ги докато не започнат да генерират доход —
-        и след това им намираме работа. Над <strong>100 от нашите търговци работят на реални позиции днес.</strong>
-        Това не е курс. Това е кариерен старт.
-        <br><strong class="gold-inline">150+ обучени. 100+ наети. И тепърва започваме.</strong>
-      </p>
+    <div class="recruit-box">
+      <h3>Завърши програмата.<br><span>Ние те назначаваме.</span></h3>
+      <p>Това не е обещание на хартия. Имаме партньорски компании и собствен екип, търсещ клоузъри. <strong>Ако покажеш резултати по време на програмата — имаш работа.</strong></p>
+      <a href="#apply" class="btn-primary" onclick="fbq('trackCustom','B2CApplyClick')">КАНДИДАТСТВАЙ ЗА ПРОГРАМАТА</a>
     </div>
-
-  </div>
-  <div class="section-cta-bar">
-    <a href="#tickets" class="btn-primary">ЗАПАЗИ МЯСТО &rarr;</a>
-    <span class="section-cta-note">от €27 &nbsp;&bull;&nbsp; места са ограничени</span>
   </div>
 </section>
 
-<div class="gold-divider"></div>
-
-<!-- ==================== 5. SCHEDULE ==================== -->
-<section id="schedule">
+<!-- PROOF -->
+<section id="proof">
   <div class="container">
-    <h2 class="section-title">ПРОГРАМАТА <span class="gold-text">НА ДЕНЯ</span></h2>
-    <p class="section-subtitle">4 Юли 2026 &bull; Хотел Черно Море, Варна &bull; 10:00 — 18:00+</p>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-time">10:00</div>
-        <div class="timeline-desc"><strong>Регистрация</strong><br>
-        Настройваш се. Запознаваш се. Темпото след това е високо — първите 30 минути са твои.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">10:30</div>
-        <div class="timeline-desc"><strong>Сесия 1: Психология на продажбите</strong><br>
-        Разбиваме митовете. Как работи реалният мозък на купувача — и защо хората купуват с емоция, а оправдават с логика. Защо 20% от търговците правят 80% от сделките и какво точно ги отличава.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">11:45</div>
-        <div class="timeline-desc"><strong>Сесия 2: Appointment Setting — B2B и B2C</strong><br>
-        Тон, темпо, думи. Как спираш да чуваш „не ме интересува" и започваш да стигаш до хората, които реално вземат решения — студено обаждане, DM, имейл.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">13:00</div>
-        <div class="timeline-desc"><strong>Обедна пауза</strong><br>
-        Центърът на Варна е на крачка — ресторанти, кафенета, морето. Вземи си час и се върни заредено. Back at 14:00.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">14:00</div>
-        <div class="timeline-desc"><strong>Сесия 3: Структури, скриптове и процеси</strong><br>
-        Рамката от първата дума до затварянето. Готови скриптове от реални ниши, работен процес за setter и closer. Излизаш с инструментите — не само с бележки.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">15:00</div>
-        <div class="timeline-desc"><strong>Сесия 4: Оборване на възражения — LIVE roleplay</strong><br>
-        Най-интензивната сесия. Реални възражения от публиката, реални отговори на живо. „Скъпо е." „Ще помисля." „Не ми трябва." — всяко се решава на сцената пред всички.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">16:15</div>
-        <div class="timeline-desc"><strong>Сесия 5: Проследяване, препоръки и follow-up системи</strong><br>
-        80% от продажбите стават след петия контакт. Ще научиш кога, как и с какво да се върнеш — без да изглеждаш отчаян, така че „може би" да стане „да".</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">16:45</div>
-        <div class="timeline-desc"><strong>🔒 Сесията, която не беше в плана</strong><br>
-        Не я разкриваме предварително. Ще разбереш на място — но хората, които са я чули, казват, че е най-ценното нещо от целия ден.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">17:15</div>
-        <div class="timeline-desc"><strong>Q&amp;A с Ресан и Даниел</strong><br>
-        Отворен микрофон. Каквото искаш да знаеш — питаш директно. Без PR отговори, без филтри.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">18:00</div>
-        <div class="timeline-desc"><strong>Край на официалната програма</strong><br>
-        Networking, снимки, последни въпроси. Времето е твое до вечерята.</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-time">20:00</div>
-        <div class="timeline-desc"><strong>🥂 VIP вечеря — само за VIP билети</strong><br>
-        Неформалното е понякога по-ценно от формалното. Затворена вечеря с Ресан, Даниел и избрани клиенти. Networking, разговори, connection.</div>
-      </div>
-    </div>
-  </div>
-  <div class="section-cta-bar">
-    <a href="#tickets" class="btn-primary">ЗАПАЗИ МЯСТО &rarr;</a>
-    <span class="section-cta-note">от €27 &nbsp;&bull;&nbsp; места са ограничени</span>
-  </div>
-</section>
-
-<div class="gold-divider"></div>
-
-<!-- ==================== 7. TESTIMONIALS ==================== -->
-<section id="testimonials">
-  <div class="container">
-    <h2 class="section-title">РЕАЛНИ ХОРА.<br><span class="gold-text">РЕАЛНИ РЕЗУЛТАТИ.</span></h2>
-    <p class="section-subtitle">Не маркетинг. Не обещания. Скрийншоти от реални разговори, реални суми, реални хора — започнали от нулата.</p>
-
-    <!-- Key stats row -->
-    <div class="proof-stats">
-      <div class="proof-stat">
-        <div class="proof-stat-num">150K EUR</div>
-        <div class="proof-stat-label">комисионни генерирани от наши обучени търговци</div>
-      </div>
-      <div class="proof-stat">
-        <div class="proof-stat-num">500K EUR</div>
-        <div class="proof-stat-label">приходи генерирани за B2B клиенти с наши екипи</div>
-      </div>
-      <div class="proof-stat">
-        <div class="proof-stat-num">72.7%</div>
-        <div class="proof-stat-label">booking rate — inbound B2C phone setting</div>
-      </div>
-      <div class="proof-stat">
-        <div class="proof-stat-num">800%</div>
-        <div class="proof-stat-label">ръст на букнати срещи за един месец</div>
-      </div>
-      <div class="proof-stat">
-        <div class="proof-stat-num">47.8%</div>
-        <div class="proof-stat-label">среден close rate на наши търговци</div>
-      </div>
+    <p class="section-eyebrow">РЕЗУЛТАТИ</p>
+    <h2 class="section-title">ЧИСЛАТА ГОВОРЯТ.</h2>
+    <p class="section-sub">Реални хора. Реални резултати. Ето какво постигнаха хората след работа с нас.</p>
+    <div class="stats-row">
+      <div class="stat-box"><div class="stat-num">100+</div><div class="stat-label">Обучени клоузъри</div></div>
+      <div class="stat-box"><div class="stat-num">800%</div><div class="stat-label">Ръст на букнати срещи</div></div>
+      <div class="stat-box"><div class="stat-num">€3 650</div><div class="stat-label">Комисионна от един клиент</div></div>
+      <div class="stat-box"><div class="stat-num">72.7%</div><div class="stat-label">Booking rate рекорд</div></div>
     </div>
 
-    <!-- ── VIDEOS FIRST ── -->
-    <div class="yt-label">🎥 ГЛЕДАЙ КАКВО КАЗВАТ НАШИТЕ ТЪРГОВЦИ</div>
+    <p class="proof-section-label">СКРИЙНШОТИ ОТ УЧАСТНИЦИ</p>
+    <div class="proof-grid">
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001549.png" alt="800% ръст на букнати срещи" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001637.png" alt="€3,650 комисионна" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001805.png" alt="4 сделки за 2 дни" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001954.png" alt="72.7% booking rate" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001910.png" alt="Първи call, първа сделка" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001818.png" alt="19г., B2B deal" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 002014.png" alt="Затвори от първи cold DM" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001657.png" alt="Proper sales skills = More money" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001728.png" alt="Клоузна за повече пари" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001832.png" alt="PIF after PIF" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001851.png" alt="2 продажби за деня" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001744.png" alt="Testimonial" loading="lazy"></div>
+      <div class="proof-card"><img src="Screenshot 2025-11-13 001926.png" alt="Closer + biz owner" loading="lazy"></div>
+    </div>
 
-    <!-- All testimonial videos — unified grid -->
-    <div class="yt-grid">
-      <div class="yt-card local-video-wrap">
-        <video controls preload="metadata">
+    <p class="video-section-label">ВИДЕО TESTIMONIALS</p>
+    <div class="video-grid">
+      <div class="local-video-wrap">
+        <video controls preload="none">
           <source src="Impromptu Google Meet Meeting - Mar 3 2026.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/Ao-5DVJGTK0?autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/Ao-5DVJGTK0/hqdefault.jpg" alt="Тестимониъл на Мо" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/CLLLNqRkdJE?autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/CLLLNqRkdJE/hqdefault.jpg" alt="Тестимониъл на Йоан" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/JNbAxOS2Xy0?autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/JNbAxOS2Xy0/hqdefault.jpg" alt="Тестимониъл на Кати" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/SBS8C-TBolQ?si=S8NRcTyBS3O07vzE&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/SBS8C-TBolQ/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/FGhzKTqSqYQ?si=_q9YjOBh8DaZnabG&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/FGhzKTqSqYQ/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/Zed2O5N1naw?si=URrMKZebkh_GpZwC&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/Zed2O5N1naw/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/aoU-HnAgZ80?si=B3yLs8BwiGcSPpYb&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/aoU-HnAgZ80/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/IlGczWaPrpo?si=lsT_6kR5wmWFSk5T&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/IlGczWaPrpo/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/pDoi5-m2EJw?si=XshnwF-PpWwlq8_T&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/pDoi5-m2EJw/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/BKwLE8jRduo?si=BTSKv_QLB6i1nlYf&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/BKwLE8jRduo/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/cna0NGhkFI8?si=fAlpirmk512d0qEI&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/cna0NGhkFI8/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/vN-Orh6lgqA?si=1IjC0CaNZKGaa95O&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/vN-Orh6lgqA/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
-      <div class="yt-card" data-src="https://www.youtube.com/embed/WBzHZpQ_LXM?si=sDSSNV1peRZQpJxr&autoplay=1">
-        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/WBzHZpQ_LXM/hqdefault.jpg" alt="RevStream testimonial" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
-      </div>
+      <a href="https://www.youtube.com/watch?v=Ao-5DVJGTK0" target="_blank" rel="noopener" class="yt-card">
+        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/Ao-5DVJGTK0/hqdefault.jpg" alt="" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=CLLLNqRkdJE" target="_blank" rel="noopener" class="yt-card">
+        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/CLLLNqRkdJE/hqdefault.jpg" alt="" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=JNbAxOS2Xy0" target="_blank" rel="noopener" class="yt-card">
+        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/JNbAxOS2Xy0/hqdefault.jpg" alt="" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=SBS8C-TBolQ" target="_blank" rel="noopener" class="yt-card">
+        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/SBS8C-TBolQ/hqdefault.jpg" alt="" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=FGhzKTqSqYQ" target="_blank" rel="noopener" class="yt-card">
+        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/FGhzKTqSqYQ/hqdefault.jpg" alt="" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=Zed2O5N1naw" target="_blank" rel="noopener" class="yt-card">
+        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/Zed2O5N1naw/hqdefault.jpg" alt="" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=aoU-HnAgZ80" target="_blank" rel="noopener" class="yt-card">
+        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/aoU-HnAgZ80/hqdefault.jpg" alt="" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=IlGczWaPrpo" target="_blank" rel="noopener" class="yt-card">
+        <div class="yt-thumb-wrap"><img src="https://img.youtube.com/vi/IlGczWaPrpo/hqdefault.jpg" alt="" loading="lazy"><div class="yt-play"><span>&#9654;</span></div></div>
+      </a>
     </div>
-
-    <!-- ── SCREENSHOTS AFTER VIDEOS ── -->
-    <div class="proof-section-label">📸 СКРИЙНШОТИ ОТ РЕАЛНИ РЕЗУЛТАТИ</div>
-    <div class="proof-grid">
-
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001549.png" alt="Alex Grey — B2B outbound team, 800% ръст на букнати срещи" loading="lazy">
-        <div class="proof-card-tag">Alex Grey • B2B Outbound Team</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001637.png" alt="Alex Grey — €3,650 комисионна от 1 клиент" loading="lazy">
-        <div class="proof-card-tag">€3,650 комисионна • 1 клиент</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001805.png" alt="@mdraganchev — 4 сделки за 2 дни" loading="lazy">
-        <div class="proof-card-tag">@mdraganchev • 4 сделки за 2 дни</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001954.png" alt="@afuzovvv — 72.7% booking rate" loading="lazy">
-        <div class="proof-card-tag">@afuzovvv • 72.7% booking rate</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001910.png" alt="@antonioxix — първи call, първа сделка" loading="lazy">
-        <div class="proof-card-tag">@antonioxix • първи call = първа сделка</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001818.png" alt="@petar_ivanov_content — 19г., B2B deal" loading="lazy">
-        <div class="proof-card-tag">@petar_ivanov_content • 19г. • B2B Close</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 002014.png" alt="@filgka — затвори от първи cold DM" loading="lazy">
-        <div class="proof-card-tag">@filgka.__ • 1 седмица → 1-ва сделка</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001657.png" alt="@bizwithalexa — Proper sales skills = More money" loading="lazy">
-        <div class="proof-card-tag">@bizwithalexa • Proper sales = More money</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001728.png" alt="@_knhgw — клоузна за повече пари + капаро" loading="lazy">
-        <div class="proof-card-tag">@_knhgw • Клоузна + капаро</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001832.png" alt="@antondenikov — PIF after PIF" loading="lazy">
-        <div class="proof-card-tag">@antondenikov • PIF after PIF</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001851.png" alt="@shopa16 — 2 продажби за деня" loading="lazy">
-        <div class="proof-card-tag">@shopa16 • 2 продажби за деня</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001744.png" alt="Testimonial — I really appreciate you" loading="lazy">
-        <div class="proof-card-tag">"This goes a fucking long way bro"</div>
-      </div>
-      <div class="proof-card">
-        <img src="Screenshot 2025-11-13 001926.png" alt="@antonioxix_ closer + @rusevatedi biz owner" loading="lazy">
-        <div class="proof-card-tag">@antonioxix_ closer • @rusevatedi biz owner</div>
-      </div>
-
-    </div>
-
-    <p class="proof-footer-note">
-      Всички скрийншоти са реални. Имената и резултатите са с позволение на търговците.
-    </p>
-
-  </div>
-  <div class="section-cta-bar">
-    <a href="#tickets" class="btn-primary">ЗАПАЗИ МЯСТО &rarr;</a>
-    <span class="section-cta-note">от €27 &nbsp;&bull;&nbsp; места са ограничени</span>
   </div>
 </section>
 
-<div class="gold-divider"></div>
-
-<!-- ==================== 8. TICKETS ==================== -->
-<section id="tickets">
+<!-- FOUNDERS -->
+<section id="founders">
   <div class="container">
-    <h2 class="section-title">ИЗБЕРИ <span class="gold-text">СВОЕТО МЯСТО</span></h2>
-    <p class="tickets-urgency">⚠️&nbsp; Капацитетът е ограничен. Това събитие се случва веднъж — на 4 юли. После е история.</p>
-
-    <div class="tickets-grid">
-
-      <!-- CARD 1: BASIC -->
-      <div class="ticket-card">
-        <div class="ticket-card-top">
-          <div class="ticket-badge basic">НАЧИНАЕЩ</div>
-          <div class="ticket-name">BASIC</div>
-          <div class="ticket-price">€27</div>
-          <div class="ticket-price-note">1 място на събитието</div>
-        </div>
-        <ul class="ticket-features">
-          <li><span class="feat-check">&#10003;</span> Твоето място в залата — 4 юли, Варна</li>
-          <li><span class="feat-check">&#10003;</span> Пълен достъп до всички 4 сесии (8 часа)</li>
-          <li><span class="feat-check">&#10003;</span> Дигитален workbook + скриптове по имейл</li>
-          <li><span class="feat-x">&#10005;</span> Обяд не е включен</li>
-          <li><span class="feat-x">&#10005;</span> VIP вечеря не е включена</li>
-        </ul>
-        <a href="https://buy.stripe.com/5kQ28qfrufJMeZS12W2go06" target="_blank" rel="noopener" class="ticket-cta basic">ВЗЕМИ БИЛЕТА СИ — €27</a>
-      </div>
-
-      <!-- CARD 2: DOUBLE (featured) -->
-      <div class="ticket-card featured">
-        <div class="ticket-card-top">
-          <div class="ticket-badge popular">НАЙ-ПОПУЛЯРЕН 🔥</div>
-          <div class="ticket-name">ДВОЕН</div>
-          <div class="ticket-price">€47</div>
-          <div class="ticket-price-note">2 места — €23.50 на човек</div>
-        </div>
-        <ul class="ticket-features">
-          <li><span class="feat-check">&#10003;</span> 2 места в залата — доведи някой, на когото ще е от полза</li>
-          <li><span class="feat-check">&#10003;</span> Пълен достъп до всички 4 сесии и за двамата</li>
-          <li><span class="feat-check">&#10003;</span> Дигитален workbook + скриптове по имейл и за двамата</li>
-          <li><span class="feat-check">&#10003;</span> Най-ниска цена на място от всички опции</li>
-          <li><span class="feat-x">&#10005;</span> Обяд не е включен</li>
-          <li><span class="feat-x">&#10005;</span> VIP вечеря не е включена</li>
-        </ul>
-        <a href="https://buy.stripe.com/6oU3cu5QU9lo8Bu5jc2go07" target="_blank" rel="noopener" class="ticket-cta popular">ВЗЕМИ 2 МЕСТА — €47</a>
-      </div>
-
-      <!-- CARD 3: VIP -->
-      <div class="ticket-card">
-        <div class="ticket-card-top">
-          <div class="ticket-badge vip">VIP ⚡</div>
-          <div class="ticket-name">VIP</div>
-          <div class="ticket-price">€77</div>
-          <div class="ticket-price-note">1 VIP място — предни редици</div>
-        </div>
-        <ul class="ticket-features">
-          <li><span class="feat-check">&#10003;</span> VIP място в предните редици — виждаш всичко</li>
-          <li><span class="feat-check">&#10003;</span> Пълен достъп до всички 4 сесии</li>
-          <li><span class="feat-check">&#10003;</span> Дигитален workbook + скриптове по имейл</li>
-          <li><span class="feat-check">&#10003;</span> Обяд включен — не губиш нито минута</li>
-          <li><span class="feat-check">&#10003;</span> Затворена VIP вечеря с Ресан и Даниел</li>
-          <li><span class="feat-check">&#10003;</span> Кратка 1:1 консултация — задаваш каквото искаш</li>
-          <li><span class="feat-check">&#10003;</span> Priority микрофон на Q&amp;A сесията</li>
-        </ul>
-        <a href="https://buy.stripe.com/fZufZg3IM4143hacLE2go08" target="_blank" rel="noopener" class="ticket-cta vip">ВЗЕМИ VIP МЯСТО — €77</a>
-      </div>
-
+    <p class="section-eyebrow">ЕКИПЪТ</p>
+    <h2 class="section-title">КОИ СМЕ НИЕ</h2>
+    <p class="section-sub">Не сме теоретици. Продаваме всеки ден и преподаваме само това, което лично работи за нас.</p>
+    <div class="founders-photo-block">
+      <img src="founders.jpg" alt="Ресан Хамид и Даниел Гелов — RevStream Consortium">
+      <div class="founders-photo-caption">РЕСАН ХАМИД &amp; ДАНИЕЛ ГЕЛОВ — REVSTREAM CONSORTIUM</div>
     </div>
-
-    <p class="tickets-trust">
-      <span>&#128274;</span> Плащането е сигурно и защитено чрез Stripe &bull; Потвърждение на имейл веднага след покупка &bull; Без скрити такси
-    </p>
-
-    <div class="guarantee-box">
-      <div class="guarantee-icon">&#129351;</div>
-      <div>
-        <div class="guarantee-title">100% Гаранция за удовлетвореност</div>
-        <p class="guarantee-body">
-          Ако до 24 часа след края на събитието не смяташ, че е най-ценното нещо, в което си инвестирал тази година —
-          <strong>връщаме ти парите без въпроси.</strong><br><br>
-          Единственото изискване: да присъстваш от начало до край и да дадеш честен шанс на информацията и практиката.
-          Никой, който го е направил, не е поискал парите си обратно.
-        </p>
+    <div class="founders-grid">
+      <div class="founder-card">
+        <div class="founder-name">РЕСАН ХАМИД</div>
+        <div class="founder-role">Co-Founder — Sales &amp; Recruitment</div>
+        <p class="founder-bio">Ресан е клоузър с реален track record. Специализира в <strong>изграждане на B2B outbound екипи</strong> и е лично затварял сделки на стойност над шест цифри. Отговаря за recruitment и управление на клоузърите в партньорските компании.</p>
+      </div>
+      <div class="founder-card">
+        <div class="founder-name">ДАНИЕЛ ГЕЛОВ</div>
+        <div class="founder-role">Co-Founder — Coaching &amp; Strategy</div>
+        <p class="founder-bio">Даниел ръководи <strong>1-on-1 коучинг програмата</strong> и стратегията на RevStream. Работил е с десетки клоузъри — от нулата до реални резултати. Подходът му е директен: без теория, само неща, които работят на реален пазар.</p>
       </div>
     </div>
-
   </div>
 </section>
 
-<div class="gold-divider"></div>
-
-<!-- ==================== 9. FAQ ==================== -->
-<section id="faq">
+<!-- APPLY -->
+<section id="apply">
   <div class="container">
-    <h2 class="section-title">ЧЕСТО ЗАДАВАНИ <span class="gold-text">ВЪПРОСИ</span></h2>
-
-    <div class="faq-list">
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span class="faq-question-text">Трябва ли ми предишен опит в продажбите?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Не. Събитието е построено от нулата — идваш без нищо, излизаш с цялата система. Ако вече работиш в продажби, ще получиш конкретните пропуски, които те държат под тавана. И двете работят.
-          </div>
-        </div>
+    <h2 class="apply-headline">КАНДИДАТСТВАЙ</h2>
+    <p class="apply-sub">Избери своя път и попълни краткото заявление. <strong>Ще се свържем с теб в рамките на 24 часа.</strong></p>
+    <div class="apply-tracks">
+      <div class="apply-card">
+        <p class="apply-card-tag">ЗА БИЗНЕСИ</p>
+        <h3 class="apply-card-title">Търговски Екип</h3>
+        <p class="apply-card-desc">За бизнеси с 8 000€+/мес. Ние изграждаме и управляваме твоя sales екип. Ти скалираш без да продаваш сам.</p>
+        <a href="https://forms.gle/placeholder-b2b" target="_blank" rel="noopener" class="apply-card-cta b2b" onclick="fbq('trackCustom','B2BFormOpen'); gtag('event','b2b_apply_click');">КАНДИДАТСТВАЙ — БИЗНЕС</a>
       </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span class="faq-question-text">Какво да взема със себе си?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Тефтер и химикал — ела готов да пишеш. Дигиталните материали (workbook, скриптове, SOP) получаваш на имейл след събитието, така че да можеш да ги приложиш от понеделник.
-          </div>
-        </div>
+      <div class="apply-card">
+        <p class="apply-card-tag">КЛОУЗЪР ПРОГРАМА</p>
+        <h3 class="apply-card-title">1-on-1 Коучинг</h3>
+        <p class="apply-card-desc">За хора, които искат да изградят кариера в продажбите. Учи, правей реални продажби, получи работа.</p>
+        <a href="https://forms.gle/placeholder-b2c" target="_blank" rel="noopener" class="apply-card-cta b2c" onclick="fbq('trackCustom','B2CFormOpen'); gtag('event','b2c_apply_click');">КАНДИДАТСТВАЙ — ПРОГРАМА</a>
       </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span class="faq-question-text">Включен ли е обядът?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Само за VIP билети. Basic и Double имат пауза 13:30–14:30 — ресторантът на хотела е на ваше разположение. Ако не искаш да се занимаваш, вземи VIP.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span class="faq-question-text">Мога ли да прехвърля билета си на друг?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Да. Пиши ни в Instagram (@resanhamidd) преди събитието с новото име и ще го уредим. Просто не чакай последния момент.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span class="faq-question-text">Ще има ли запис на събитието?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Не. Умишлено. Ценността е в живата зала — roleplay на сцена, директни въпроси, енергията на стаята. Запис не може да замести това. Ако не дойдеш, губиш точно тази версия завинаги.
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span class="faq-question-text">Как да стигна до хотела?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">
-            Хотел Черно Море е в центъра на Варна, до Морската градина. Кола, такси или автобус — всичко работи. Паркинг е наличен. Ако идваш отдалеч, резервирай хотел рано — юли е пик сезон и цените растат бързо.
-          </div>
-        </div>
-      </div>
-
     </div>
+    <p class="apply-note">Местата са ограничени — приемаме нови кандидати на партиди</p>
   </div>
 </section>
 
-<div class="gold-divider"></div>
-
-<!-- ==================== 9. FINAL CTA ==================== -->
-<section id="final-cta">
-  <div class="container">
-    <div class="final-headline">НАМЕРИ РАБОТА.</div>
-    <p class="final-sub">Онлайн продажбите в България са най-бързо растящият начин за доход в момента — и повечето хора все още не знаят как да влязат в тях.</p>
-
-    <div class="countdown" id="countdown-final">
-      <div class="cd-box"><span class="cd-num" id="f-days">00</span><span class="cd-label">Дни</span></div>
-      <div class="cd-box"><span class="cd-num" id="f-hours">00</span><span class="cd-label">Часа</span></div>
-      <div class="cd-box"><span class="cd-num" id="f-mins">00</span><span class="cd-label">Минути</span></div>
-      <div class="cd-box"><span class="cd-num" id="f-secs">00</span><span class="cd-label">Секунди</span></div>
-    </div>
-
-    <p style="font-size:1rem;color:var(--text-dim);max-width:640px;margin:0 auto 2rem;line-height:1.8;">
-      На 4 юли ще научиш точно как да се позиционираш, как да намериш най-добрите оферти и клиенти в онлайн средата в България — и как да превърнеш това в стабилен доход веднага след събитието.
-    </p>
-
-    <a href="#tickets" class="btn-primary">ЗАПАЗИ МЯСТО СЕГА &rarr;</a>
-
-    <p class="final-note">Местата са физически ограничени. Когато залата се запълни, линкът за покупка спира. Без изключения.</p>
-  </div>
-</section>
-
-<!-- ==================== 10. FOOTER ==================== -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-brand">REVSTREAM CONSORTIUM</div>
-  <p class="footer-copy">© 2026 RevStream Consortium. All rights reserved.</p>
-  <a href="https://www.instagram.com/resanhamidd" target="_blank" rel="noopener" class="footer-ig">Instagram: @resanhamidd</a>
-  <p class="footer-hint">Въпроси? Пиши ни в Instagram.</p>
-  <span class="footer-tc-link" onclick="document.getElementById('tc-modal').classList.add('open')">Общи условия</span>
-  &nbsp;·&nbsp;
-  <span class="footer-tc-link" onclick="document.getElementById('pp-modal').classList.add('open')">Политика за поверителност</span>
+  <p class="footer-copy">&copy; 2026 RevStream Consortium. Всички права запазени.</p>
+  <div class="footer-links">
+    <a href="mailto:info@revstreamconsortium.com">info@revstreamconsortium.com</a>
+    <a href="#b2b">За Бизнеси</a>
+    <a href="#b2c">Клоузър Програма</a>
+    <a href="#proof">Резултати</a>
+  </div>
 </footer>
 
-<!-- ==================== TERMS & CONDITIONS MODAL ==================== -->
-<div id="tc-modal" role="dialog" aria-modal="true" aria-labelledby="tc-title">
-  <div class="tc-box">
-    <button class="tc-close" onclick="document.getElementById('tc-modal').classList.remove('open')" aria-label="Затвори">&#215;</button>
-    <h2 id="tc-title">Общи Условия</h2>
-    <p class="tc-date">Последна актуализация: Май 2026</p>
-
-    <h3>1. Организатор</h3>
-    <p>Събитието RevStream LIVE се организира от RevStream Consortium. С покупката на билет участникът приема настоящите общи условия в пълен обем.</p>
-
-    <hr class="tc-divider">
-    <h3>2. Билети и плащане</h3>
-    <ul>
-      <li>Всички цени са в евро (€) и включват ДДС.</li>
-      <li>Плащането се извършва онлайн чрез платформата Stripe. Транзакцията е защитена с SSL криптиране.</li>
-      <li>След успешно плащане участникът получава потвърждение на посочения имейл адрес.</li>
-      <li>Билетът е личен и не може да бъде преотстъпван без изрично писмено съгласие от страна на организатора.</li>
-    </ul>
-
-    <hr class="tc-divider">
-    <h3>3. Отмяна и възстановяване</h3>
-    <ul>
-      <li><strong style="color:#ccc">До 14 дни преди събитието:</strong> пълно възстановяване на сумата.</li>
-      <li><strong style="color:#ccc">От 14 до 7 дни преди събитието:</strong> 50% възстановяване.</li>
-      <li><strong style="color:#ccc">По-малко от 7 дни преди събитието:</strong> не се извършва възстановяване.</li>
-      <li>При отмяна от страна на организатора участниците получават пълно възстановяване или ваучер за бъдещо събитие.</li>
-    </ul>
-
-    <hr class="tc-divider">
-    <h3>4. Програма и съдържание</h3>
-    <p>Организаторът си запазва правото да внася промени в програмата, лекторите и часовете на провеждане, без това да е основание за отказ от участие или претенции. При съществена промяна участниците ще бъдат уведомени предварително.</p>
-
-    <hr class="tc-divider">
-    <h3>5. Снимки и видео</h3>
-    <p>По време на събитието могат да се правят снимки и видеозаписи за маркетингови цели на организатора. Участникът дава съгласие за използването на материали, в които се появява, освен ако изрично не е заявил отказ писмено преди събитието.</p>
-
-    <hr class="tc-divider">
-    <h3>6. Отговорност</h3>
-    <p>RevStream Consortium не носи отговорност за лични вещи, наранявания или щети, настъпили по вина на участника. Организаторът не гарантира конкретни финансови резултати от прилагането на преподаденото съдържание.</p>
-
-    <hr class="tc-divider">
-    <h3>7. Лични данни</h3>
-    <p>Данните, предоставени при покупка, се обработват единствено за целите на организацията на събитието и не се предоставят на трети страни, с изключение на платежния оператор (Stripe). Участникът има право на достъп, коригиране и изтриване на данните си по смисъла на GDPR.</p>
-
-    <hr class="tc-divider">
-    <h3>8. Приложимо право</h3>
-    <p>Настоящите условия се уреждат от законодателството на Република България. Всички спорове се решават по взаимно съгласие, а при невъзможност — пред компетентния съд в град Варна.</p>
-
-    <hr class="tc-divider">
-    <h3>9. Контакт</h3>
-    <p>При въпроси относно общите условия се свържете с нас чрез Instagram: <a href="https://www.instagram.com/resanhamidd" target="_blank" rel="noopener" style="color:var(--gold-dark)">@resanhamidd</a></p>
-  </div>
-</div>
-
 <script>
-/* ===================== NAVBAR ===================== */
-(function() {
-  var navbar = document.getElementById('navbar');
-  var burger = document.getElementById('nav-burger');
-  var links  = document.getElementById('nav-links');
-
-  window.addEventListener('scroll', function() {
-    navbar.classList.toggle('scrolled', window.scrollY > 40);
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
   });
-
-  burger.addEventListener('click', function() {
-    burger.classList.toggle('open');
-    links.classList.toggle('open');
-  });
-
-  links.querySelectorAll('a').forEach(function(a) {
-    a.addEventListener('click', function() {
-      burger.classList.remove('open');
-      links.classList.remove('open');
-    });
-  });
-})();
-
-/* ===================== PARTICLES ===================== */
-(function() {
-  var container = document.getElementById('particles');
-  var count = 32;
-  for (var i = 0; i < count; i++) {
-    var p = document.createElement('div');
-    p.className = 'particle';
-    var size = Math.random() * 4 + 2;        // 2–6px
-    var left = Math.random() * 100;           // 0–100%
-    var bottom = Math.random() * -20;         // start slightly below
-    var dur = (Math.random() * 12 + 7).toFixed(1);    // 7–19s
-    var delay = (Math.random() * 14).toFixed(1);       // 0–14s delay
-    var drift = (Math.random() * 140 - 70).toFixed(0); // -70 to +70px
-    var op = (Math.random() * 0.5 + 0.3).toFixed(2);  // 0.3–0.8
-    p.style.cssText = [
-      'width:' + size + 'px',
-      'height:' + size + 'px',
-      'left:' + left + '%',
-      'bottom:' + bottom + '%',
-      '--dur:' + dur + 's',
-      '--delay:' + delay + 's',
-      '--drift:' + drift + 'px',
-      '--op:' + op
-    ].join(';');
-    container.appendChild(p);
-  }
-})();
-
-/* ===================== COUNTDOWN ===================== */
-var countdownTarget = new Date('2026-07-04T10:00:00').getTime();
-
-function pad(n) { return n < 10 ? '0' + n : '' + n; }
-
-function updateCountdowns() {
-  var now = Date.now();
-  var diff = countdownTarget - now;
-
-  if (diff <= 0) {
-    // Expired state
-    var heroEl = document.getElementById('countdown-hero');
-    var finalEl = document.getElementById('countdown-final');
-    var expired = '<span class="cd-expired">СЪБИТИЕТО Е ЗАПОЧНАЛО 🔥</span>';
-    if (heroEl)  heroEl.innerHTML = expired;
-    if (finalEl) finalEl.innerHTML = expired;
-    return;
-  }
-
-  var days  = Math.floor(diff / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var mins  = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  var secs  = Math.floor((diff % (1000 * 60)) / 1000);
-
-  // Hero
-  var hd = document.getElementById('h-days');
-  var hh = document.getElementById('h-hours');
-  var hm = document.getElementById('h-mins');
-  var hs = document.getElementById('h-secs');
-  if (hd) hd.textContent = pad(days);
-  if (hh) hh.textContent = pad(hours);
-  if (hm) hm.textContent = pad(mins);
-  if (hs) hs.textContent = pad(secs);
-
-  // Final CTA
-  var fd = document.getElementById('f-days');
-  var fh = document.getElementById('f-hours');
-  var fm = document.getElementById('f-mins');
-  var fs = document.getElementById('f-secs');
-  if (fd) fd.textContent = pad(days);
-  if (fh) fh.textContent = pad(hours);
-  if (fm) fm.textContent = pad(mins);
-  if (fs) fs.textContent = pad(secs);
-}
-
-updateCountdowns();
-setInterval(updateCountdowns, 1000);
-
-/* ===================== FAQ ACCORDION ===================== */
-(function() {
-  var items = document.querySelectorAll('.faq-item');
-
-  items.forEach(function(item) {
-    var btn = item.querySelector('.faq-question');
-    if (!btn) return;
-
-    btn.addEventListener('click', function() {
-      var isOpen = item.classList.contains('open');
-
-      // Close all
-      items.forEach(function(el) {
-        el.classList.remove('open');
-        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-      });
-
-      // Open clicked if it was closed
-      if (!isOpen) {
-        item.classList.add('open');
-        btn.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-})();
-
-/* ===================== YOUTUBE CLICK-TO-PLAY ===================== */
-(function() {
-  document.querySelectorAll('.yt-card[data-src], .yt-named-card[data-src]').forEach(function(card) {
-    card.style.cursor = 'pointer';
-    card.addEventListener('click', function() {
-      var embedSrc = card.dataset.src;
-      var match = embedSrc.match(/embed\/([a-zA-Z0-9_-]+)/);
-      var watchUrl = match ? 'https://www.youtube.com/watch?v=' + match[1] : embedSrc;
-      window.open(watchUrl, '_blank', 'noopener');
-    });
-  });
-})();
-
-/* ===================== SMOOTH SCROLL FALLBACK ===================== */
-(function() {
-  function scrollToTarget(target) {
-    // Use getBoundingClientRect after layout settles for accurate position
-    var top = target.getBoundingClientRect().top + window.pageYOffset - 80;
-    window.scrollTo({ top: top, behavior: 'smooth' });
-  }
-
-  document.querySelectorAll('a[href^="#"]').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      var href = link.getAttribute('href');
-      var target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        // Small rAF delay so any in-progress layout shifts finish first
-        requestAnimationFrame(function() {
-          requestAnimationFrame(function() {
-            scrollToTarget(target);
-          });
-        });
-      }
-    });
-  });
-})();
-
-</script>
-
-<!-- ==================== SOCIAL PROOF POPUP ==================== -->
-<div id="social-proof-popup">
-  <div class="sp-avatar" id="sp-avatar">М</div>
-  <div class="sp-text">
-    <div class="sp-name" id="sp-name">Мартин</div>
-    <div class="sp-action" id="sp-action">току-що запази <span>Basic билет</span></div>
-    <div class="sp-time" id="sp-time">преди 2 минути</div>
-  </div>
-</div>
-
-<script>
-(function() {
-  var purchases = [
-    { name: 'Мартин', city: 'Варна',    ticket: 'Basic билет',  time: 'преди малко' },
-    { name: 'Симона', city: 'София',    ticket: 'VIP билет',    time: 'преди 3 минути' },
-    { name: 'Виктор', city: 'Пловдив',  ticket: 'Basic билет',  time: 'преди 5 минути' },
-    { name: 'Калина', city: 'Бургас',   ticket: 'Двоен билет',  time: 'преди 7 минути' },
-    { name: 'Петър',  city: 'Варна',    ticket: 'VIP билет',    time: 'преди малко' },
-    { name: 'Ивана',  city: 'Стара Загора', ticket: 'Basic билет', time: 'преди 4 минути' },
-    { name: 'Георги', city: 'Русе',     ticket: 'Двоен билет',  time: 'преди 6 минути' },
-    { name: 'Надя',   city: 'София',    ticket: 'VIP билет',    time: 'преди 2 минути' },
-    { name: 'Стефан', city: 'Варна',    ticket: 'Basic билет',  time: 'преди малко' },
-    { name: 'Деница', city: 'Велико Търново', ticket: 'Двоен билет', time: 'преди 8 минути' }
-  ];
-
-  var popup = document.getElementById('social-proof-popup');
-  var avatarEl = document.getElementById('sp-avatar');
-  var nameEl = document.getElementById('sp-name');
-  var actionEl = document.getElementById('sp-action');
-  var timeEl = document.getElementById('sp-time');
-  var idx = 0;
-
-  function showNext() {
-    var p = purchases[idx % purchases.length];
-    idx++;
-    avatarEl.textContent = p.name.charAt(0);
-    nameEl.textContent = p.name + ' от ' + p.city;
-    actionEl.innerHTML = 'току-що запази <span>' + p.ticket + '</span>';
-    timeEl.textContent = p.time;
-    popup.classList.add('show');
-    setTimeout(function() { popup.classList.remove('show'); }, 4000);
-  }
-
-  setTimeout(function() {
-    showNext();
-    setInterval(showNext, 22000);
-  }, 6000);
-})();
-</script>
-
-<!-- Meta Pixel Events + Conversions API -->
-<script>
-(function() {
-  var PIXEL_ID = '894951940022072';
-  var CAPI_TOKEN = 'EAAIwmhZAZAwsgBRpk0eosx7wyTQvG6ZAufmBoAJxVCwrSrrNaIf4D7QyMVKsUdtI1zPryLZAIvrE02DhvWKUdseCMUdeJQ8oEtqcWmbDfmDJ3QnHDVvQRSoMGZAmEZADa2Eydp0j1KyTYwTYJbkK9A5PgFYWNp10wqsaC1D0ZA2BylMfOeu22WgFq0QZB6M7kwZDZD';
-
-  function getCookie(name) {
-    var m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
-    return m ? m[2] : undefined;
-  }
-
-  function genId() {
-    return Date.now().toString(36) + Math.random().toString(36).substr(2, 9);
-  }
-
-  function sendCAPI(eventName, eventId, customData) {
-    var payload = {
-      data: [{
-        event_name: eventName,
-        event_time: Math.floor(Date.now() / 1000),
-        event_id: eventId,
-        event_source_url: window.location.href,
-        action_source: 'website',
-        user_data: {
-          client_user_agent: navigator.userAgent,
-          fbp: getCookie('_fbp'),
-          fbc: getCookie('_fbc')
-        }
-      }]
-    };
-    if (customData) payload.data[0].custom_data = customData;
-    fetch(
-      'https://graph.facebook.com/v19.0/' + PIXEL_ID + '/events?access_token=' + CAPI_TOKEN,
-      { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }
-    );
-  }
-
-  // PageView — CAPI only (pixel fires in <head> above)
-  var pvId = genId();
-  sendCAPI('PageView', pvId);
-
-  // ViewContent — fires once when tickets section scrolls into view
-  var ticketsEl = document.getElementById('tickets');
-  if (ticketsEl && 'IntersectionObserver' in window) {
-    var vcFired = false;
-    var vcObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting && !vcFired) {
-          vcFired = true;
-          var vcId = genId();
-          fbq('track', 'ViewContent', { content_name: 'RevStream Live — Tickets' }, { eventID: vcId });
-          sendCAPI('ViewContent', vcId, { content_name: 'RevStream Live — Tickets', currency: 'EUR' });
-          vcObserver.disconnect();
-        }
-      });
-    }, { threshold: 0.2 });
-    vcObserver.observe(ticketsEl);
-  }
-
-  // InitiateCheckout — fires on any Stripe button click
-  var ticketPrices = {
-    '5kQ28qfrufJMeZS12W2go06': { name: 'Basic', value: 27 },
-    '6oU3cu5QU9lo8Bu5jc2go07': { name: 'Double', value: 47 },
-    'fZufZg3IM4143hacLE2go08': { name: 'VIP', value: 77 }
-  };
-  document.querySelectorAll('a[href*="buy.stripe.com"]').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var href = btn.getAttribute('href') || '';
-      var key = Object.keys(ticketPrices).find(function(k) { return href.indexOf(k) !== -1; });
-      var meta = key ? ticketPrices[key] : { name: 'RevStream Live', value: 0 };
-      var icId = genId();
-      fbq('track', 'InitiateCheckout', {
-        content_name: 'RevStream Live — ' + meta.name,
-        value: meta.value,
-        currency: 'EUR',
-        num_items: 1
-      }, { eventID: icId });
-      sendCAPI('InitiateCheckout', icId, {
-        content_name: 'RevStream Live — ' + meta.name,
-        value: meta.value,
-        currency: 'EUR',
-        num_items: 1
-      });
-    });
-  });
-})();
-</script>
-<!-- ==================== PRIVACY POLICY MODAL ==================== -->
-<div id="pp-modal" role="dialog" aria-modal="true" aria-labelledby="pp-title">
-  <div class="tc-box">
-    <button class="tc-close" onclick="document.getElementById('pp-modal').classList.remove('open')" aria-label="Затвори">&#215;</button>
-    <h2 id="pp-title">Политика за Поверителност</h2>
-    <p class="tc-date">Последна актуализация: Май 2026</p>
-
-    <h3>1. Администратор на лични данни</h3>
-    <p>RevStream Consortium е администратор на личните данни, събирани чрез уебсайта revstreamconsortium.com и при покупка на билет за събитието RevStream LIVE.</p>
-
-    <hr class="tc-divider">
-    <h3>2. Какви данни събираме</h3>
-    <ul>
-      <li><strong style="color:#ccc">При покупка на билет:</strong> три имена, имейл адрес, данни за плащане (обработвани от Stripe — ние не съхраняваме карточни данни).</li>
-      <li><strong style="color:#ccc">При посещение на уебсайта:</strong> IP адрес, тип браузър, страниците, които посещавате, и действията, които предприемате (чрез Meta Pixel и стандартни уеб логове).</li>
-      <li><strong style="color:#ccc">При контакт с нас:</strong> съдържанието на съобщенията, изпратени чрез Instagram или имейл.</li>
-    </ul>
-
-    <hr class="tc-divider">
-    <h3>3. Цели на обработването</h3>
-    <ul>
-      <li>Потвърждение и организация на участието в събитието.</li>
-      <li>Изпращане на информация, свързана с RevStream LIVE (промени в програмата, напомняния).</li>
-      <li>Показване на релевантни реклами чрез Meta (Facebook/Instagram) Ads — при получено съгласие.</li>
-      <li>Анализ на ефективността на уебсайта и маркетинговите кампании.</li>
-    </ul>
-
-    <hr class="tc-divider">
-    <h3>4. Правно основание</h3>
-    <ul>
-      <li><strong style="color:#ccc">Изпълнение на договор:</strong> обработване на данните, необходими за покупката и участието.</li>
-      <li><strong style="color:#ccc">Легитимен интерес:</strong> подобряване на услугите и анализ на ефективността.</li>
-      <li><strong style="color:#ccc">Съгласие:</strong> маркетингови комуникации и рекламно насочване (може да бъде оттеглено по всяко време).</li>
-    </ul>
-
-    <hr class="tc-divider">
-    <h3>5. Споделяне с трети страни</h3>
-    <ul>
-      <li><strong style="color:#ccc">Stripe Inc.</strong> — платежен оператор, обработва данните за транзакцията.</li>
-      <li><strong style="color:#ccc">Meta Platforms Inc.</strong> — рекламна платформа, при ваше съгласие за проследяване.</li>
-      <li><strong style="color:#ccc">Netlify Inc.</strong> — хостинг доставчик на уебсайта.</li>
-      <li>Не продаваме и не предоставяме личните ви данни на други трети страни.</li>
-    </ul>
-
-    <hr class="tc-divider">
-    <h3>6. Международни трансфери</h3>
-    <p>Stripe и Meta са базирани в САЩ. Трансферът се извършва въз основа на стандартни договорни клаузи, одобрени от Европейската комисия, в съответствие с GDPR.</p>
-
-    <hr class="tc-divider">
-    <h3>7. Съхранение на данните</h3>
-    <ul>
-      <li>Данни за покупка: съхраняват се до 5 години за счетоводни и правни цели.</li>
-      <li>Маркетингови данни: до оттегляне на съгласието или до 2 години от последния контакт.</li>
-      <li>Уеб логове: до 12 месеца.</li>
-    </ul>
-
-    <hr class="tc-divider">
-    <h3>8. Вашите права (GDPR)</h3>
-    <ul>
-      <li><strong style="color:#ccc">Достъп:</strong> право да получите копие от данните си.</li>
-      <li><strong style="color:#ccc">Коригиране:</strong> право да поискате поправка на неточни данни.</li>
-      <li><strong style="color:#ccc">Изтриване:</strong> право „да бъдете забравени" при определени условия.</li>
-      <li><strong style="color:#ccc">Ограничаване:</strong> право да ограничите обработването.</li>
-      <li><strong style="color:#ccc">Преносимост:</strong> право да получите данните си в машинночетим формат.</li>
-      <li><strong style="color:#ccc">Възражение:</strong> право да се противопоставите на обработване, основано на легитимен интерес.</li>
-      <li><strong style="color:#ccc">Оттегляне на съгласие:</strong> по всяко време, без да засяга законосъобразността на предходното обработване.</li>
-    </ul>
-
-    <hr class="tc-divider">
-    <h3>9. Бисквитки (Cookies)</h3>
-    <p>Уебсайтът използва Meta Pixel — технология за проследяване, която поставя бисквитка в браузъра ви с цел показване на персонализирани реклами. Можете да управлявате бисквитките чрез настройките на браузъра си или чрез <a href="https://www.facebook.com/settings?tab=ads" target="_blank" rel="noopener" style="color:var(--gold-dark)">настройките за реклами на Meta</a>.</p>
-
-    <hr class="tc-divider">
-    <h3>10. Жалби</h3>
-    <p>При смятате, че обработваме данните ви в нарушение на приложимото законодателство, имате право да подадете жалба до <strong style="color:#ccc">Комисията за защита на личните данни (КЗЛД)</strong> — <a href="https://www.cpdp.bg" target="_blank" rel="noopener" style="color:var(--gold-dark)">www.cpdp.bg</a>.</p>
-
-    <hr class="tc-divider">
-    <h3>11. Контакт</h3>
-    <p>За упражняване на правата си или при въпроси относно поверителността се свържете с нас чрез Instagram: <a href="https://www.instagram.com/resanhamidd" target="_blank" rel="noopener" style="color:var(--gold-dark)">@resanhamidd</a></p>
-  </div>
-</div>
-
-<!-- End Meta Pixel Events -->
-
-<script>
-/* ── MODALS: close on backdrop click + Escape key ── */
-(function() {
-  ['tc-modal', 'pp-modal'].forEach(function(id) {
-    var modal = document.getElementById(id);
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) modal.classList.remove('open');
-    });
-  });
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      document.getElementById('tc-modal').classList.remove('open');
-      document.getElementById('pp-modal').classList.remove('open');
-    }
-  });
-})();
+});
 </script>
 
 </body>
