@@ -490,6 +490,18 @@ section { padding: 80px 20px; }
 
 /* ===== WHO ===== */
 #founders { background: var(--black-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.founders-photo { position: relative; margin: 0 0 24px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+.founders-photo::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold-grad); z-index: 1; }
+.founders-photo img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 12%; }
+.founders-photo figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 20px 16px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+  font-size: 0.9rem; color: #fff; font-weight: 500;
+}
+@media (max-width: 600px) {
+  .founders-photo img { aspect-ratio: 4 / 5; object-position: center 8%; }
+  .founders-photo figcaption { font-size: 0.82rem; padding: 32px 14px 12px; }
+}
 .founders-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .founder-card {
   background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
@@ -1157,6 +1169,10 @@ footer p { font-size: 0.78rem; color: #444; }
     <p class="section-label">КОИ СМЕ НИЕ</p>
     <h2 class="section-title">Защо изобщо да ни слушате</h2>
     <p class="section-sub">Здрасти, ние сме Ресан Хамид и Даниел Гелов — основатели на RevStream Consortium. <strong>Не сме теоретици. Продаваме всеки ден и преподаваме само това, което лично работи за нас.</strong></p>
+    <figure class="founders-photo">
+      <img src="../founders.jpg" alt="Ресан Хамид и Даниел Гелов — основатели на RevStream Consortium" loading="lazy" width="739" height="1357">
+      <figcaption>Ресан и Даниел — с тях ще работиш всеки ден от предизвикателството.</figcaption>
+    </figure>
     <div class="founders-grid">
       <div class="founder-card">
         <div class="founder-name">Ресан Хамид</div>
