@@ -670,6 +670,17 @@ html.su-lock, html.su-lock body { overflow: hidden; }
   .story-text p.story-lead { font-size: 1.05rem; }
 }
 
+/* hero date + countdown */
+.hero-date { margin: 0 auto 1.8rem; }
+.hero-date-line { font-size: 0.95rem; color: var(--text-dim); margin-bottom: 0.8rem; }
+.hero-date-line strong { color: var(--text); }
+.countdown { display: flex; justify-content: center; gap: 10px; }
+.countdown[hidden] { display: none; }
+.countdown div { min-width: 64px; padding: 10px 6px; background: var(--card-bg); border: 1px solid rgba(212,160,23,0.35); border-radius: 8px; }
+.countdown strong { display: block; font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.9rem; line-height: 1; color: #FFD700; font-weight: 400; }
+.countdown span { display: block; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-top: 4px; }
+@media (max-width: 480px) { .countdown div { min-width: 56px; } .countdown strong { font-size: 1.6rem; } }
+
 /* ===== FOOTER ===== */
 footer { padding: 40px 20px; text-align: center; border-top: 1px solid var(--border); }
 .footer-brand {
@@ -730,10 +741,10 @@ footer p { font-size: 0.78rem; color: #444; }
   <div class="hero-content">
     <p class="hero-callout">За хора, които искат да започнат в продажбите — <strong>без опит</strong> или все още не са започнали.</p>
 
-    <p class="eyebrow">БЕЗПЛАТНО 7-ДНЕВНО ПРЕДИЗВИКАТЕЛСТВО, В КОЕТО МОЖЕ ДА СПЕЧЕЛИШ ПЪРВИЯ СИ КЛИЕНТ</p>
+    <p class="eyebrow">БЕЗПЛАТНО 7-ДНЕВНО ПРЕДИЗВИКАТЕЛСТВО · ПОБЕДИТЕЛЯТ ПЕЧЕЛИ РАБОТА В НАШ ПАРТНЬОРСКИ БИЗНЕС</p>
 
     <h1 class="hero-headline hero-headline-v2">
-      Стани търговец, който превръща непознати в <span class="hl-gold">клиенти за реални бизнеси</span> — и взима комисионна за всеки.
+      Стани търговец, който превръща непознати в <span class="hl-gold">клиенти за едни от най-големите бизнеси в България</span> — и взима комисионна за всеки.
     </h1>
 
     <div class="hero-hosts">
@@ -748,7 +759,17 @@ footer p { font-size: 0.78rem; color: #444; }
 
     <div class="hero-prize">
       <span class="hero-prize-icon">🏆</span>
-      <p>В края — <strong>тест 1-на-1 с Ресан и Даниел.</strong> Победителят печели <strong>1-on-1 коучинг и работа в наш партньорски бизнес.</strong></p>
+      <p>В края — <strong>тест 1-на-1 с Ресан и Даниел.</strong> Победителят печели <strong>1-on-1 коучинг и гарантирана работа в наш партньорски бизнес.</strong></p>
+    </div>
+
+    <div class="hero-date">
+      <p class="hero-date-line">📅 <strong>Старт: сряда, 18 ноември · 19:00</strong> · Онлайн, на живо</p>
+      <div class="countdown" data-countdown="2026-11-18T19:00:00+02:00" aria-label="Оставащо време до старта">
+        <div><strong data-cd="d">--</strong><span>дни</span></div>
+        <div><strong data-cd="h">--</strong><span>часа</span></div>
+        <div><strong data-cd="m">--</strong><span>мин</span></div>
+        <div><strong data-cd="s">--</strong><span>сек</span></div>
+      </div>
     </div>
 
     <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeHeroClick')">ВЛИЗАМ В ПРЕДИЗВИКАТЕЛСТВОТО →</a>
@@ -771,9 +792,9 @@ footer p { font-size: 0.78rem; color: #444; }
     </div>
 
     <div class="hero-proof">
+      <div><strong>1 млн.+</strong><span>cash collected за клиенти</span></div>
       <div><strong>100+</strong><span>обучени търговци</span></div>
       <div><strong>€3 650</strong><span>комисионна от един клиент</span></div>
-      <div><strong>72.7%</strong><span>booking rate рекорд</span></div>
     </div>
   </div>
 </section>
@@ -830,7 +851,7 @@ footer p { font-size: 0.78rem; color: #444; }
     <div class="story-text">
       <p class="story-lead">Всеки ти говори за трейдинг, дропшипинг и „пасивен доход“. Никой не ти казва, че едно от най-ценните умения, които можеш да имаш, е да вдигнеш телефона и да превърнеш непознат в клиент.</p>
       <p>А когато някой все пак говори за продажби — получаваш мотивационни клипове и „5 техники за затваряне“. Никой не те води <strong>зад кулисите</strong>: какво точно се казва в първите 10 секунди, как звучи истинско възражение и какво отговаря човек, който го чува всеки ден.</p>
-      <p>Ние сме Ресан и Даниел. <strong>Не сме инфлуенсъри — продаваме всеки ден.</strong> Изграждаме и управляваме търговски екипи за бизнеси в България и чужбина и сме обучили над 100 търговци — повечето от нулата.</p>
+      <p>Ние сме Ресан и Даниел. <strong>Не сме инфлуенсъри — продаваме всеки ден.</strong> Изграждаме и управляваме търговски екипи за бизнеси в България и чужбина. <strong>Екипите, които управляваме и коучваме, са донесли над 1 милион cash collected за нашите клиенти</strong> — и сме обучили над 100 търговци, повечето от нулата.</p>
       <p>Затова правим това предизвикателство: 7 дни, в които ти показваме точно това, което работи при нас — <strong>и го упражняваш заедно с нас, на живо.</strong></p>
     </div>
     <figure class="founders-photo">
@@ -933,7 +954,7 @@ footer p { font-size: 0.78rem; color: #444; }
         <div class="tl-dot">ДЕН<br>7</div>
         <div class="tl-body">
           <div class="tl-title">Финален Изпит 🏆</div>
-          <div class="tl-desc">Типът на изпита ще бъде обявен на първия кол на предизвикателството. <strong>Победителят печели безплатен 1-on-1 коучинг и реална възможност за работа.</strong></div>
+          <div class="tl-desc">Типът на изпита ще бъде обявен на първия кол на предизвикателството. <strong>Победителят печели безплатен 1-on-1 коучинг и гарантирана работа в наш партньорски бизнес.</strong></div>
           <span class="tl-tag exam">Изпит — типа се обявява на Ден 1</span>
         </div>
       </div>
@@ -947,7 +968,7 @@ footer p { font-size: 0.78rem; color: #444; }
       Днес изкарва <strong>4 000–5 000 лв. комисионни на месец.</strong></p>
       <a href="https://www.youtube.com/watch?v=WBzHZpQ_LXM" target="_blank" rel="noopener" class="t-link">Виж историята на Влади →</a>
     </div>
-    <p class="program-note">Събитието ще се проведе на <strong>[ДАТА] от 19:00</strong>. Всеки ден от 19:00 по план.</p>
+    <p class="program-note">Старт: <strong>сряда, 18 ноември, 19:00</strong>. 7 дни на живо онлайн — всеки ден от 19:00, до 24 ноември.</p>
     <div class="inline-cta">
       <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeProgramClick')">ВЛИЗАМ В ПРЕДИЗВИКАТЕЛСТВОТО →</a>
       <span class="btn-cta-sub">Следващият Влади може да си ти.</span>
@@ -961,10 +982,10 @@ footer p { font-size: 0.78rem; color: #444; }
     <p class="section-label">КАКВО ПЕЧЕЛИШ</p>
     <div class="win-box">
       <h3>Спечели предизвикателството.<br><span>Ние те назначаваме.</span></h3>
-      <p>Победителят получава безплатен 1-on-1 коучинг с нашия екип и реална възможност за работа след успешно завършване на програмата. <strong>Ако покажеш резултати — имаш работа.</strong></p>
+      <p>Победителят получава безплатен 1-on-1 коучинг с Ресан и Даниел и <strong>гарантирана работа в наш партньорски бизнес.</strong> Постоянно търсим търговци — ако покажеш резултати по време на предизвикателството, имаш шанс за работа дори да не си първи.</p>
       <div class="win-prizes">
         <span class="prize-tag">🏆 Безплатен 1-on-1 Коучинг</span>
-        <span class="prize-tag">💼 Работа след програмата</span>
+        <span class="prize-tag">💼 Гарантирана работа</span>
         <span class="prize-tag">🎓 Сертификат RevClosers</span>
       </div>
       <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeWinClick')">ИСКАМ ДА УЧАСТВАМ →</a>
@@ -980,8 +1001,8 @@ footer p { font-size: 0.78rem; color: #444; }
     <p class="section-sub">Хора, обучени от RevStream — реални резултати, реални разговори, реален доход.</p>
 
     <div class="proof-stats">
+      <div class="proof-stat"><strong>1 млн.+</strong><span>cash collected от екипите, които управляваме и коучваме</span></div>
       <div class="proof-stat"><strong>100+</strong><span>обучени търговци</span></div>
-      <div class="proof-stat"><strong>800%</strong><span>ръст на букнати срещи</span></div>
       <div class="proof-stat"><strong>€3 650</strong><span>комисионна от един клиент</span></div>
       <div class="proof-stat"><strong>72.7%</strong><span>booking rate рекорд</span></div>
     </div>
@@ -1144,13 +1165,13 @@ footer p { font-size: 0.78rem; color: #444; }
   <div class="container">
     <p class="eyebrow">ВЛЕЗ В ПРЕДИЗВИКАТЕЛСТВОТО</p>
     <h2 class="cta-headline">Участието е <span>Безплатно.</span></h2>
-    <p class="cta-sub">Единственото, което инвестираш, е времето си. Ето какво взимаш:</p>
+    <p class="cta-sub"><strong>Старт: сряда, 18 ноември, 19:00.</strong> Единственото, което инвестираш, е времето си. Ето какво взимаш:</p>
 
     <ul class="recap-list">
       <li><strong>7 сесии на живо с Ресан и Даниел</strong> — учиш от хора, които продават всеки ден, не от теоретици.</li>
       <li><strong>Ежедневна ролева практика</strong> — влизаш в реални разговори уверен, защото вече си ги правил.</li>
       <li><strong>Рамка за обаждания, DM и възражения</strong> — знаеш какво да кажеш във всяка ситуация.</li>
-      <li><strong>Финален тест 1-на-1</strong> — шанс за 1-on-1 коучинг и работа в наш партньорски бизнес.</li>
+      <li><strong>Финален тест 1-на-1</strong> — победителят печели 1-on-1 коучинг и гарантирана работа в наш партньорски бизнес.</li>
     </ul>
 
     <a href="#apply" id="apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFinalClick'); gtag('event','challenge_apply_click');">ВЛИЗАМ В ПРЕДИЗВИКАТЕЛСТВОТО →</a>
@@ -1170,6 +1191,28 @@ footer p { font-size: 0.78rem; color: #444; }
 </footer>
 
 
+
+<script>
+  (function () {
+    var el = document.querySelector('[data-countdown]');
+    if (!el) return;
+    var target = new Date(el.getAttribute('data-countdown')).getTime();
+    var parts = {};
+    ['d', 'h', 'm', 's'].forEach(function (k) { parts[k] = el.querySelector('[data-cd="' + k + '"]'); });
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+    function tick() {
+      var diff = Math.max(0, target - Date.now());
+      if (diff === 0) { el.hidden = true; clearInterval(timer); return; }
+      var t = Math.floor(diff / 1000);
+      parts.d.textContent = Math.floor(t / 86400);
+      parts.h.textContent = pad(Math.floor(t % 86400 / 3600));
+      parts.m.textContent = pad(Math.floor(t % 3600 / 60));
+      parts.s.textContent = pad(t % 60);
+    }
+    var timer = setInterval(tick, 1000);
+    tick();
+  })();
+</script>
 
 <!-- STICKY MOBILE CTA -->
 <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
@@ -1202,7 +1245,7 @@ footer p { font-size: 0.78rem; color: #444; }
 
     <p class="su-eyebrow">БЕЗПЛАТНО 7-ДНЕВНО ПРЕДИЗВИКАТЕЛСТВО</p>
     <h2 class="su-title" id="su-title">Влез в предизвикателството</h2>
-    <p class="su-sub"><strong>Ограничен брой места.</strong> Попълни данните си — ще се свържем с теб до 24 часа.</p>
+    <p class="su-sub"><strong>Старт: 18 ноември, 19:00 · Ограничен брой места.</strong> Попълни данните си — ще се свържем с теб до 24 часа.</p>
 
     <div class="su-form-frame" id="su-form-frame">
       <div class="su-loading" id="su-loading">Зареждане…</div>
