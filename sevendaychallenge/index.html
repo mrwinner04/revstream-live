@@ -627,6 +627,49 @@ html.su-lock, html.su-lock body { overflow: hidden; }
 .su-note { text-align: center; font-size: 0.74rem; color: var(--text-dim); margin-top: 10px; }
 @media (max-width: 480px) { .su-modal { padding: 26px 18px 20px; } .su-title { font-size: 1.9rem; } }
 
+/* ===== V3: feedback restructure ===== */
+.hero-hosts { display: inline-flex; align-items: center; gap: 10px; margin: 0 auto 1.2rem; padding: 6px 14px 6px 6px; border: 1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,0.03); }
+.hero-hosts img { width: 64px; height: 40px; border-radius: 999px; object-fit: cover; object-position: center 6%; }
+.hero-hosts span { font-size: 0.85rem; color: var(--text-dim); }
+.hero-hosts strong { color: var(--text); }
+.hero-prize { display: flex; align-items: center; gap: 12px; max-width: 600px; margin: 0 auto 2rem; padding: 14px 18px; text-align: left; border: 1px solid rgba(212,160,23,0.45); border-radius: 10px; background: rgba(212,160,23,0.07); }
+.hero-prize-icon { font-size: 1.6rem; flex-shrink: 0; }
+.hero-prize p { font-size: 0.92rem; color: var(--text-dim); line-height: 1.55; margin: 0; }
+.hero-prize strong { color: var(--text); }
+
+#learn { background: var(--black-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.fba-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 1rem; }
+.fba-card { position: relative; overflow: hidden; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 24px 22px; transition: border-color 0.3s; }
+.fba-card:hover { border-color: var(--gold-dark); }
+.fba-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold-grad); }
+.fba-feature { display: flex; align-items: center; gap: 10px; font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 1.25rem; letter-spacing: 0.03em; color: var(--text); margin-bottom: 0.7rem; line-height: 1.15; }
+.fba-icon { font-size: 1.4rem; }
+.fba-benefit { font-size: 0.92rem; color: var(--text); font-weight: 500; line-height: 1.55; margin-bottom: 0.6rem; }
+.fba-apply { font-size: 0.86rem; color: var(--text-dim); line-height: 1.55; }
+.fba-apply span { color: #FFD700; font-weight: 700; }
+
+#story { background: var(--black); }
+.story-text { max-width: 680px; margin: 0 auto 2.4rem; }
+.story-text p { font-size: 1rem; color: var(--text-dim); line-height: 1.8; margin-bottom: 1.1rem; }
+.story-text p.story-lead { font-size: 1.15rem; color: var(--text); }
+.story-text strong { color: var(--text); }
+
+#testimonials { background: var(--black-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.recap-list { list-style: none; max-width: 600px; margin: 0 auto 2.2rem; padding: 0; text-align: left; }
+.recap-list li { position: relative; padding: 12px 0 12px 30px; border-bottom: 1px solid var(--border); font-size: 0.95rem; color: var(--text-dim); line-height: 1.55; }
+.recap-list li:last-child { border-bottom: none; }
+.recap-list li::before { content: '✓'; position: absolute; left: 0; top: 12px; color: #FFD700; font-weight: 700; }
+.recap-list strong { color: var(--text); }
+
+@media (max-width: 860px) { .fba-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) {
+  .fba-grid { grid-template-columns: 1fr; }
+  .hero-hosts span { font-size: 0.8rem; }
+  .hero-prize { padding: 12px 14px; }
+  .story-text p.story-lead { font-size: 1.05rem; }
+}
+
 /* ===== FOOTER ===== */
 footer { padding: 40px 20px; text-align: center; border-top: 1px solid var(--border); }
 .footer-brand {
@@ -685,21 +728,31 @@ footer p { font-size: 0.78rem; color: #444; }
     <div class="particle" style="left:85%; width:3px; height:3px; --dur:11s; --delay:0.5s;"></div>
   </div>
   <div class="hero-content">
-    <p class="hero-callout">За хора <strong>без опит</strong> (или с много малко) в продажбите, които искат умение, с което компаниите плащат — от вкъщи, на комисионна, без таван.</p>
+    <p class="hero-callout">За хора, които искат да започнат в продажбите — <strong>без опит</strong> или все още не са започнали.</p>
 
-    <p class="eyebrow">БЕЗПЛАТНО 7-ДНЕВНО ПРЕДИЗВИКАТЕЛСТВО · НА ЖИВО</p>
+    <p class="eyebrow">БЕЗПЛАТНО 7-ДНЕВНО ПРЕДИЗВИКАТЕЛСТВО, В КОЕТО МОЖЕ ДА СПЕЧЕЛИШ ПЪРВИЯ СИ КЛИЕНТ</p>
 
     <h1 class="hero-headline hero-headline-v2">
-      От нула опит до търговец, който <span class="hl-gold">превръща непознати в запазени срещи</span> — за 7 дни.
+      Стани търговец, който превръща непознати в <span class="hl-gold">клиенти за реални бизнеси</span> — и взима комисионна за всеки.
     </h1>
 
+    <div class="hero-hosts">
+      <img src="../founders.jpg" alt="Ресан Хамид и Даниел Гелов" width="739" height="1357">
+      <span>Водят: <strong>Ресан Хамид и Даниел Гелов</strong></span>
+    </div>
+
     <p class="hero-sub">
-      Ще научиш точно какво да кажеш в първото съобщение, на първото обаждане и когато чуеш „не ме интересува“ —
-      и <strong>ще го упражняваш на живо всеки ден директно с нас, Ресан и Даниел, докато стане рефлекс.</strong>
+      7 дни на живо, <strong>заедно с нас.</strong> Ще минем с теб през първото съобщение, първото обаждане и как да обориш
+      всяко възражение — и ще го упражняваш с нас всеки ден, докато стане рефлекс. Без опит. Без да си го правил преди.
     </p>
 
-    <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeHeroClick')">ЗАПАЗИ МИ МЯСТО — БЕЗПЛАТНО</a>
-    <span class="btn-cta-sub">Остават <strong id="spots-counter">58</strong> места · Затваряме приема в неделя · Ще се свържем с теб до 24 ч.</span>
+    <div class="hero-prize">
+      <span class="hero-prize-icon">🏆</span>
+      <p>В края — <strong>тест 1-на-1 с Ресан и Даниел.</strong> Победителят печели <strong>1-on-1 коучинг и работа в наш партньорски бизнес.</strong></p>
+    </div>
+
+    <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeHeroClick')">ВЛИЗАМ В ПРЕДИЗВИКАТЕЛСТВОТО →</a>
+    <span class="btn-cta-sub">Безплатно · Ограничен брой места · Ще се свържем с теб до 24 ч.</span>
 
     <div class="hero-case">
       <img src="https://img.youtube.com/vi/WBzHZpQ_LXM/mqdefault.jpg" alt="Влади" loading="lazy">
@@ -709,120 +762,18 @@ footer p { font-size: 0.78rem; color: #444; }
     </div>
 
     <div class="hero-outcomes">
-      <p class="hero-outcomes-title">За 7-те дни ще можеш:</p>
+      <p class="hero-outcomes-title">След 7-те дни:</p>
       <ul>
-        <li>Да започнеш <strong>cold call или DM</strong> с непознат и да го доведеш до запазена среща</li>
-        <li>Да отговориш на <strong>„нямам време“, „колко струва“ и „не ме интересува“</strong>, без да губиш разговора</li>
-        <li>Да водиш <strong>pipeline и follow-up</strong> така, че нито един lead да не изтече</li>
-        <li>Да се явиш на <strong>финален изпит</strong> — победителят печели 1-on-1 коучинг и <strong>реална възможност за работа</strong></li>
+        <li><strong>Започваш студено обаждане или DM</strong> с непознат — и го довеждаш до запазена среща.</li>
+        <li><strong>„Нямам време“, „колко струва“, „не ме интересува“</strong> вече не те спират — знаеш точно какво да отговориш.</li>
+        <li><strong>Pipeline и follow-up</strong> като топ търговците — никой потенциален клиент не се губи.</li>
       </ul>
     </div>
 
     <div class="hero-proof">
       <div><strong>100+</strong><span>обучени търговци</span></div>
-      <div><strong>€3 650</strong><span>комисионна от 1 клиент</span></div>
+      <div><strong>€3 650</strong><span>комисионна от един клиент</span></div>
       <div><strong>72.7%</strong><span>booking rate рекорд</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- TICKER -->
-<div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker-inner">
-    <span class="ticker-item">APPOINTMENT SETTING <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">ОТ НУЛА ДО ТЪРГОВЕЦ <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">РАБОТИ ОТКЪДЕТО ИСКАШ <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">БЕЗ ДИПЛОМА <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">БЕЗ ПРОДУКТ <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">БЕЗ КАПИТАЛ <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">REVCLOSERS PROGRAM <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">APPOINTMENT SETTING <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">ОТ НУЛА ДО ТЪРГОВЕЦ <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">РАБОТИ ОТКЪДЕТО ИСКАШ <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">БЕЗ ДИПЛОМА <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">БЕЗ ПРОДУКТ <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">БЕЗ КАПИТАЛ <span class="ticker-sep">✦</span></span>
-    <span class="ticker-item">REVCLOSERS PROGRAM <span class="ticker-sep">✦</span></span>
-  </div>
-</div>
-
-<!-- WHY SALES -->
-<section id="why-sales">
-  <div class="container">
-    <p class="section-label">ЗАЩО ТОЧНО ПРОДАЖБИ</p>
-    <h2 class="section-title">Продажбите са единственото умение,<br>за което компаниите плащат неограничено.</h2>
-    <p class="why-sales-intro">
-      Докторите, адвокатите и инженерите имат таван на заплатата. Хората в продажбите — нямат.
-      <strong>Колкото повече срещи запазиш, толкова повече печелиш.</strong>
-      И за разлика от повечето умения, appointment setting може да се научи за седмици — не години.
-    </p>
-
-    <div class="sales-stats">
-      <div class="stat-pill">
-        <div class="stat-pill-num">750€+</div>
-        <div class="stat-pill-label">средна седмична комисионна на опитен търговец</div>
-      </div>
-      <div class="stat-pill">
-        <div class="stat-pill-num">100+</div>
-        <div class="stat-pill-label">търговци, обучени от RevStream — повечето започнаха от нулата</div>
-      </div>
-      <div class="stat-pill">
-        <div class="stat-pill-num">7 дни</div>
-        <div class="stat-pill-label">за да усвоиш структурата и да влезеш в реални разговори</div>
-      </div>
-    </div>
-
-    <div class="opportunity-grid">
-      <div class="opp-card">
-        <div class="opp-icon">🌍</div>
-        <div class="opp-title">Работи откъдето искаш</div>
-        <p class="opp-desc">Appointment setting се прави по телефон и в DM — от лаптоп, от вкъщи, от плажа. <strong>Единственото, от което се нуждаеш, е интернет и правилната структура.</strong></p>
-      </div>
-      <div class="opp-card">
-        <div class="opp-icon">📈</div>
-        <div class="opp-title">Без таван на дохода</div>
-        <p class="opp-desc">Търговците работят на комисионна — колкото повече срещи запазиш, толкова повече печелиш. <strong>Няма шеф, който решава колко да ти плати.</strong> Числата говорят сами.</p>
-      </div>
-      <div class="opp-card">
-        <div class="opp-icon">🎓</div>
-        <div class="opp-title">Нулево изискване за опит</div>
-        <p class="opp-desc">Не ти трябва диплома, предишен опит в продажбите или специален продукт. <strong>Трябва ти структура, практика и някой, който е минал пътя преди теб.</strong> Точно за това е това предизвикателство.</p>
-      </div>
-      <div class="opp-card">
-        <div class="opp-icon">🏢</div>
-        <div class="opp-title">Компаниите се борят за добри търговци</div>
-        <p class="opp-desc">Всяка компания с отдел по продажби търси хора, които могат да запазват качествени срещи. <strong>Търсенето надвишава предлагането — и ние знаем точно кои компании наемат.</strong></p>
-      </div>
-    </div>
-    <div class="inline-cta">
-      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeWhySalesClick')">ИСКАМ ДА НАУЧА ТОВА УМЕНИЕ →</a>
-      <span class="btn-cta-sub">Безплатно · 7 дни на живо · Без опит</span>
-    </div>
-  </div>
-</section>
-
-<!-- PROBLEM -->
-<section id="problem">
-  <div class="container">
-    <p class="section-label">ЗАЩО ПОВЕЧЕТО ХОРА НЕ УСПЯВАТ</p>
-    <h2 class="section-title">Проблемът не е пазарът.<br>Проблемът е подходът.</h2>
-    <p class="section-sub">Хората не купуват само с логика. Те взимат решения чрез усещане — яснота, доверие и сигурност в отсрещната страна.</p>
-    <div class="problem-grid">
-      <div class="problem-card">
-        <div class="problem-num">01</div>
-        <div class="problem-title">Мислят, че е проблем на пазара</div>
-        <div class="problem-desc">Истината е, че проблемът рядко е конюнктурата. Той е в начина, по който започва и се води целият продажбен процес.</div>
-      </div>
-      <div class="problem-card">
-        <div class="problem-num">02</div>
-        <div class="problem-title">Чакат перфектния момент</div>
-        <div class="problem-desc">Умението за appointment setting не изисква диплома, опит или специален продукт. Изисква структура и практика — нищо повече.</div>
-      </div>
-      <div class="problem-card">
-        <div class="problem-num">03</div>
-        <div class="problem-title">Учат теория, не прилагат</div>
-        <div class="problem-desc">Гледат видеа, четат книги, но никога не влизат в реален разговор. Резултатът: нула срещи, нула приходи.</div>
-      </div>
     </div>
   </div>
 </section>
@@ -831,80 +782,86 @@ footer p { font-size: 0.78rem; color: #444; }
 <section id="learn">
   <div class="container">
     <p class="section-label">КАКВО ЩЕ НАУЧИШ</p>
-    <h2 class="section-title">Реално обучение.<br>Реални резултати.</h2>
-    <p class="section-sub">Практическо обучение с реални скриптове и упражнения, по които нашите търговци достигнаха <strong>72.7% booking rate рекорд и 800% ръст на букнатите срещи.</strong></p>
-    <div class="learn-grid">
-      <div class="learn-card">
-        <div class="learn-icon">🎯</div>
-        <div class="learn-title">Откривай нуждите на клиента</div>
-        <ul class="learn-list">
-          <li>Задавай неутрални въпроси, които намаляват съпротивата</li>
-          <li>Откривай емоционалните причини зад възражения</li>
-          <li>Позиционирай се като доверен съветник, не като досаден продавач</li>
-        </ul>
+    <h2 class="section-title">Ето какво ще можеш<br>след 7-те дни.</h2>
+    <div class="fba-grid">
+      <div class="fba-card">
+        <div class="fba-feature"><span class="fba-icon">📞</span>Студени обаждания и DM</div>
+        <p class="fba-benefit">Знаеш какво да кажеш в първите 10 секунди, за да не ти затворят.</p>
+        <p class="fba-apply"><span>→</span> Вместо да отлагаш обаждането, го правиш — и отсреща те слушат.</p>
       </div>
-      <div class="learn-card">
-        <div class="learn-icon">📞</div>
-        <div class="learn-title">Води разговори без натиск</div>
-        <ul class="learn-list">
-          <li>Реални DM и телефонни разговори — разбивка на тон и структура</li>
-          <li>Работа с най-честите възражения: „нямам времe", „каква е цената"</li>
-          <li>От първи контакт → записана среща с ясна структура</li>
-        </ul>
+      <div class="fba-card">
+        <div class="fba-feature"><span class="fba-icon">📥</span>Входящи запитвания</div>
+        <p class="fba-benefit">Превръщаш интереса в запазена среща, преди да изстине.</p>
+        <p class="fba-apply"><span>→</span> Всяко „интересно ми е“ става час в календара.</p>
       </div>
-      <div class="learn-card">
-        <div class="learn-icon">💰</div>
-        <div class="learn-title">Умение, което се плаща добре</div>
-        <ul class="learn-list">
-          <li>Повече уговорени срещи = повече събрани комисионни</li>
-          <li>Хора и компании, които казват: „Искам да работя с теб"</li>
-          <li>Допълнителен или основен онлайн доход — от дома или навсякъде</li>
-        </ul>
+      <div class="fba-card">
+        <div class="fba-feature"><span class="fba-icon">🛡️</span>Обориване на възражения</div>
+        <p class="fba-benefit">Възражението вече не е краят на разговора, а началото.</p>
+        <p class="fba-apply"><span>→</span> Там, където другите затварят телефона, ти записваш срещата.</p>
       </div>
-      <div class="learn-card">
-        <div class="learn-icon">⚡</div>
-        <div class="learn-title">4-те фатални грешки</div>
-        <ul class="learn-list">
-          <li>Грешките, които търговците допускат без да осъзнават</li>
-          <li>Как да ги избегнеш и да се отличиш пред конкуренцията</li>
-          <li>Умение, което отличава търговеца, който запазва срещи, от този, който просто „пичва"</li>
-        </ul>
+      <div class="fba-card">
+        <div class="fba-feature"><span class="fba-icon">📊</span>Pipeline, CRM и follow-up</div>
+        <p class="fba-benefit">Системата на топ търговците — нищо не се губи между обажданията.</p>
+        <p class="fba-apply"><span>→</span> Повече срещи от същия брой контакти = повече комисионни.</p>
+      </div>
+      <div class="fba-card">
+        <div class="fba-feature"><span class="fba-icon">🔍</span>Разбор на реални разговори</div>
+        <p class="fba-benefit">Виждаш грешките си веднага, а не след 50 изгубени разговора.</p>
+        <p class="fba-apply"><span>→</span> Поправяш ги още на следващото си обаждане.</p>
+      </div>
+      <div class="fba-card">
+        <div class="fba-feature"><span class="fba-icon">🎭</span>Ролева практика с нас всеки ден</div>
+        <p class="fba-benefit">Уменията стават рефлекс, а не теория в тетрадка.</p>
+        <p class="fba-apply"><span>→</span> Влизаш в реален разговор спокоен, защото вече си го правил.</p>
       </div>
     </div>
     <div class="inline-cta">
-      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeLearnClick')">ЗАПАЗИ МИ МЯСТО →</a>
-      <span class="btn-cta-sub">Всичко това — за 7 дни, на живо, безплатно.</span>
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeLearnClick')">ИСКАМ ДА НАУЧА ТОВА →</a>
+      <span class="btn-cta-sub">7 дни на живо с Ресан и Даниел · Безплатно</span>
     </div>
   </div>
 </section>
 
-<!-- FIT -->
-<section id="fit">
+<!-- WHY US / LEAD COPY -->
+<section id="story">
   <div class="container">
-    <p class="section-label">ЗА КОГО Е</p>
-    <h2 class="section-title">Това предизвикателство<br>не е за всеки.</h2>
-    <div class="fit-grid">
-      <div class="fit-card fit-yes">
-        <div class="fit-title">✓ За теб е, ако:</div>
-        <ul>
-          <li>Нямаш опит в продажбите — или имаш съвсем малко и искаш структура</li>
-          <li>Искаш умение, с което да работиш дистанционно и да печелиш според резултатите си</li>
-          <li>Можеш да отделиш време всеки ден в продължение на 7 дни</li>
-          <li>Готов си да говориш на глас в ролевите сесии, дори да ти е неудобно в началото</li>
+    <p class="section-label">ЗАЩО ТОЧНО НИЕ</p>
+    <h2 class="section-title">Никой не те учи на това.<br>Ние го правим всеки ден.</h2>
+    <div class="story-text">
+      <p class="story-lead">Всеки ти говори за трейдинг, дропшипинг и „пасивен доход“. Никой не ти казва, че едно от най-ценните умения, които можеш да имаш, е да вдигнеш телефона и да превърнеш непознат в клиент.</p>
+      <p>А когато някой все пак говори за продажби — получаваш мотивационни клипове и „5 техники за затваряне“. Никой не те води <strong>зад кулисите</strong>: какво точно се казва в първите 10 секунди, как звучи истинско възражение и какво отговаря човек, който го чува всеки ден.</p>
+      <p>Ние сме Ресан и Даниел. <strong>Не сме инфлуенсъри — продаваме всеки ден.</strong> Изграждаме и управляваме търговски екипи за бизнеси в България и чужбина и сме обучили над 100 търговци — повечето от нулата.</p>
+      <p>Затова правим това предизвикателство: 7 дни, в които ти показваме точно това, което работи при нас — <strong>и го упражняваш заедно с нас, на живо.</strong></p>
+    </div>
+    <figure class="founders-photo">
+      <img src="../founders.jpg" alt="Ресан Хамид и Даниел Гелов — основатели на RevStream Consortium" loading="lazy" width="739" height="1357">
+      <figcaption>Ресан и Даниел — с тях ще работиш всеки ден от предизвикателството.</figcaption>
+    </figure>
+    <div class="founders-grid">
+      <div class="founder-card">
+        <div class="founder-name">Ресан Хамид</div>
+        <div class="founder-role">Appointment Setting & Team Building</div>
+        <p class="founder-bio">Ресан е клоузър с реален track record. Специализира в изграждане на B2B outbound екипи и е лично затварял сделки на стойност над шест цифри.</p>
+        <ul class="creds-list">
+          <li>Достигнал митичните 100% затворени сделки за седмица</li>
+          <li>Над 10+ създадени продажбени екипи</li>
+          <li>7г. опит на BG, UK и US пазари</li>
         </ul>
       </div>
-      <div class="fit-card fit-no">
-        <div class="fit-title">✕ Не е за теб, ако:</div>
-        <ul>
-          <li>Търсиш пасивен доход без да провеждаш разговори</li>
-          <li>Искаш само да гледаш видеа, без да практикуваш</li>
-          <li>Не си готов да издържиш и седемте дни докрай</li>
+      <div class="founder-card">
+        <div class="founder-name">Даниел Гелов</div>
+        <div class="founder-role">Коучинг & Стратегия</div>
+        <p class="founder-bio">Даниел ръководи 1-on-1 коучинг програмата и стратегията на RevStream. Работил е с десетки клоузъри — от нулата до реални резултати.</p>
+        <ul class="creds-list">
+          <li>Основател на най-бързо развиващата се академия по продажби в BG</li>
+          <li>50+ успешно обучени търговци за под 5 месеца</li>
+          <li>Затварял сделки без възражения за над 5 000€.</li>
         </ul>
       </div>
     </div>
     <div class="inline-cta">
-      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFitClick')">ТОВА СЪМ АЗ — ЗАПАЗИ МИ МЯСТО →</a>
-      <span class="btn-cta-sub">Ако се разпозна в лявата колона — мястото ти е тук.</span>
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFoundersClick')">УЧИ ДИРЕКТНО С НАС →</a>
+      <span class="btn-cta-sub">Всеки ден на живо · Безплатно</span>
     </div>
   </div>
 </section>
@@ -1010,7 +967,7 @@ footer p { font-size: 0.78rem; color: #444; }
         <span class="prize-tag">💼 Работа след програмата</span>
         <span class="prize-tag">🎓 Сертификат RevClosers</span>
       </div>
-      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeWinClick')">ЗАПАЗИ СВОЕТО МЯСТО</a>
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeWinClick')">ИСКАМ ДА УЧАСТВАМ →</a>
     </div>
   </div>
 </section>
@@ -1147,86 +1104,37 @@ footer p { font-size: 0.78rem; color: #444; }
       <div class="proof-shot"><img src="../Screenshot 2025-11-13 002014.png" alt="Затвори от първи cold DM" loading="lazy"><span class="proof-cap">Затвори от първи cold DM</span></div>
       <div class="proof-shot"><img src="../Screenshot 2025-11-13 001657.png" alt="Proper sales skills = More money" loading="lazy"><span class="proof-cap">Proper sales skills = More money</span></div>
       <div class="proof-shot"><img src="../Screenshot 2025-11-13 001728.png" alt="Клоузна за повече пари" loading="lazy"><span class="proof-cap">Клоузна за повече пари</span></div>
-      <div class="proof-shot"><img src="../Screenshot 2025-11-13 001832.png" alt="PIF след PIF" loading="lazy"><span class="proof-cap">PIF след PIF</span></div>
-      <div class="proof-shot"><img src="../Screenshot 2025-11-13 001851.png" alt="2 продажби за деня" loading="lazy"><span class="proof-cap">2 продажби за деня</span></div>
-      <div class="proof-shot"><img src="../Screenshot 2025-11-13 001926.png" alt="Търговец + собственик на бизнес" loading="lazy"><span class="proof-cap">Търговец + собственик на бизнес</span></div>
-      <div class="proof-shot"><img src="../Screenshot 2025-11-13 001744.png" alt="Отзив" loading="lazy"><span class="proof-cap">Отзив</span></div>
     </div>
   </div>
 </section>
 
-<!-- CTA BLOCK -->
-<div class="cta-block">
+<!-- FIT -->
+<section id="fit">
   <div class="container">
-    <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeMidClick')">ЗАПАЗИ СВОЕТО МЯСТО →</a>
-    <p class="btn-cta-sub" style="margin-top:12px; font-size:0.8rem; color:#555;">Безплатно участие. Местата са ограничени — затваряме в Неделя.</p>
-  </div>
-</div>
-
-<!-- FOUNDERS / WHO WE ARE -->
-<section id="founders">
-  <div class="container">
-    <p class="section-label">КОИ СМЕ НИЕ</p>
-    <h2 class="section-title">Защо изобщо да ни слушате</h2>
-    <p class="section-sub">Здрасти, ние сме Ресан Хамид и Даниел Гелов — основатели на RevStream Consortium. <strong>Не сме теоретици. Продаваме всеки ден и преподаваме само това, което лично работи за нас.</strong></p>
-    <figure class="founders-photo">
-      <img src="../founders.jpg" alt="Ресан Хамид и Даниел Гелов — основатели на RevStream Consortium" loading="lazy" width="739" height="1357">
-      <figcaption>Ресан и Даниел — с тях ще работиш всеки ден от предизвикателството.</figcaption>
-    </figure>
-    <div class="founders-grid">
-      <div class="founder-card">
-        <div class="founder-name">Ресан Хамид</div>
-        <div class="founder-role">Appointment Setting & Team Building</div>
-        <p class="founder-bio">Ресан е клоузър с реален track record. Специализира в изграждане на B2B outbound екипи и е лично затварял сделки на стойност над шест цифри.</p>
-        <ul class="creds-list">
-          <li>Достигнал митичните 100% затворени сделки за седмица</li>
-          <li>Над 10+ създадени продажбени екипи</li>
-          <li>7г. опит на BG, UK и US пазари</li>
+    <p class="section-label">ЗА КОГО Е</p>
+    <h2 class="section-title">Това предизвикателство<br>не е за всеки.</h2>
+    <div class="fit-grid">
+      <div class="fit-card fit-yes">
+        <div class="fit-title">✓ За теб е, ако:</div>
+        <ul>
+          <li>Нямаш опит в продажбите — или имаш съвсем малко и искаш структура</li>
+          <li>Искаш умение, с което да работиш дистанционно и да печелиш според резултатите си</li>
+          <li>Можеш да отделиш време всеки ден в продължение на 7 дни</li>
+          <li>Готов си да говориш на глас в ролевите сесии, дори да ти е неудобно в началото</li>
         </ul>
       </div>
-      <div class="founder-card">
-        <div class="founder-name">Даниел Гелов</div>
-        <div class="founder-role">Коучинг & Стратегия</div>
-        <p class="founder-bio">Даниел ръководи 1-on-1 коучинг програмата и стратегията на RevStream. Работил е с десетки клоузъри — от нулата до реални резултати.</p>
-        <ul class="creds-list">
-          <li>Основател на най-бързо развиващата се академия по продажби в BG</li>
-          <li>50+ успешно обучени търговци за под 5 месеца</li>
-          <li>Затварял сделки без възражения за над 5 000€.</li>
+      <div class="fit-card fit-no">
+        <div class="fit-title">✕ Не е за теб, ако:</div>
+        <ul>
+          <li>Търсиш пасивен доход без да провеждаш разговори</li>
+          <li>Искаш само да гледаш видеа, без да практикуваш</li>
+          <li>Не си готов да издържиш и седемте дни докрай</li>
         </ul>
       </div>
     </div>
     <div class="inline-cta">
-      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFoundersClick')">УЧИ ДИРЕКТНО С НАС →</a>
-      <span class="btn-cta-sub">Всеки ден на живо с Ресан и Даниел.</span>
-    </div>
-  </div>
-</section>
-
-<!-- WHY IT WORKS -->
-<section id="why">
-  <div class="container">
-    <p class="section-label">МОЖЕ ЛИ ТОВА ДА УВЕЛИЧИ ДОХОДА ТИ</p>
-    <h2 class="section-title">Да. Ето рационалните основания.</h2>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-num">01</div>
-        <div class="why-title">Базирано на доказана методология</div>
-        <p class="why-desc">Методологията е базирана на NEPQ на Jeremy Miner и методиката на Cole Gordon и Bill Walsh — системи, разработени върху <strong>поведенческа психология</strong>, без натиск върху клиента.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-num">02</div>
-        <div class="why-title">Приложено в множество индустрии</div>
-        <p class="why-desc">Търговци, използващи тези системи, обичайно отчитат <strong>значимо подобрение в процента успешни срещи</strong> в рамките на 30–90 дни — не защото „късметът се обръща", а защото комуникацията става по-структурирана.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-num">03</div>
-        <div class="why-title">Конкретни инструменти и подкрепа</div>
-        <p class="why-desc">Стъпка по стъпка структура на разговора, въпроси, намаляващи съпротивата, анализ на твои реални разговори и ролеви упражнения. <strong>Реалната промяна настъпва, когато имаш експерт до теб.</strong></p>
-      </div>
-    </div>
-    <div class="inline-cta">
-      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeWhyClick')">ЗАПАЗИ МИ МЯСТО — БЕЗПЛАТНО</a>
-      <span class="btn-cta-sub">Местата са ограничени · Затваряме приема в неделя.</span>
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFitClick')">ТОВА СЪМ АЗ — ВЛИЗАМ →</a>
+      <span class="btn-cta-sub">Ако се разпозна в лявата колона — мястото ти е тук.</span>
     </div>
   </div>
 </section>
@@ -1234,17 +1142,19 @@ footer p { font-size: 0.78rem; color: #444; }
 <!-- FINAL CTA -->
 <section id="cta-final">
   <div class="container">
-    <p class="eyebrow">ЗАПАЗИ СВОЕТО МЯСТО</p>
+    <p class="eyebrow">ВЛЕЗ В ПРЕДИЗВИКАТЕЛСТВОТО</p>
     <h2 class="cta-headline">Участието е <span>Безплатно.</span></h2>
-    <p class="cta-sub">Единственото, което инвестираш, е времето си. <strong>Местата са ограничени — затваряме приема в Неделя.</strong></p>
+    <p class="cta-sub">Единственото, което инвестираш, е времето си. Ето какво взимаш:</p>
 
-    <div class="urgency-strip" style="margin-bottom:2rem;">
-      <span class="spots-count">58</span>
-      <span class="spots-label">оставащи места</span>
-    </div>
+    <ul class="recap-list">
+      <li><strong>7 сесии на живо с Ресан и Даниел</strong> — учиш от хора, които продават всеки ден, не от теоретици.</li>
+      <li><strong>Ежедневна ролева практика</strong> — влизаш в реални разговори уверен, защото вече си ги правил.</li>
+      <li><strong>Рамка за обаждания, DM и възражения</strong> — знаеш какво да кажеш във всяка ситуация.</li>
+      <li><strong>Финален тест 1-на-1</strong> — шанс за 1-on-1 коучинг и работа в наш партньорски бизнес.</li>
+    </ul>
 
-    <a href="#apply" id="apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFinalClick'); gtag('event','challenge_apply_click');">ЗАПАЗИ СВОЕТО МЯСТО</a>
-    <span class="btn-cta-sub">Безплатно участие — ще се свържем с теб в рамките на 24 часа.</span>
+    <a href="#apply" id="apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFinalClick'); gtag('event','challenge_apply_click');">ВЛИЗАМ В ПРЕДИЗВИКАТЕЛСТВОТО →</a>
+    <span class="btn-cta-sub">Безплатно · Ограничен брой места · Ще се свържем с теб до 24 ч.</span>
   </div>
 </section>
 
@@ -1259,24 +1169,11 @@ footer p { font-size: 0.78rem; color: #444; }
   </div>
 </footer>
 
-<script>
-  // Simple spots countdown — update the number as you fill seats
-  const counter = document.getElementById('spots-counter');
-  let spots = parseInt(counter?.textContent || '58');
-  // Slowly tick down to create urgency feel (optional)
-  // Remove this block if you want a static number
-  const tick = () => {
-    if (spots > 30 && Math.random() < 0.3) {
-      spots = Math.max(30, spots - 1);
-      if (counter) counter.textContent = spots;
-    }
-  };
-  setInterval(tick, 45000);
-</script>
+
 
 <!-- STICKY MOBILE CTA -->
 <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
-  <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeStickyClick')">ЗАПАЗИ МИ МЯСТО — БЕЗПЛАТНО</a>
+  <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeStickyClick')">ВЛИЗАМ В ПРЕДИЗВИКАТЕЛСТВОТО →</a>
 </div>
 <script>
   (function () {
@@ -1304,8 +1201,8 @@ footer p { font-size: 0.78rem; color: #444; }
     <button type="button" class="su-close" id="su-close" aria-label="Затвори">&times;</button>
 
     <p class="su-eyebrow">БЕЗПЛАТНО 7-ДНЕВНО ПРЕДИЗВИКАТЕЛСТВО</p>
-    <h2 class="su-title" id="su-title">Запази мястото си</h2>
-    <p class="su-sub">Остават <strong class="su-spots">58</strong> места. Попълни данните си — ще се свържем с теб до 24 часа.</p>
+    <h2 class="su-title" id="su-title">Влез в предизвикателството</h2>
+    <p class="su-sub"><strong>Ограничен брой места.</strong> Попълни данните си — ще се свържем с теб до 24 часа.</p>
 
     <div class="su-form-frame" id="su-form-frame">
       <div class="su-loading" id="su-loading">Зареждане…</div>
@@ -1367,8 +1264,6 @@ footer p { font-size: 0.78rem; color: #444; }
     if (e) e.preventDefault();
     lastFocus = document.activeElement;
     loadForm();
-    var spots = document.getElementById('spots-counter');
-    if (spots) overlay.querySelector('.su-spots').textContent = spots.textContent;
     overlay.hidden = false;
     requestAnimationFrame(function () { overlay.classList.add('open'); });
     document.documentElement.classList.add('su-lock');
