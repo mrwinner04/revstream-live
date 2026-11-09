@@ -551,6 +551,68 @@ section { padding: 80px 20px; }
 .cta-block .price-note { font-size: 0.88rem; color: var(--text-dim); margin-bottom: 1.6rem; }
 .cta-block .price-note strong { color: var(--gold-light); }
 
+/* ===== EXTRA CTAs ===== */
+.inline-cta { text-align: center; margin-top: 2.6rem; }
+.inline-cta .btn-cta-sub { margin-top: 10px; }
+.sticky-cta { display: none; }
+@media (max-width: 768px) {
+  .sticky-cta {
+    display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 999;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(10,10,10,0.94); border-top: 1px solid rgba(212,160,23,0.35);
+    backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+    transform: translateY(110%); transition: transform 0.3s ease;
+  }
+  .sticky-cta.show { transform: translateY(0); }
+  .sticky-cta .btn-cta { display: block; width: 100%; text-align: center; margin: 0; padding-left: 12px; padding-right: 12px; }
+  body { padding-bottom: 76px; }
+}
+
+/* ===== SIGNUP MODAL ===== */
+html.su-lock, html.su-lock body { overflow: hidden; }
+.su-overlay {
+  position: fixed; inset: 0; z-index: 2000; display: flex; align-items: center; justify-content: center;
+  padding: 16px; background: rgba(0,0,0,0.78); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  opacity: 0; transition: opacity 0.2s ease;
+}
+.su-overlay[hidden] { display: none; }
+.su-overlay.open { opacity: 1; }
+.su-modal {
+  position: relative; width: 100%; max-width: 480px; max-height: calc(100vh - 32px); overflow-y: auto;
+  background: var(--card-bg); border: 1px solid rgba(212,160,23,0.4); border-top: 3px solid #D4A017;
+  border-radius: 14px; padding: 30px 28px 24px; text-align: left;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 60px rgba(212,160,23,0.12);
+  transform: translateY(16px) scale(0.98); transition: transform 0.25s ease;
+}
+.su-overlay.open .su-modal { transform: none; }
+.su-close {
+  position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; border: none; border-radius: 50%;
+  background: transparent; color: var(--text-dim); font-size: 1.8rem; line-height: 1; cursor: pointer;
+}
+.su-close:hover { color: #fff; background: rgba(255,255,255,0.06); }
+.su-eyebrow { font-family: 'Bebas Neue', 'Oswald', sans-serif; letter-spacing: 0.2em; font-size: 0.85rem; color: var(--gold-dark); }
+.su-title { font-family: 'Bebas Neue', 'Oswald', sans-serif; font-size: 2.2rem; line-height: 1; letter-spacing: 0.03em; margin: 4px 0 8px; color: #fff; }
+.su-sub { font-size: 0.88rem; color: var(--text-dim); line-height: 1.5; margin-bottom: 18px; }
+.su-sub strong { color: #FFD700; }
+.su-field { display: block; margin-bottom: 14px; border: none; }
+.su-field > span, .su-field legend { display: block; font-size: 0.78rem; font-weight: 600; color: var(--text); margin-bottom: 6px; letter-spacing: 0.02em; }
+.su-field input[type=text], .su-field input[type=tel], .su-field input[type=email] {
+  width: 100%; padding: 12px 14px; font: inherit; font-size: 16px; color: #fff;
+  background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 8px; transition: border-color 0.2s, box-shadow 0.2s;
+}
+.su-field input::placeholder { color: #555; }
+.su-field input:focus { outline: none; border-color: #D4A017; box-shadow: 0 0 0 3px rgba(212,160,23,0.18); }
+.su-legal { text-align: center; font-size: 0.68rem; color: #666; line-height: 1.45; margin-top: 8px; }
+.su-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.su-error { background: rgba(230,57,70,0.1); border: 1px solid rgba(230,57,70,0.4); color: #ff8a93; font-size: 0.82rem; padding: 10px 12px; border-radius: 8px; margin-bottom: 12px; }
+.su-submit { display: block; width: 100%; text-align: center; border: none; cursor: pointer; margin: 0; }
+.su-submit:disabled { opacity: 0.6; cursor: wait; }
+.su-form-frame { position: relative; min-height: 360px; margin: 0 -6px; }
+.su-form-frame iframe { display: block; }
+.su-loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--text-dim); font-size: 0.85rem; pointer-events: none; }
+.su-note { text-align: center; font-size: 0.74rem; color: var(--text-dim); margin-top: 10px; }
+@media (max-width: 480px) { .su-modal { padding: 26px 18px 20px; } .su-title { font-size: 1.9rem; } }
+
 /* ===== FOOTER ===== */
 footer { padding: 40px 20px; text-align: center; border-top: 1px solid var(--border); }
 .footer-brand {
@@ -718,6 +780,10 @@ footer p { font-size: 0.78rem; color: #444; }
         <p class="opp-desc">Всяка компания с отдел по продажби търси хора, които могат да запазват качествени срещи. <strong>Търсенето надвишава предлагането — и ние знаем точно кои компании наемат.</strong></p>
       </div>
     </div>
+    <div class="inline-cta">
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeWhySalesClick')">ИСКАМ ДА НАУЧА ТОВА УМЕНИЕ →</a>
+      <span class="btn-cta-sub">Безплатно · 7 дни на живо · Без опит</span>
+    </div>
   </div>
 </section>
 
@@ -791,6 +857,10 @@ footer p { font-size: 0.78rem; color: #444; }
         </ul>
       </div>
     </div>
+    <div class="inline-cta">
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeLearnClick')">ЗАПАЗИ МИ МЯСТО →</a>
+      <span class="btn-cta-sub">Всичко това — за 7 дни, на живо, безплатно.</span>
+    </div>
   </div>
 </section>
 
@@ -817,6 +887,10 @@ footer p { font-size: 0.78rem; color: #444; }
           <li>Не си готов да издържиш и седемте дни докрай</li>
         </ul>
       </div>
+    </div>
+    <div class="inline-cta">
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFitClick')">ТОВА СЪМ АЗ — ЗАПАЗИ МИ МЯСТО →</a>
+      <span class="btn-cta-sub">Ако се разпозна в лявата колона — мястото ти е тук.</span>
     </div>
   </div>
 </section>
@@ -903,6 +977,10 @@ footer p { font-size: 0.78rem; color: #444; }
       <a href="https://www.youtube.com/watch?v=WBzHZpQ_LXM" target="_blank" rel="noopener" class="t-link">Виж историята на Влади →</a>
     </div>
     <p class="program-note">Събитието ще се проведе на <strong>[ДАТА] от 19:00</strong>. Всеки ден от 19:00 по план.</p>
+    <div class="inline-cta">
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeProgramClick')">ВЛИЗАМ В ПРЕДИЗВИКАТЕЛСТВОТО →</a>
+      <span class="btn-cta-sub">Следващият Влади може да си ти.</span>
+    </div>
   </div>
 </section>
 
@@ -1039,6 +1117,11 @@ footer p { font-size: 0.78rem; color: #444; }
       </div>
     </div>
 
+    <div class="inline-cta">
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeVideosClick')">ИСКАМ ДА СЪМ СЛЕДВАЩИЯТ →</a>
+      <span class="btn-cta-sub">Безплатно · 7 дни на живо</span>
+    </div>
+
     <p class="section-label" style="margin-bottom:1.4rem;">СКРИЙНШОТИ ОТ РЕАЛНИ РЕЗУЛТАТИ</p>
     <div class="proof-masonry">
       <div class="proof-shot"><img src="../Screenshot 2025-11-13 001549.png" alt="800% ръст на букнати срещи" loading="lazy"><span class="proof-cap">800% ръст на букнати срещи</span></div>
@@ -1094,6 +1177,10 @@ footer p { font-size: 0.78rem; color: #444; }
         </ul>
       </div>
     </div>
+    <div class="inline-cta">
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFoundersClick')">УЧИ ДИРЕКТНО С НАС →</a>
+      <span class="btn-cta-sub">Всеки ден на живо с Ресан и Даниел.</span>
+    </div>
   </div>
 </section>
 
@@ -1119,6 +1206,10 @@ footer p { font-size: 0.78rem; color: #444; }
         <p class="why-desc">Стъпка по стъпка структура на разговора, въпроси, намаляващи съпротивата, анализ на твои реални разговори и ролеви упражнения. <strong>Реалната промяна настъпва, когато имаш експерт до теб.</strong></p>
       </div>
     </div>
+    <div class="inline-cta">
+      <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeWhyClick')">ЗАПАЗИ МИ МЯСТО — БЕЗПЛАТНО</a>
+      <span class="btn-cta-sub">Местата са ограничени · Затваряме приема в неделя.</span>
+    </div>
   </div>
 </section>
 
@@ -1134,7 +1225,7 @@ footer p { font-size: 0.78rem; color: #444; }
       <span class="spots-label">оставащи места</span>
     </div>
 
-    <a href="YOUR_FORM_LINK_HERE" target="_blank" rel="noopener" id="apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFinalClick'); gtag('event','challenge_apply_click');">ЗАПАЗИ СВОЕТО МЯСТО</a>
+    <a href="#apply" id="apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeFinalClick'); gtag('event','challenge_apply_click');">ЗАПАЗИ СВОЕТО МЯСТО</a>
     <span class="btn-cta-sub">Безплатно участие — ще се свържем с теб в рамките на 24 часа.</span>
   </div>
 </section>
@@ -1163,6 +1254,116 @@ footer p { font-size: 0.78rem; color: #444; }
     }
   };
   setInterval(tick, 45000);
+</script>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <a href="#apply" class="btn-cta" onclick="fbq('trackCustom','ChallengeStickyClick')">ЗАПАЗИ МИ МЯСТО — БЕЗПЛАТНО</a>
+</div>
+<script>
+  (function () {
+    var bar = document.getElementById('sticky-cta');
+    var watch = [document.querySelector('#hero .btn-cta'), document.getElementById('cta-final')].filter(Boolean);
+    if (!bar || !('IntersectionObserver' in window)) return;
+    var visible = new Set();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { en.isIntersecting ? visible.add(en.target) : visible.delete(en.target); });
+      var show = visible.size === 0 && window.scrollY > 400;
+      bar.classList.toggle('show', show);
+      bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+    });
+    watch.forEach(function (el) { io.observe(el); });
+    window.addEventListener('scroll', function () {
+      if (window.scrollY <= 400) { bar.classList.remove('show'); bar.setAttribute('aria-hidden', 'true'); }
+      else if (visible.size === 0) { bar.classList.add('show'); bar.setAttribute('aria-hidden', 'false'); }
+    }, { passive: true });
+  })();
+</script>
+
+<!-- SIGNUP MODAL -->
+<div class="su-overlay" id="su-overlay" hidden>
+  <div class="su-modal" role="dialog" aria-modal="true" aria-labelledby="su-title">
+    <button type="button" class="su-close" id="su-close" aria-label="Затвори">&times;</button>
+
+    <p class="su-eyebrow">БЕЗПЛАТНО 7-ДНЕВНО ПРЕДИЗВИКАТЕЛСТВО</p>
+    <h2 class="su-title" id="su-title">Запази мястото си</h2>
+    <p class="su-sub">Остават <strong class="su-spots">58</strong> места. Попълни данните си — ще се свържем с теб до 24 часа.</p>
+
+    <div class="su-form-frame" id="su-form-frame">
+      <div class="su-loading" id="su-loading">Зареждане…</div>
+      <iframe
+        id="inline-gZK4Vi0EXPCSS8kXCWr9"
+        data-src="https://api.leadconnectorhq.com/widget/form/gZK4Vi0EXPCSS8kXCWr9"
+        title="Запази мястото си — 7-дневно предизвикателство"
+        style="width:100%;height:420px;border:none;background:transparent;"
+        allowtransparency="true"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="7 day challenge November"
+        data-height="420"
+        data-layout-iframe-id="inline-gZK4Vi0EXPCSS8kXCWr9"
+        data-form-id="gZK4Vi0EXPCSS8kXCWr9"></iframe>
+    </div>
+    <p class="su-note">🔒 Безплатно. Без спам. Без скрити такси.</p>
+  </div>
+</div>
+
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script>
+(function () {
+  var overlay = document.getElementById('su-overlay');
+  var iframe = document.getElementById('inline-gZK4Vi0EXPCSS8kXCWr9');
+  var loading = document.getElementById('su-loading');
+  var lastFocus = null;
+
+  function loadForm() {
+    if (iframe.src) return;
+    // pass UTM / fbclid from the page URL through to the form for attribution
+    iframe.src = iframe.getAttribute('data-src') + location.search;
+    iframe.addEventListener('load', function () { loading.hidden = true; });
+  }
+
+  function open(e) {
+    if (e) e.preventDefault();
+    lastFocus = document.activeElement;
+    loadForm();
+    var spots = document.getElementById('spots-counter');
+    if (spots) overlay.querySelector('.su-spots').textContent = spots.textContent;
+    overlay.hidden = false;
+    requestAnimationFrame(function () { overlay.classList.add('open'); });
+    document.documentElement.classList.add('su-lock');
+    document.getElementById('su-close').focus();
+    // lets the thank-you page know this visitor came through the popup (for the Lead event)
+    try { sessionStorage.setItem('rs_challenge_lead', '1'); } catch (e1) {}
+    try { if (window.fbq) fbq('trackCustom', 'ChallengeFormOpen'); } catch (e2) {}
+    try { if (window.gtag) gtag('event', 'challenge_form_open'); } catch (e3) {}
+  }
+
+  function close() {
+    overlay.classList.remove('open');
+    document.documentElement.classList.remove('su-lock');
+    setTimeout(function () { overlay.hidden = true; }, 200);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  // every "#apply" button opens the popup
+  document.querySelectorAll('a[href="#apply"]').forEach(function (a) {
+    a.addEventListener('click', open);
+  });
+  document.getElementById('su-close').addEventListener('click', close);
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (!overlay.hidden && e.key === 'Escape') close();
+  });
+
+  // start loading the form in the background once the page is idle, so the popup opens instantly
+  window.addEventListener('load', function () { setTimeout(loadForm, 2500); });
+})();
 </script>
 
 </body>
