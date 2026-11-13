@@ -493,16 +493,16 @@ section { padding: 80px 20px; }
 
 /* ===== WHO ===== */
 #founders { background: var(--black-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.founders-photo { position: relative; margin: 0 0 24px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+.founders-photo { position: relative; margin: 0 auto 24px; max-width: 680px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
 .founders-photo::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold-grad); z-index: 1; }
-.founders-photo img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 12%; }
+.founders-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: center top; }
 .founders-photo figcaption {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 20px 16px;
   background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
   font-size: 0.9rem; color: #fff; font-weight: 500;
 }
 @media (max-width: 600px) {
-  .founders-photo img { aspect-ratio: 4 / 5; object-position: center 8%; }
+  .founders-photo img { aspect-ratio: 4 / 5; object-position: center top; }
   .founders-photo figcaption { font-size: 0.82rem; padding: 32px 14px 12px; }
 }
 .founders-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
@@ -632,7 +632,7 @@ html.su-lock, html.su-lock body { overflow: hidden; }
 
 /* ===== V3: feedback restructure ===== */
 .hero-hosts { display: inline-flex; align-items: center; gap: 10px; margin: 0 auto 1.2rem; padding: 6px 14px 6px 6px; border: 1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,0.03); }
-.hero-hosts img { width: 64px; height: 40px; border-radius: 999px; object-fit: cover; object-position: center 6%; }
+.hero-hosts img { width: 64px; height: 40px; border-radius: 999px; object-fit: cover; object-position: center 3%; }
 .hero-hosts span { font-size: 0.85rem; color: var(--text-dim); }
 .hero-hosts strong { color: var(--text); }
 .hero-prize { display: flex; align-items: center; gap: 12px; max-width: 600px; margin: 0 auto 2rem; padding: 14px 18px; text-align: left; border: 1px solid rgba(212,160,23,0.45); border-radius: 10px; background: rgba(212,160,23,0.07); }
