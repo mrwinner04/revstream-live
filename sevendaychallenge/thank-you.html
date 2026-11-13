@@ -32,6 +32,9 @@ src="https://www.facebook.com/tr?id=894951940022072&ev=PageView&noscript=1"/></n
 </script>
 <!-- End Google Analytics -->
 
+<!-- First-party tracking (Supabase) -->
+<script src="rs-track.js" data-page="thank_you"></script>
+
 <!-- Lead tracking: fires only once, right after a real form submission (not on reloads or direct visits) -->
 <script>
 (function () {
@@ -42,6 +45,7 @@ src="https://www.facebook.com/tr?id=894951940022072&ev=PageView&noscript=1"/></n
   } catch (e) {}
   if (!isLead) return;
   fbq('track', 'Lead', { content_name: '7-Day Challenge', currency: 'EUR', value: 0 });
+  try { if (window.rsTrack) rsTrack('lead', { label: '7-day-challenge' }); } catch (e2) {}
   gtag('event', 'generate_lead', { event_category: '7-day-challenge' });
 })();
 </script>

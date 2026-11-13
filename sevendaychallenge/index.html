@@ -32,6 +32,9 @@ src="https://www.facebook.com/tr?id=894951940022072&ev=PageView&noscript=1"/></n
 </script>
 <!-- End Google Analytics -->
 
+<!-- First-party tracking (Supabase) -->
+<script src="rs-track.js" data-page="challenge"></script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -1284,7 +1287,11 @@ footer p { font-size: 0.78rem; color: #444; }
     started = true;
     iframe.addEventListener('load', formReady);
     // pass UTM / fbclid from the page URL through to the form for attribution
-    iframe.src = iframe.getAttribute('data-src') + location.search;
+    // + rs_vid so the GoHighLevel contact can be matched to this visitor's journey
+    var q = new URLSearchParams(location.search);
+    if (window.rsVisitorId) q.set('rs_vid', window.rsVisitorId);
+    var qstr = q.toString();
+    iframe.src = iframe.getAttribute('data-src') + (qstr ? '?' + qstr : '');
     setTimeout(formReady, 5000); // never leave the loader stuck
   }
   // the form tells the page its real height; use it so there is no empty space
@@ -1308,6 +1315,11 @@ footer p { font-size: 0.78rem; color: #444; }
     // lets the thank-you page know this visitor came through the popup (for the Lead event)
     try { sessionStorage.setItem('rs_challenge_lead', '1'); } catch (e1) {}
     try { if (window.fbq) fbq('trackCustom', 'ChallengeFormOpen'); } catch (e2) {}
+    try {
+      var t = e && e.currentTarget;
+      var sec = t && t.closest ? (t.closest('#sticky-cta') ? 'sticky' : ((t.closest('section[id]') || {}).id || 'other')) : 'other';
+      if (window.rsTrack) rsTrack('popup_open', { section: sec });
+    } catch (e4) {}
     try { if (window.gtag) gtag('event', 'challenge_form_open'); } catch (e3) {}
   }
 
