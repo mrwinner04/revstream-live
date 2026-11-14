@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0a0a0a">
 <meta name="robots" content="noindex">
 <title>Мястото ти е запазено — 7-Дневно Предизвикателство</title>
 
@@ -170,6 +172,21 @@ h1 {
 /* long word "предизвикателството" overflowed on phones */
 h1 { overflow-wrap: break-word; }
 @media (max-width: 600px) { h1 { font-size: clamp(1.9rem, 8.6vw, 2.8rem); letter-spacing: 0.02em; } }
+
+/* ===== SOLID GOLD TEXT (readable everywhere) =====
+   Gradient-clipped text gets darkened by Samsung Internet / forced dark modes.
+   Plain solid colour + soft glow renders the same in every browser. */
+:root { color-scheme: dark; }
+h1,
+.footer-brand {
+  background: none !important;
+  -webkit-background-clip: border-box !important; background-clip: border-box !important;
+  -webkit-text-fill-color: #FFD23F !important;
+  color: #FFD23F !important;
+  filter: none !important;
+  animation: none !important;
+  text-shadow: 0 0 18px rgba(255, 196, 40, 0.35);
+}
 </style>
 </head>
 <body>

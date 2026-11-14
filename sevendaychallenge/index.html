@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0a0a0a">
 <meta name="description" content="Безплатно 7-Дневно Предизвикателство по Appointment Setting — Научи как да превръщаш „Не" в записани срещи — 7 дни на живо, от нула опит до търговец, който запазва срещи.">
 <title>Безплатното 7-Дневно Предизвикателство — RevStream Consortium</title>
 
@@ -759,6 +761,35 @@ footer p { font-size: 0.78rem; color: #444; }
 .win-box h3 { overflow-wrap: break-word; }
 @media (max-width: 600px) {
   .win-box h3 { font-size: clamp(1.35rem, 6.8vw, 2rem); letter-spacing: 0.02em; }
+}
+
+/* ===== SOLID GOLD TEXT (readable everywhere) =====
+   Gradient-clipped text gets darkened by Samsung Internet / forced dark modes.
+   Plain solid colour + soft glow renders the same in every browser. */
+:root { color-scheme: dark; }
+.hero-headline-v2 .hl-gold,
+.win-box h3 span,
+.cta-headline span,
+.nav-brand,
+.footer-brand,
+.stat-pill-num,
+.hero-headline .line-gold {
+  background: none !important;
+  -webkit-background-clip: border-box !important; background-clip: border-box !important;
+  -webkit-text-fill-color: #FFD23F !important;
+  color: #FFD23F !important;
+  filter: none !important;
+  animation: none !important;
+  text-shadow: 0 0 18px rgba(255, 196, 40, 0.35);
+}
+
+/* buttons: keep the label on one line on phones */
+@media (max-width: 600px) {
+  .btn-cta { padding: 18px 16px; font-size: 1.12rem; letter-spacing: 0.05em; white-space: nowrap; max-width: 100%; }
+  .sticky-cta .btn-cta { font-size: 1.08rem; padding: 15px 10px; }
+}
+@media (max-width: 360px) {
+  .btn-cta { font-size: 1rem; letter-spacing: 0.03em; padding: 16px 10px; }
 }
 </style>
 </head>
