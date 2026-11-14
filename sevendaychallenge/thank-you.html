@@ -175,6 +175,14 @@ footer { margin-top: 2.4rem; padding-top: 1.6rem; border-top: 1px solid var(--bo
     <p class="date-sub">7 дни на живо онлайн — всеки ден от 19:00, до 24 ноември.</p>
   </div>
 
+  <!-- Group invite: shown only when GROUP_URL is set below -->
+  <div class="card group-block" id="group-block" hidden>
+    <p class="card-title">ВЛЕЗ ВЪВ VIBER ГРУПАТА НА УЧАСТНИЦИТЕ</p>
+    <p>Всички участници се събираме в една група — там ще получаваш <strong>напомняния, линкове за сесиите и материалите за всеки ден.</strong></p>
+    <a class="btn" id="group-link" href="#" target="_blank" rel="noopener noreferrer"
+       onclick="if(window.fbq){fbq('trackCustom','ChallengeGroupJoin');}">ВЛЕЗ ВЪВ VIBER ГРУПАТА →</a>
+  </div>
+
   <div class="card">
     <p class="card-title">КАКВО СЛЕДВА</p>
     <ol class="steps">
@@ -191,14 +199,6 @@ footer { margin-top: 2.4rem; padding-top: 1.6rem; border-top: 1px solid var(--bo
         <span><strong>Отдели си време всеки ден за 7-те дни.</strong> От Ден 2 нататък има ролева практика на живо с Ресан и Даниел — колкото повече участваш, толкова повече научаваш.</span>
       </li>
     </ol>
-  </div>
-
-  <!-- Group invite: shown only when GROUP_URL is set below -->
-  <div class="card group-block" id="group-block" hidden>
-    <p class="card-title">ВЛЕЗ В ГРУПАТА НА УЧАСТНИЦИТЕ</p>
-    <p>Всички участници се събираме в една група — там ще получаваш <strong>напомняния, линкове за сесиите и материалите за всеки ден.</strong></p>
-    <a class="btn" id="group-link" href="#" target="_blank" rel="noopener noreferrer"
-       onclick="if(window.fbq){fbq('trackCustom','ChallengeGroupJoin');}">ВЛЕЗ В ГРУПАТА →</a>
   </div>
 
   <div class="card">
@@ -223,7 +223,7 @@ footer { margin-top: 2.4rem; padding-top: 1.6rem; border-top: 1px solid var(--bo
   // ====== CONFIG ======
   // Paste the Viber / WhatsApp / Telegram group invite link for this challenge.
   // Leave empty to hide the group block.
-  var GROUP_URL = '';
+  var GROUP_URL = 'https://invite.viber.com/?g2=AQBCWtbS%2BWuUQFd0gPBhXGmgs838cP6SmV2ghx%2Fpl88vRPIZYMm6SBPUKNAWlKjf';
   // ====================
 
   if (GROUP_URL) {
