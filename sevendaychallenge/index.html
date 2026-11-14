@@ -726,6 +726,40 @@ footer p { font-size: 0.78rem; color: #444; }
   .sales-stats { grid-template-columns: 1fr; }
   .opportunity-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== GOLD TEXT: brighter + readable on phones ===== */
+/* Old gradient dipped into dark #D4A017 and, on wrapped lines, each line only got a slice of it,
+   so parts of the headline looked dull on mobile. clone = every line gets the full bright gradient. */
+.hero-headline-v2 .hl-gold,
+.win-box h3 span,
+.cta-headline span {
+  color: #FFD54A; /* fallback if gradient text is unsupported */
+  background: linear-gradient(90deg, #FFC83D 0%, #FFE680 25%, #FFD23F 50%, #FFE680 75%, #FFC83D 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  filter: drop-shadow(0 0 14px rgba(255, 200, 60, 0.35));
+  animation: shimmer 6s linear infinite;
+}
+.nav-brand, .footer-brand {
+  background: linear-gradient(135deg, #FFC83D 0%, #FFE680 50%, #FFC83D 100%);
+  -webkit-background-clip: text; background-clip: text;
+}
+@media (max-width: 600px) {
+  .hero-headline-v2 .hl-gold,
+  .win-box h3 span,
+  .cta-headline span { filter: drop-shadow(0 0 10px rgba(255, 200, 60, 0.4)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-headline-v2 .hl-gold, .win-box h3 span, .cta-headline span { animation: none; }
+}
+
+/* prize box headline: long word "предизвикателството" overflowed the card on phones */
+.win-box h3 { overflow-wrap: break-word; }
+@media (max-width: 600px) {
+  .win-box h3 { font-size: clamp(1.35rem, 6.8vw, 2rem); letter-spacing: 0.02em; }
+}
 </style>
 </head>
 <body>
