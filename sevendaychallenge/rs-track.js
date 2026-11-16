@@ -40,6 +40,25 @@
   if (!/^[0-9a-f-]{36}$/i.test(sessionId || '')) { sessionId = uuid(); ssSet('rs_sid', sessionId); }
   window.rsVisitorId = visitorId;
 
+  // ---------- hero A/B test (50/50, sticky per visitor) ----------
+  // Preview a version with ?hero=A or ?hero=B (that also pins it for this browser).
+  var HERO_SPLIT_B = 0.5; // share of visitors who get version B
+  var variant = null;
+  try {
+    var forced = (new URLSearchParams(location.search).get('hero') || '').toUpperCase();
+    if (forced === 'A' || forced === 'B') { variant = forced; lsSet('rs_ab_hero', variant); }
+    else {
+      variant = lsGet('rs_ab_hero');
+      if (variant !== 'A' && variant !== 'B') {
+        variant = Math.random() < HERO_SPLIT_B ? 'B' : 'A';
+        lsSet('rs_ab_hero', variant);
+      }
+    }
+  } catch (e) { variant = Math.random() < HERO_SPLIT_B ? 'B' : 'A'; }
+  window.rsHeroVariant = variant;
+  // set before the body renders, so CSS shows the right headline with no flicker
+  document.documentElement.setAttribute('data-hero', variant);
+
   // ---------- attribution ----------
   var qs = new URLSearchParams(location.search);
   var extRef = '';
@@ -113,7 +132,8 @@
         ft_source: cut(ft.source, 200), ft_medium: cut(ft.medium, 200),
         ft_campaign: cut(ft.campaign, 300), ft_content: cut(ft.content, 300),
         ft_referrer: cut(ft.referrer, 500), ft_at: ft.at || null,
-        device: device, screen_w: w, lang: cut(navigator.language, 20), tz: cut(tz, 60)
+        device: device, screen_w: w, lang: cut(navigator.language, 20), tz: cut(tz, 60),
+        variant: variant
       });
       if (queue.length >= 20) flush(false);
       else if (!timer) timer = setTimeout(function () { flush(false); }, 1500);

@@ -791,6 +791,14 @@ footer p { font-size: 0.78rem; color: #444; }
 @media (max-width: 360px) {
   .btn-cta { font-size: 1rem; letter-spacing: 0.03em; padding: 16px 10px; }
 }
+
+/* ===== HERO A/B TEST ===== */
+.hero-v-b { display: none; }
+html[data-hero="B"] .hero-v-a { display: none; }
+html[data-hero="B"] .hero-v-b { display: block; }
+/* B is a longer headline, so it runs a bit smaller */
+.hero-v-b { font-size: clamp(1.9rem, 4.4vw, 3.3rem); line-height: 1.06; }
+@media (max-width: 600px) { .hero-v-b { font-size: clamp(1.6rem, 7.4vw, 2.2rem); } }
 </style>
 </head>
 <body>
@@ -814,8 +822,12 @@ footer p { font-size: 0.78rem; color: #444; }
 
     <p class="eyebrow">БЕЗПЛАТНО 7-ДНЕВНО ПРЕДИЗВИКАТЕЛСТВО · ПОБЕДИТЕЛЯТ ПЕЧЕЛИ РАБОТА В НАШ ПАРТНЬОРСКИ БИЗНЕС</p>
 
-    <h1 class="hero-headline hero-headline-v2">
+    <!-- HERO A/B TEST: variant is set on <html data-hero="A|B"> by rs-track.js -->
+    <h1 class="hero-headline hero-headline-v2 hero-v-a">
       Стани търговец, който превръща непознати в <span class="hl-gold">клиенти за едни от най-големите бизнеси в България</span> — и взима комисионна за всеки.
+    </h1>
+    <h1 class="hero-headline hero-headline-v2 hero-v-b">
+      Научи Умението За Което Никой Не Говори: Виж За Какво Бизнесите В България Плащат Хиляди Комисионна И <span class="hl-gold">Спечели Работа Само След 7 Дни</span>
     </h1>
 
     <div class="hero-hosts">
@@ -881,7 +893,7 @@ footer p { font-size: 0.78rem; color: #444; }
         <p class="fba-apply"><span>→</span> Всяко „интересно ми е“ става час в календара.</p>
       </div>
       <div class="fba-card">
-        <div class="fba-feature"><span class="fba-icon">🛡️</span>Обориване на възражения</div>
+        <div class="fba-feature"><span class="fba-icon">🛡️</span>Оборване на възражения</div>
         <p class="fba-benefit">Възражението вече не е краят на разговора, а началото.</p>
         <p class="fba-apply"><span>→</span> Там, където другите затварят телефона, ти записваш срещата.</p>
       </div>
@@ -1349,6 +1361,7 @@ footer p { font-size: 0.78rem; color: #444; }
     // + rs_vid so the GoHighLevel contact can be matched to this visitor's journey
     var q = new URLSearchParams(location.search);
     if (window.rsVisitorId) q.set('rs_vid', window.rsVisitorId);
+    if (window.rsHeroVariant) q.set('rs_hero', window.rsHeroVariant);
     var qstr = q.toString();
     iframe.src = iframe.getAttribute('data-src') + (qstr ? '?' + qstr : '');
     setTimeout(formReady, 5000); // never leave the loader stuck
